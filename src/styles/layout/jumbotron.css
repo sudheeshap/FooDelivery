@@ -1,0 +1,12 @@
+.jumbotron {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 250px;
+}
+
+.jumbotron__subtitle {
+  max-width: 50%;
+}
