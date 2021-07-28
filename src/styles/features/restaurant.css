@@ -1,24 +1,172 @@
-.restaurant__list {
-  max-width: 900px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+.restaurant-list__wrapper {
+  background-color: rgb(247, 247, 247);
 }
 
-.restaurant__card {
-  border: 1px solid;
+.restaurant-list__container {
+  /* max-width: 900px; */
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 0 10px;
+}
+
+.restaurant-list__card {
+  color: inherit;
+  box-shadow: rgb(150 150 150 / 15%) 0px 0px 20px 3px;
   border-radius: 4px;
   background-color: #fff;
   cursor: pointer;
   width: 30%;
   margin: 10px;
-  height: 180px;
-  padding: 10px;
+  height: 188px;
   box-sizing: border-box;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
   font-size: 0.8em;
+  text-decoration: none;
+  overflow: hidden;
+  position: relative;
+}
+
+.restaurant-list__card-info {
+  padding: 10px 13px 10px;
+  width: 100%;
+  line-height: 19px;
+}
+
+.restaurant-list__card-logo {
+  position: absolute;
+  left: 20px;
+  top: 22px;
+  width: 50px;
+  height: 50px;
+  background-position: center center;
+  background-size: cover;
+  background-color: #fff;
+  border: 2px solid #fff;
+  border-radius: 4px;
+}
+
+.restaurant-list__card-image {
+  background-color: #f5f5f5;
+  height: 100px;
+  width: 100%;
+  background-position: center center;
+  background-size: cover;
+}
+
+.restaurant-list__card-featured {
+  background-color: #ece593;
+  padding: 1px 10px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 10px;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.restaurant-list__card-title {
+  font-size: 15px;
+  font-weight: bold;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 75%;
+  overflow: hidden;
+}
+
+.restaurant-list__card-subtitle {
+  font-size: 12px;
+  color: #777;
+}
+
+.restaurant-list__card-more {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.restaurant-list__card-point {
+  margin-right: 10px;
+}
+
+.restaurant-list__card-icon {
+  margin-right: 3px;
+}
+
+.restaurant-list__card-rating {
+  position: absolute;
+  top: 115px;
+  right: 10px;
+}
+
+.restaurant-list__card-rating .restaurant-list__card-icon {
+  color: orange;
+}
+
+.restaurant-info__section {
+  background-color: #fff;
+}
+
+.restaurant-info__container {
+  margin: 0 auto;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: rgb(150 150 150 / 15%) 0px 0px 35px 5px;
+}
+
+.restaurant-logo {
+  width: 60px;
+  height: 60px;
+  background-size: cover;
+  background-position: center center;
+  /* z-index: 10; */
+  margin-right: 20px;
+  border-radius: 3px;
+}
+
+.restaurant-info__image {
+  background-color: #f5f5f5;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 180px;
+}
+
+.restaurant-info {
+  /* background: linear-gradient(0deg, rgba(256, 256, 256, 1) 0%, rgba(0, 0, 0, 0) 100%); */
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  background-color: #fff;
+  /* margin: 10px; */
+  /* border-radius: 70px 0 0 0; */
+  height: 80px;
+  display: flex;
+  justify-content: flex-start;
+  /* padding: 25px 0 0 30px; */
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.restaurant-info__title {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.rating-container {
+  position: absolute;
+  top: 10px;
+  right: 60px;
+}
+
+.icon-star {
+  color: #f6ab2b;
 }

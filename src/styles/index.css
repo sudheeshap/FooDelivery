@@ -2,19 +2,11 @@
 @import 'bootstrap-icons/font/bootstrap-icons.css';
 
 /* Layout */
+@import './layout/layout';
 @import './layout/header';
 @import './layout/jumbotron';
 
 /* Features */
 @import './features/restaurant';
-
-body {
-  margin: 0;
-  font-family: 'Roboto', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-main {
-  background-color: rgb(247, 247, 247);
-}
+@import './features/product';
+@import './features/cart';
