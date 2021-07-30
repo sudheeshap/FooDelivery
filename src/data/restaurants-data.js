@@ -15,6 +15,7 @@ const RESTAURANTS_DATA = [
     distance: '1 km',
     is_open: true,
     is_featured: true,
+    has_free_delivery: false,
   },
   {
     id: 627048,
@@ -29,6 +30,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: true,
+    has_free_delivery: false,
   },
   {
     id: 22895,
@@ -43,6 +45,7 @@ const RESTAURANTS_DATA = [
     distance: '2 km',
     is_open: true,
     is_featured: true,
+    has_free_delivery: false,
   },
   {
     id: 623154,
@@ -57,6 +60,7 @@ const RESTAURANTS_DATA = [
     distance: '2 km',
     is_open: true,
     is_featured: true,
+    has_free_delivery: false,
   },
   {
     id: 625898,
@@ -71,6 +75,7 @@ const RESTAURANTS_DATA = [
     distance: '2 km',
     is_open: true,
     is_featured: true,
+    has_free_delivery: false,
   },
   {
     id: 613433,
@@ -85,6 +90,7 @@ const RESTAURANTS_DATA = [
     distance: '2 km',
     is_open: true,
     is_featured: true,
+    has_free_delivery: false,
   },
   {
     id: 8990,
@@ -95,10 +101,12 @@ const RESTAURANTS_DATA = [
     rating: 3.8,
     photo_highlight:
       'https://t4.ftcdn.net/jpg/01/79/54/15/240_F_179541526_EMI6Znq5tVKcAlPZrqKe9hWveRY8W5Va.jpg',
-    delivery_in: '30 - 45 min',
+    delivery_in: '25 - 35 min',
     distance: '2 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: true,
+    available_offer: '',
   },
   {
     id: 624505,
@@ -113,6 +121,7 @@ const RESTAURANTS_DATA = [
     distance: '2 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 602746,
@@ -127,6 +136,7 @@ const RESTAURANTS_DATA = [
     distance: '2 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 611737,
@@ -137,10 +147,11 @@ const RESTAURANTS_DATA = [
     rating: 3.8,
     photo_highlight:
       'https://t4.ftcdn.net/jpg/01/30/02/57/240_F_130025712_Ep0vdSQgFNEOOStuVUfhhy7Z3C8Qq0Cu.jpg',
-    delivery_in: '30 - 45 min',
+    delivery_in: '35 - 45 min',
     distance: '2 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 607346,
@@ -155,6 +166,8 @@ const RESTAURANTS_DATA = [
     distance: '2 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: true,
+    available_offer: '',
   },
   {
     id: 620991,
@@ -165,10 +178,12 @@ const RESTAURANTS_DATA = [
     rating: 3.8,
     photo_highlight:
       'https://t4.ftcdn.net/jpg/02/42/85/11/240_F_242851114_h3w8oKRkjKFoHQq0Wy33e7NEDmmQVkx3.jpg',
-    delivery_in: '30 - 45 min',
+    delivery_in: '30 - 50 min',
     distance: '2 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: true,
+    available_offer: '',
   },
   {
     id: 29273,
@@ -183,6 +198,8 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: true,
+    available_offer: '',
   },
   {
     id: 628070,
@@ -197,6 +214,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 626702,
@@ -211,6 +229,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 628086,
@@ -225,6 +244,7 @@ const RESTAURANTS_DATA = [
     distance: '2.8 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 13050,
@@ -239,6 +259,7 @@ const RESTAURANTS_DATA = [
     distance: '2.8 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 19448,
@@ -251,8 +272,10 @@ const RESTAURANTS_DATA = [
       'https://t4.ftcdn.net/jpg/02/42/85/11/240_F_242851114_h3w8oKRkjKFoHQq0Wy33e7NEDmmQVkx3.jpg',
     delivery_in: '30 - 50 min',
     distance: '2.8 km',
-    is_open: true,
+    is_open: false,
     is_featured: false,
+    has_free_delivery: true,
+    available_offer: '',
   },
   {
     id: 621510,
@@ -267,6 +290,7 @@ const RESTAURANTS_DATA = [
     distance: '2.8 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 18035,
@@ -281,6 +305,7 @@ const RESTAURANTS_DATA = [
     distance: '2.8 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 6656,
@@ -295,6 +320,7 @@ const RESTAURANTS_DATA = [
     distance: '2.8 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 620694,
@@ -309,6 +335,7 @@ const RESTAURANTS_DATA = [
     distance: '2.8 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 622068,
@@ -323,6 +350,7 @@ const RESTAURANTS_DATA = [
     distance: '2.8 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 627820,
@@ -337,6 +365,7 @@ const RESTAURANTS_DATA = [
     distance: '2.8 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 26677,
@@ -349,8 +378,9 @@ const RESTAURANTS_DATA = [
       'https://t4.ftcdn.net/jpg/02/42/85/11/240_F_242851114_h3w8oKRkjKFoHQq0Wy33e7NEDmmQVkx3.jpg',
     delivery_in: '30 - 50 min',
     distance: '2.8 km',
-    is_open: true,
+    is_open: false,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 11587,
@@ -365,6 +395,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 19168,
@@ -379,6 +410,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 606634,
@@ -393,6 +425,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 617426,
@@ -407,6 +440,7 @@ const RESTAURANTS_DATA = [
     distance: '3.4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 620412,
@@ -421,6 +455,7 @@ const RESTAURANTS_DATA = [
     distance: '3.4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 11527,
@@ -435,6 +470,7 @@ const RESTAURANTS_DATA = [
     distance: '3.4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 616809,
@@ -449,6 +485,7 @@ const RESTAURANTS_DATA = [
     distance: '3.4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 17508,
@@ -463,6 +500,7 @@ const RESTAURANTS_DATA = [
     distance: '3.4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 620006,
@@ -477,6 +515,7 @@ const RESTAURANTS_DATA = [
     distance: '3.4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 22938,
@@ -491,6 +530,7 @@ const RESTAURANTS_DATA = [
     distance: '3.4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 628787,
@@ -505,6 +545,7 @@ const RESTAURANTS_DATA = [
     distance: '3.4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 625367,
@@ -519,6 +560,7 @@ const RESTAURANTS_DATA = [
     distance: '3.4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 600948,
@@ -533,6 +575,7 @@ const RESTAURANTS_DATA = [
     distance: '3.4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 616136,
@@ -547,6 +590,7 @@ const RESTAURANTS_DATA = [
     distance: '3.4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 3021,
@@ -561,6 +605,7 @@ const RESTAURANTS_DATA = [
     distance: '3.4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 8285,
@@ -575,6 +620,7 @@ const RESTAURANTS_DATA = [
     distance: '3.4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 617679,
@@ -589,6 +635,7 @@ const RESTAURANTS_DATA = [
     distance: '3.4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 624961,
@@ -603,6 +650,7 @@ const RESTAURANTS_DATA = [
     distance: '3.4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 627232,
@@ -617,6 +665,7 @@ const RESTAURANTS_DATA = [
     distance: '3.4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 9202,
@@ -631,6 +680,7 @@ const RESTAURANTS_DATA = [
     distance: '3.4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 602805,
@@ -645,6 +695,7 @@ const RESTAURANTS_DATA = [
     distance: '3.4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 614989,
@@ -659,6 +710,7 @@ const RESTAURANTS_DATA = [
     distance: '3.4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 628563,
@@ -673,6 +725,7 @@ const RESTAURANTS_DATA = [
     distance: '3.4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 620259,
@@ -687,6 +740,7 @@ const RESTAURANTS_DATA = [
     distance: '3.4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 629226,
@@ -701,6 +755,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 600143,
@@ -715,6 +770,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 608668,
@@ -729,6 +785,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 624692,
@@ -743,6 +800,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 24321,
@@ -757,6 +815,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 11470,
@@ -771,6 +830,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 8630,
@@ -785,6 +845,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 622000,
@@ -799,6 +860,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 18289,
@@ -813,6 +875,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 26001,
@@ -827,6 +890,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 613477,
@@ -841,6 +905,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 17346,
@@ -855,6 +920,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 26095,
@@ -869,6 +935,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 7123,
@@ -883,6 +950,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 628562,
@@ -897,6 +965,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 626412,
@@ -911,6 +980,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 624730,
@@ -925,6 +995,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 619953,
@@ -939,6 +1010,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 626348,
@@ -953,6 +1025,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 628357,
@@ -967,6 +1040,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 15401,
@@ -981,6 +1055,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 600598,
@@ -995,6 +1070,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 9807,
@@ -1009,6 +1085,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 15783,
@@ -1023,6 +1100,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 22802,
@@ -1037,6 +1115,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 19618,
@@ -1051,6 +1130,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 15500,
@@ -1065,6 +1145,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 608345,
@@ -1079,6 +1160,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 16612,
@@ -1093,6 +1175,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 627901,
@@ -1107,6 +1190,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 627170,
@@ -1121,6 +1205,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 12516,
@@ -1135,6 +1220,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 627701,
@@ -1149,6 +1235,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 19328,
@@ -1163,6 +1250,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 629446,
@@ -1177,6 +1265,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 28319,
@@ -1191,6 +1280,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 626330,
@@ -1205,6 +1295,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 26281,
@@ -1219,6 +1310,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 25119,
@@ -1233,6 +1325,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 26858,
@@ -1247,6 +1340,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 628534,
@@ -1261,6 +1355,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 625568,
@@ -1275,6 +1370,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 20904,
@@ -1289,6 +1385,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 616785,
@@ -1303,6 +1400,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 4193,
@@ -1317,6 +1415,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 19853,
@@ -1331,6 +1430,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 23854,
@@ -1345,6 +1445,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 2188,
@@ -1359,6 +1460,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 7495,
@@ -1373,6 +1475,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 627086,
@@ -1387,6 +1490,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 17834,
@@ -1401,6 +1505,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 24830,
@@ -1415,6 +1520,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 20278,
@@ -1429,6 +1535,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 13333,
@@ -1443,6 +1550,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 624953,
@@ -1457,6 +1565,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 617121,
@@ -1471,6 +1580,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 600702,
@@ -1485,6 +1595,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 20353,
@@ -1499,6 +1610,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 12423,
@@ -1513,6 +1625,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 606584,
@@ -1527,6 +1640,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 618125,
@@ -1541,6 +1655,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 603013,
@@ -1555,6 +1670,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 11883,
@@ -1569,6 +1685,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 617119,
@@ -1583,6 +1700,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 28831,
@@ -1597,6 +1715,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 619106,
@@ -1611,6 +1730,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 23572,
@@ -1625,6 +1745,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 22186,
@@ -1639,6 +1760,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 619502,
@@ -1653,6 +1775,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 625880,
@@ -1667,6 +1790,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 611411,
@@ -1681,6 +1805,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 22391,
@@ -1695,6 +1820,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 12482,
@@ -1709,6 +1835,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 614013,
@@ -1723,6 +1850,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 26770,
@@ -1737,6 +1865,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 601132,
@@ -1751,6 +1880,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 621570,
@@ -1765,6 +1895,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 629516,
@@ -1779,6 +1910,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 13910,
@@ -1793,6 +1925,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 5828,
@@ -1807,6 +1940,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 6895,
@@ -1821,6 +1955,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 20314,
@@ -1835,6 +1970,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 1321,
@@ -1849,6 +1985,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 627340,
@@ -1863,6 +2000,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 25529,
@@ -1877,6 +2015,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 27809,
@@ -1891,6 +2030,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 610927,
@@ -1905,6 +2045,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 615997,
@@ -1919,6 +2060,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 630469,
@@ -1933,6 +2075,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 24322,
@@ -1947,6 +2090,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 629723,
@@ -1961,6 +2105,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 26214,
@@ -1975,6 +2120,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 600360,
@@ -1989,6 +2135,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 623412,
@@ -2003,6 +2150,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 607786,
@@ -2017,6 +2165,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 624182,
@@ -2031,6 +2180,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 8916,
@@ -2045,6 +2195,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 628458,
@@ -2059,6 +2210,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 600758,
@@ -2073,6 +2225,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 628639,
@@ -2087,6 +2240,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 626327,
@@ -2101,6 +2255,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 612824,
@@ -2115,6 +2270,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 1979,
@@ -2128,6 +2284,8 @@ const RESTAURANTS_DATA = [
     delivery_in: '25 - 45 min',
     distance: '4 km',
     is_open: false,
+    is_featured: true,
+    has_free_delivery: false,
   },
   {
     id: 28661,
@@ -2141,6 +2299,8 @@ const RESTAURANTS_DATA = [
     delivery_in: '25 - 45 min',
     distance: '4 km',
     is_open: false,
+    is_featured: true,
+    has_free_delivery: false,
   },
   {
     id: 22082,
@@ -2154,6 +2314,8 @@ const RESTAURANTS_DATA = [
     delivery_in: '25 - 45 min',
     distance: '4 km',
     is_open: false,
+    is_featured: true,
+    has_free_delivery: false,
   },
   {
     id: 614794,
@@ -2167,6 +2329,8 @@ const RESTAURANTS_DATA = [
     delivery_in: '25 - 45 min',
     distance: '4 km',
     is_open: false,
+    is_featured: true,
+    has_free_delivery: false,
   },
   {
     id: 627850,
@@ -2180,6 +2344,8 @@ const RESTAURANTS_DATA = [
     delivery_in: '25 - 45 min',
     distance: '4 km',
     is_open: false,
+    is_featured: true,
+    has_free_delivery: false,
   },
   {
     id: 624761,
@@ -2193,6 +2359,8 @@ const RESTAURANTS_DATA = [
     delivery_in: '25 - 45 min',
     distance: '4 km',
     is_open: false,
+    is_featured: true,
+    has_free_delivery: false,
   },
   {
     id: 625609,
@@ -2206,6 +2374,8 @@ const RESTAURANTS_DATA = [
     delivery_in: '25 - 45 min',
     distance: '4 km',
     is_open: false,
+    is_featured: true,
+    has_free_delivery: false,
   },
   {
     id: 618741,
@@ -2219,6 +2389,8 @@ const RESTAURANTS_DATA = [
     delivery_in: '25 - 45 min',
     distance: '4 km',
     is_open: false,
+    is_featured: true,
+    has_free_delivery: false,
   },
   {
     id: 622749,
@@ -2232,6 +2404,8 @@ const RESTAURANTS_DATA = [
     delivery_in: '25 - 45 min',
     distance: '4 km',
     is_open: false,
+    is_featured: true,
+    has_free_delivery: false,
   },
   {
     id: 624478,
@@ -2245,6 +2419,8 @@ const RESTAURANTS_DATA = [
     delivery_in: '25 - 45 min',
     distance: '4 km',
     is_open: false,
+    is_featured: true,
+    has_free_delivery: false,
   },
   {
     id: 27976,
@@ -2258,6 +2434,8 @@ const RESTAURANTS_DATA = [
     delivery_in: '25 - 45 min',
     distance: '4 km',
     is_open: false,
+    is_featured: true,
+    has_free_delivery: false,
   },
   {
     id: 600406,
@@ -2271,6 +2449,8 @@ const RESTAURANTS_DATA = [
     delivery_in: '25 - 45 min',
     distance: '4 km',
     is_open: false,
+    is_featured: true,
+    has_free_delivery: false,
   },
   {
     id: 23349,
@@ -2284,6 +2464,8 @@ const RESTAURANTS_DATA = [
     delivery_in: '25 - 45 min',
     distance: '4 km',
     is_open: false,
+    is_featured: true,
+    has_free_delivery: false,
   },
   {
     id: 609460,
@@ -2297,6 +2479,8 @@ const RESTAURANTS_DATA = [
     delivery_in: '25 - 45 min',
     distance: '4 km',
     is_open: false,
+    is_featured: true,
+    has_free_delivery: false,
   },
   {
     id: 12946,
@@ -2310,6 +2494,8 @@ const RESTAURANTS_DATA = [
     delivery_in: '25 - 45 min',
     distance: '4 km',
     is_open: false,
+    is_featured: true,
+    has_free_delivery: false,
   },
   {
     id: 28953,
@@ -2323,6 +2509,8 @@ const RESTAURANTS_DATA = [
     delivery_in: '25 - 45 min',
     distance: '4 km',
     is_open: false,
+    is_featured: true,
+    has_free_delivery: false,
   },
   {
     id: 607499,
@@ -2336,6 +2524,8 @@ const RESTAURANTS_DATA = [
     delivery_in: '25 - 45 min',
     distance: '4 km',
     is_open: false,
+    is_featured: true,
+    has_free_delivery: false,
   },
   {
     id: 6026,
@@ -2349,6 +2539,8 @@ const RESTAURANTS_DATA = [
     delivery_in: '25 - 45 min',
     distance: '4 km',
     is_open: false,
+    is_featured: true,
+    has_free_delivery: false,
   },
   {
     id: 13355,
@@ -2362,6 +2554,8 @@ const RESTAURANTS_DATA = [
     delivery_in: '25 - 45 min',
     distance: '4 km',
     is_open: false,
+    is_featured: true,
+    has_free_delivery: false,
   },
   {
     id: 606214,
@@ -2375,6 +2569,8 @@ const RESTAURANTS_DATA = [
     delivery_in: '25 - 45 min',
     distance: '4 km',
     is_open: false,
+    is_featured: true,
+    has_free_delivery: false,
   },
   {
     id: 12743,
@@ -2388,6 +2584,8 @@ const RESTAURANTS_DATA = [
     delivery_in: '25 - 45 min',
     distance: '4 km',
     is_open: false,
+    is_featured: true,
+    has_free_delivery: false,
   },
   {
     id: 25803,
@@ -2401,6 +2599,8 @@ const RESTAURANTS_DATA = [
     delivery_in: '25 - 45 min',
     distance: '4 km',
     is_open: false,
+    is_featured: true,
+    has_free_delivery: false,
   },
   {
     id: 623897,
@@ -2414,6 +2614,8 @@ const RESTAURANTS_DATA = [
     delivery_in: '25 - 45 min',
     distance: '4 km',
     is_open: false,
+    is_featured: true,
+    has_free_delivery: false,
   },
   {
     id: 606317,
@@ -2427,6 +2629,8 @@ const RESTAURANTS_DATA = [
     delivery_in: '25 - 45 min',
     distance: '4 km',
     is_open: false,
+    is_featured: true,
+    has_free_delivery: false,
   },
   {
     id: 3924,
@@ -2440,6 +2644,8 @@ const RESTAURANTS_DATA = [
     delivery_in: '25 - 45 min',
     distance: '4 km',
     is_open: false,
+    is_featured: true,
+    has_free_delivery: false,
   },
   {
     id: 602467,
@@ -2453,6 +2659,8 @@ const RESTAURANTS_DATA = [
     delivery_in: '25 - 45 min',
     distance: '4 km',
     is_open: false,
+    is_featured: true,
+    has_free_delivery: false,
   },
   {
     id: 602620,
@@ -2466,6 +2674,8 @@ const RESTAURANTS_DATA = [
     delivery_in: '25 - 45 min',
     distance: '4 km',
     is_open: false,
+    is_featured: true,
+    has_free_delivery: false,
   },
   {
     id: 18442,
@@ -2480,6 +2690,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 603263,
@@ -2494,6 +2705,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 627983,
@@ -2508,6 +2720,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 13420,
@@ -2522,6 +2735,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 10598,
@@ -2536,6 +2750,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 600710,
@@ -2550,6 +2765,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 624469,
@@ -2564,6 +2780,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 26172,
@@ -2578,6 +2795,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 7238,
@@ -2592,6 +2810,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 615074,
@@ -2606,6 +2825,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 620307,
@@ -2620,6 +2840,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 16800,
@@ -2634,6 +2855,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 607607,
@@ -2648,6 +2870,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 12714,
@@ -2662,6 +2885,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 22846,
@@ -2676,6 +2900,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 617449,
@@ -2690,6 +2915,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 17260,
@@ -2704,6 +2930,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 15400,
@@ -2718,6 +2945,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 23703,
@@ -2732,6 +2960,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 619351,
@@ -2746,6 +2975,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 15370,
@@ -2760,6 +2990,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 628573,
@@ -2774,6 +3005,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 600740,
@@ -2788,6 +3020,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
   {
     id: 630942,
@@ -2802,6 +3035,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
+    has_free_delivery: false,
   },
 ];
 

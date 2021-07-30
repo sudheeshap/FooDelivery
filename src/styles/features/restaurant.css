@@ -3,14 +3,12 @@
 }
 
 .restaurant-list__container {
-  /* max-width: 900px; */
   margin: 0 auto;
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 30px 0 10px;
 }
 
 .restaurant-list__card {
@@ -19,9 +17,9 @@
   border-radius: 4px;
   background-color: #fff;
   cursor: pointer;
-  width: 30%;
+  width: 31.5%;
   margin: 10px;
-  height: 188px;
+  height: 210px;
   box-sizing: border-box;
   display: flex;
   justify-content: flex-start;
@@ -42,7 +40,7 @@
 .restaurant-list__card-logo {
   position: absolute;
   left: 20px;
-  top: 22px;
+  top: 34px;
   width: 50px;
   height: 50px;
   background-position: center center;
@@ -54,7 +52,7 @@
 
 .restaurant-list__card-image {
   background-color: #f5f5f5;
-  height: 100px;
+  height: 120px;
   width: 100%;
   background-position: center center;
   background-size: cover;
@@ -68,6 +66,62 @@
   right: 10px;
   font-size: 10px;
   font-weight: bold;
+  border-radius: 10px;
+}
+
+/* .restaurant-list__count {
+  font-weight: 500;
+  font-size: 14px;
+} */
+
+.restaurant-list__header {
+  width: 100%;
+  margin: 30px 10px 20px;
+  color: #666666;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.restaurant-list__filters {
+  margin-right: 20px;
+}
+
+.restaurant-list,
+.restaurant-list__header,
+.restaurant-list__actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.restaurant-list__filter {
+  cursor: pointer;
+  padding: 5px 10px;
+  background-color: #e5e5e5;
+  border-radius: 5px;
+  margin: 0 5px;
+  font-size: 11px;
+  font-weight: bold;
+  color: #666;
+}
+
+.restaurant-list__filter--active {
+  background-color: #6366f1;
+  color: #fff;
+}
+
+.restaurant-list__sort select {
+  margin-left: 5px;
+}
+
+.restaurant-list__card-free-delivery {
+  background-color: #cce3ef;
+  padding: 1px 10px;
+  position: absolute;
+  bottom: 14px;
+  right: 10px;
+  font-size: 10px;
   border-radius: 10px;
 }
 
@@ -92,7 +146,7 @@
 }
 
 .restaurant-list__card-point {
-  margin-right: 10px;
+  margin-right: 13px;
 }
 
 .restaurant-list__card-icon {
@@ -101,7 +155,7 @@
 
 .restaurant-list__card-rating {
   position: absolute;
-  top: 115px;
+  bottom: 55px;
   right: 10px;
 }
 
