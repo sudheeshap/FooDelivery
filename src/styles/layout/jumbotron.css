@@ -1,12 +1,41 @@
 .jumbotron {
-  background-color: #fff;
+  height: 250px;
+  position: relative;
+}
+
+.jumbotron__title {
+  color: orange;
+  font-size: 3rem;
+  margin: 0;
+}
+
+.jumbotron__subtitle {
+  color: #555555;
+}
+
+.jumbotron__image-container {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.jumbotron__image {
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  object-fit: cover;
+}
+
+.jumbotron__content {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: 250px;
-}
-
-.jumbotron__subtitle {
-  max-width: 50%;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
 }

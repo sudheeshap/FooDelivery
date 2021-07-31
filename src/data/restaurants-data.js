@@ -16,6 +16,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: true,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 627048,
@@ -31,6 +32,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: true,
     has_free_delivery: false,
+    offer: '10% off',
   },
   {
     id: 22895,
@@ -46,6 +48,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: true,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 623154,
@@ -61,6 +64,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: true,
     has_free_delivery: false,
+    offer: '20% off',
   },
   {
     id: 625898,
@@ -76,6 +80,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: true,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 613433,
@@ -91,6 +96,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: true,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 8990,
@@ -106,7 +112,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: true,
-    available_offer: '',
+    offer: '',
   },
   {
     id: 624505,
@@ -122,6 +128,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 602746,
@@ -137,6 +144,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 611737,
@@ -152,6 +160,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 607346,
@@ -167,7 +176,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: true,
-    available_offer: '',
+    offer: '',
   },
   {
     id: 620991,
@@ -183,7 +192,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: true,
-    available_offer: '',
+    offer: '',
   },
   {
     id: 29273,
@@ -199,7 +208,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: true,
-    available_offer: '',
+    offer: '',
   },
   {
     id: 628070,
@@ -215,6 +224,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 626702,
@@ -230,6 +240,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 628086,
@@ -245,6 +256,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 13050,
@@ -260,6 +272,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 19448,
@@ -275,7 +288,7 @@ const RESTAURANTS_DATA = [
     is_open: false,
     is_featured: false,
     has_free_delivery: true,
-    available_offer: '',
+    offer: '',
   },
   {
     id: 621510,
@@ -291,6 +304,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 18035,
@@ -306,6 +320,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 6656,
@@ -321,6 +336,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 620694,
@@ -336,6 +352,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 622068,
@@ -351,6 +368,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '10% off',
   },
   {
     id: 627820,
@@ -366,6 +384,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 26677,
@@ -381,6 +400,7 @@ const RESTAURANTS_DATA = [
     is_open: false,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 11587,
@@ -396,6 +416,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 19168,
@@ -411,6 +432,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 606634,
@@ -426,6 +448,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 617426,
@@ -441,6 +464,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 620412,
@@ -456,6 +480,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 11527,
@@ -471,6 +496,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 616809,
@@ -486,6 +512,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 17508,
@@ -501,6 +528,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 620006,
@@ -516,6 +544,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 22938,
@@ -531,6 +560,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 628787,
@@ -546,6 +576,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 625367,
@@ -561,6 +592,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 600948,
@@ -576,6 +608,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 616136,
@@ -591,6 +624,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 3021,
@@ -606,6 +640,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 8285,
@@ -621,6 +656,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 617679,
@@ -636,6 +672,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 624961,
@@ -651,6 +688,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 627232,
@@ -666,6 +704,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 9202,
@@ -681,6 +720,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 602805,
@@ -696,6 +736,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 614989,
@@ -711,6 +752,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 628563,
@@ -726,6 +768,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 620259,
@@ -741,6 +784,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 629226,
@@ -756,6 +800,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 600143,
@@ -771,6 +816,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 608668,
@@ -786,6 +832,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 624692,
@@ -801,6 +848,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 24321,
@@ -816,6 +864,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 11470,
@@ -831,6 +880,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 8630,
@@ -846,6 +896,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 622000,
@@ -861,6 +912,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 18289,
@@ -876,6 +928,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 26001,
@@ -891,6 +944,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 613477,
@@ -906,6 +960,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 17346,
@@ -921,6 +976,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 26095,
@@ -936,6 +992,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 7123,
@@ -951,6 +1008,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 628562,
@@ -966,6 +1024,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 626412,
@@ -981,6 +1040,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 624730,
@@ -996,6 +1056,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 619953,
@@ -1011,6 +1072,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 626348,
@@ -1026,6 +1088,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 628357,
@@ -1041,6 +1104,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 15401,
@@ -1056,6 +1120,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 600598,
@@ -1071,6 +1136,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 9807,
@@ -1086,6 +1152,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 15783,
@@ -1101,6 +1168,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 22802,
@@ -1116,6 +1184,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 19618,
@@ -1131,6 +1200,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 15500,
@@ -1146,6 +1216,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 608345,
@@ -1161,6 +1232,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 16612,
@@ -1176,6 +1248,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 627901,
@@ -1191,6 +1264,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 627170,
@@ -1206,6 +1280,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 12516,
@@ -1221,6 +1296,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 627701,
@@ -1236,6 +1312,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 19328,
@@ -1251,6 +1328,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 629446,
@@ -1266,6 +1344,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 28319,
@@ -1281,6 +1360,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 626330,
@@ -1296,6 +1376,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 26281,
@@ -1311,6 +1392,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 25119,
@@ -1326,6 +1408,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 26858,
@@ -1341,6 +1424,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 628534,
@@ -1356,6 +1440,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 625568,
@@ -1371,6 +1456,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 20904,
@@ -1386,6 +1472,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 616785,
@@ -1401,6 +1488,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 4193,
@@ -1416,6 +1504,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 19853,
@@ -1431,6 +1520,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 23854,
@@ -1446,6 +1536,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 2188,
@@ -1461,6 +1552,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 7495,
@@ -1476,6 +1568,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 627086,
@@ -1491,6 +1584,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 17834,
@@ -1506,6 +1600,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 24830,
@@ -1521,6 +1616,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 20278,
@@ -1536,6 +1632,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 13333,
@@ -1551,6 +1648,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 624953,
@@ -1566,6 +1664,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 617121,
@@ -1581,6 +1680,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 600702,
@@ -1596,6 +1696,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 20353,
@@ -1611,6 +1712,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 12423,
@@ -1626,6 +1728,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 606584,
@@ -1641,6 +1744,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 618125,
@@ -1656,6 +1760,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 603013,
@@ -1671,6 +1776,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 11883,
@@ -1686,6 +1792,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 617119,
@@ -1701,6 +1808,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 28831,
@@ -1716,6 +1824,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 619106,
@@ -1731,6 +1840,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 23572,
@@ -1746,6 +1856,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 22186,
@@ -1761,6 +1872,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 619502,
@@ -1776,6 +1888,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 625880,
@@ -1791,6 +1904,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 611411,
@@ -1806,6 +1920,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 22391,
@@ -1821,6 +1936,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 12482,
@@ -1836,6 +1952,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 614013,
@@ -1851,6 +1968,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 26770,
@@ -1866,6 +1984,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 601132,
@@ -1881,6 +2000,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 621570,
@@ -1896,6 +2016,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 629516,
@@ -1911,6 +2032,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 13910,
@@ -1926,6 +2048,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 5828,
@@ -1941,6 +2064,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 6895,
@@ -1956,6 +2080,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 20314,
@@ -1971,6 +2096,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 1321,
@@ -1986,6 +2112,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 627340,
@@ -2001,6 +2128,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 25529,
@@ -2016,6 +2144,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 27809,
@@ -2031,6 +2160,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 610927,
@@ -2046,6 +2176,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 615997,
@@ -2061,6 +2192,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 630469,
@@ -2076,6 +2208,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 24322,
@@ -2091,6 +2224,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 629723,
@@ -2106,6 +2240,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 26214,
@@ -2121,6 +2256,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 600360,
@@ -2136,6 +2272,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 623412,
@@ -2151,6 +2288,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 607786,
@@ -2166,6 +2304,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 624182,
@@ -2181,6 +2320,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 8916,
@@ -2196,6 +2336,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 628458,
@@ -2211,6 +2352,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 600758,
@@ -2226,6 +2368,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 628639,
@@ -2241,6 +2384,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 626327,
@@ -2256,6 +2400,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 612824,
@@ -2271,6 +2416,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 1979,
@@ -2286,6 +2432,7 @@ const RESTAURANTS_DATA = [
     is_open: false,
     is_featured: true,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 28661,
@@ -2301,6 +2448,7 @@ const RESTAURANTS_DATA = [
     is_open: false,
     is_featured: true,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 22082,
@@ -2316,6 +2464,7 @@ const RESTAURANTS_DATA = [
     is_open: false,
     is_featured: true,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 614794,
@@ -2331,6 +2480,7 @@ const RESTAURANTS_DATA = [
     is_open: false,
     is_featured: true,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 627850,
@@ -2346,6 +2496,7 @@ const RESTAURANTS_DATA = [
     is_open: false,
     is_featured: true,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 624761,
@@ -2361,6 +2512,7 @@ const RESTAURANTS_DATA = [
     is_open: false,
     is_featured: true,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 625609,
@@ -2376,6 +2528,7 @@ const RESTAURANTS_DATA = [
     is_open: false,
     is_featured: true,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 618741,
@@ -2391,6 +2544,7 @@ const RESTAURANTS_DATA = [
     is_open: false,
     is_featured: true,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 622749,
@@ -2406,6 +2560,7 @@ const RESTAURANTS_DATA = [
     is_open: false,
     is_featured: true,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 624478,
@@ -2421,6 +2576,7 @@ const RESTAURANTS_DATA = [
     is_open: false,
     is_featured: true,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 27976,
@@ -2436,6 +2592,7 @@ const RESTAURANTS_DATA = [
     is_open: false,
     is_featured: true,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 600406,
@@ -2451,6 +2608,7 @@ const RESTAURANTS_DATA = [
     is_open: false,
     is_featured: true,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 23349,
@@ -2466,6 +2624,7 @@ const RESTAURANTS_DATA = [
     is_open: false,
     is_featured: true,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 609460,
@@ -2481,6 +2640,7 @@ const RESTAURANTS_DATA = [
     is_open: false,
     is_featured: true,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 12946,
@@ -2496,6 +2656,7 @@ const RESTAURANTS_DATA = [
     is_open: false,
     is_featured: true,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 28953,
@@ -2511,6 +2672,7 @@ const RESTAURANTS_DATA = [
     is_open: false,
     is_featured: true,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 607499,
@@ -2526,6 +2688,7 @@ const RESTAURANTS_DATA = [
     is_open: false,
     is_featured: true,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 6026,
@@ -2541,6 +2704,7 @@ const RESTAURANTS_DATA = [
     is_open: false,
     is_featured: true,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 13355,
@@ -2556,6 +2720,7 @@ const RESTAURANTS_DATA = [
     is_open: false,
     is_featured: true,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 606214,
@@ -2571,6 +2736,7 @@ const RESTAURANTS_DATA = [
     is_open: false,
     is_featured: true,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 12743,
@@ -2586,6 +2752,7 @@ const RESTAURANTS_DATA = [
     is_open: false,
     is_featured: true,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 25803,
@@ -2601,6 +2768,7 @@ const RESTAURANTS_DATA = [
     is_open: false,
     is_featured: true,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 623897,
@@ -2616,6 +2784,7 @@ const RESTAURANTS_DATA = [
     is_open: false,
     is_featured: true,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 606317,
@@ -2631,6 +2800,7 @@ const RESTAURANTS_DATA = [
     is_open: false,
     is_featured: true,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 3924,
@@ -2646,6 +2816,7 @@ const RESTAURANTS_DATA = [
     is_open: false,
     is_featured: true,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 602467,
@@ -2661,6 +2832,7 @@ const RESTAURANTS_DATA = [
     is_open: false,
     is_featured: true,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 602620,
@@ -2676,6 +2848,7 @@ const RESTAURANTS_DATA = [
     is_open: false,
     is_featured: true,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 18442,
@@ -2691,6 +2864,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 603263,
@@ -2706,6 +2880,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 627983,
@@ -2721,6 +2896,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 13420,
@@ -2736,6 +2912,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 10598,
@@ -2751,6 +2928,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 600710,
@@ -2766,6 +2944,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 624469,
@@ -2781,6 +2960,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 26172,
@@ -2796,6 +2976,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 7238,
@@ -2811,6 +2992,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 615074,
@@ -2826,6 +3008,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 620307,
@@ -2841,6 +3024,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 16800,
@@ -2856,6 +3040,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 607607,
@@ -2871,6 +3056,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 12714,
@@ -2886,6 +3072,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 22846,
@@ -2901,6 +3088,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 617449,
@@ -2916,6 +3104,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 17260,
@@ -2931,6 +3120,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 15400,
@@ -2946,6 +3136,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 23703,
@@ -2961,6 +3152,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 619351,
@@ -2976,6 +3168,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 15370,
@@ -2991,6 +3184,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 628573,
@@ -3006,6 +3200,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 600740,
@@ -3021,6 +3216,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
   {
     id: 630942,
@@ -3036,6 +3232,7 @@ const RESTAURANTS_DATA = [
     is_open: true,
     is_featured: false,
     has_free_delivery: false,
+    offer: '',
   },
 ];
 

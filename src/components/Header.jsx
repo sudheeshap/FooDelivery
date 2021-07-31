@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Header() {
   const [isLoggedIn] = useState(false);
@@ -8,13 +9,13 @@ export default function Header() {
       <nav className="navbar">
         <div className="navbar__section">
           <div className="navbar__item">
-            <a href="/">
+            <Link to="/">
               <img
                 className="navbar__logo"
                 src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
                 alt="Workflow"
               />
-            </a>
+            </Link>
           </div>
         </div>
         <div className="navbar__section">

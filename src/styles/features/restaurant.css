@@ -11,24 +11,40 @@
   margin: 0 auto;
 }
 
-.restaurant-list__card {
-  color: inherit;
-  box-shadow: rgb(150 150 150 / 15%) 0px 0px 20px 3px;
-  border-radius: 4px;
-  background-color: #fff;
-  cursor: pointer;
+.restaurant-list__card-container {
   width: 31.5%;
   margin: 10px;
   height: 210px;
+  cursor: pointer;
   box-sizing: border-box;
+  text-decoration: none;
+  color: inherit;
+}
+
+.restaurant-list__card {
+  box-shadow: rgb(150 150 150 / 15%) 0px 0px 20px 3px;
+  border-radius: 4px;
+  background-color: #fff;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   flex-wrap: wrap;
   font-size: 0.8em;
-  text-decoration: none;
   overflow: hidden;
   position: relative;
+}
+
+.restaurant-list__card-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(140 140 140 / 50%);
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
 }
 
 .restaurant-list__card-info {
@@ -40,13 +56,13 @@
 .restaurant-list__card-logo {
   position: absolute;
   left: 20px;
-  top: 34px;
+  top: 33px;
   width: 50px;
   height: 50px;
   background-position: center center;
   background-size: cover;
   background-color: #fff;
-  border: 2px solid #fff;
+  border: 4px solid #fff;
   border-radius: 4px;
 }
 
@@ -69,21 +85,20 @@
   border-radius: 10px;
 }
 
-/* .restaurant-list__count {
-  font-weight: 500;
+.restaurant-list__count {
   font-size: 14px;
-} */
+}
 
 .restaurant-list__header {
   width: 100%;
   margin: 30px 10px 20px;
   color: #666666;
   font-weight: bold;
-  font-size: 13px;
+  font-size: 12px;
 }
 
 .restaurant-list__filters {
-  margin-right: 20px;
+  margin-right: 25px;
 }
 
 .restaurant-list,
@@ -149,6 +164,12 @@
   margin-right: 13px;
 }
 
+.restaurant-list__card-point--offer {
+  color: #1bbb09;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+
 .restaurant-list__card-icon {
   margin-right: 3px;
 }
@@ -180,7 +201,6 @@
   height: 60px;
   background-size: cover;
   background-position: center center;
-  /* z-index: 10; */
   margin-right: 20px;
   border-radius: 3px;
 }
@@ -190,7 +210,7 @@
   background-size: cover;
   background-position: center center;
   width: 100%;
-  height: 180px;
+  height: 250px;
 }
 
 .restaurant-info {

@@ -5,6 +5,7 @@
 @import './layout/layout';
 @import './layout/header';
 @import './layout/jumbotron';
+@import './layout/form';
 
 /* Features */
 @import './features/restaurant';

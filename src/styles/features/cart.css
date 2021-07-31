@@ -3,4 +3,22 @@
   min-height: 400px;
   max-height: 350px;
   width: 100%;
+  padding: 15px;
+  text-align: center;
+}
+
+.cart__empty-box {
+  height: 210px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.cart__empty-box .icon {
+  font-size: 45px;
+  padding: 20px;
+  display: block;
+  color: #aaa;
 }

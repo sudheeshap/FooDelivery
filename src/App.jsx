@@ -13,7 +13,7 @@ function App() {
       <Header />
       <main>
         <Switch>
-          <Route path="/restaurant">
+          <Route path="/restaurant/:slug">
             <Restaurant />
           </Route>
           <Route path="/">

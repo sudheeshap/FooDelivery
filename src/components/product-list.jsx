@@ -19,9 +19,9 @@ export default function ProductList() {
       </div>
       <div className="products">
         <div className="category-header">{categoryTitle}</div>
-        {[1, 2, 3, 4, 5, 6, 7].map(() => (
+        {[1, 2, 3, 4, 5, 6, 7].map((n) => (
           <>
-            <ProductItem />
+            <ProductItem key={n} />
           </>
         ))}
       </div>
