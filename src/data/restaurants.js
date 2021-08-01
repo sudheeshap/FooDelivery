@@ -1,7 +1,7 @@
 /* eslint-disable */
 /* prettier-ignore */
 
-const RESTAURANTS_DATA = [
+const DATA_RESTAURANTS = [
   {
     id: 620709,
     name: 'L&G Pizzeria',
@@ -3236,4 +3236,4 @@ const RESTAURANTS_DATA = [
   },
 ];
 
-export default RESTAURANTS_DATA;
+export default DATA_RESTAURANTS;

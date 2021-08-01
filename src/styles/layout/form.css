@@ -23,9 +23,6 @@
   align-items: center;
   justify-content: center;
   border-radius: 4px;
-  color: white;
-  background-color: #07bf69;
-  background-position: center center;
   cursor: pointer;
   outline: 0px;
   padding: 10px 16px;
@@ -33,17 +30,31 @@
   white-space: nowrap;
   appearance: none;
   border: none;
-  transition: box-shadow 200ms ease-out;
   font-weight: bold;
-}
-
-.form__button:hover {
-  box-shadow: rgb(126 125 125 / 15%) 0px 10px 20px 0px;
+  transition: background-color 200ms ease-out;
 }
 
 .form__button:disabled {
   opacity: 0.4;
   pointer-events: none;
+}
+
+.form__button--shadow {
+  transition: box-shadow 200ms ease-out;
+}
+
+.form__button--shadow:hover {
+  box-shadow: rgb(126 125 125 / 15%) 0px 10px 20px 0px;
+}
+
+.form__button--green {
+  background-color: #07bf69;
+  color: #fff;
+}
+
+.form__button--sm {
+  padding: 8px 13px;
+  font-size: 11px;
 }
 
 .form__button--lg {

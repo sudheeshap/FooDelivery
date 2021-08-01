@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import RESTAURANTS_DATA from '../data/restaurants-data';
+import DATA_RESTAURANTS from '../data/restaurants';
 import RestaurantCard from './restaurant-card';
 
 export default function RestaurantList() {
@@ -9,7 +9,7 @@ export default function RestaurantList() {
       <div className="restaurant-list__container">
         <div className="restaurant-list__header">
           <div className="restaurant-list__count">
-            <span>{RESTAURANTS_DATA.length}</span>
+            <span>{DATA_RESTAURANTS.length}</span>
             <span> restaurants</span>
           </div>
           <div className="restaurant-list__actions">
@@ -32,7 +32,7 @@ export default function RestaurantList() {
           </div>
         </div>
         <div className="restaurant-list">
-          {RESTAURANTS_DATA.map((restaurant) => (
+          {DATA_RESTAURANTS.map((restaurant) => (
             <Link
               to={`/restaurant/${restaurant.slug}`}
               key={restaurant.id}

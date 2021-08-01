@@ -18,7 +18,7 @@ export default function Jumbotron() {
       </div>
 
       <div className="jumbotron__content">
-        <h2 className="jumbotron__title">Foodies</h2>
+        <h2 className="jumbotron__title">FooDelivery</h2>
         <h4 className="jumbotron__subtitle">Delivering the food of your choice, on time.</h4>
         <div>
           <input

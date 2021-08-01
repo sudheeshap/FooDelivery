@@ -16,7 +16,7 @@
   justify-content: center;
 }
 
-.product-item__container {
+.product__card {
   background-color: #fff;
   cursor: pointer;
   width: 100%;
@@ -28,47 +28,48 @@
   border-radius: 4px;
   overflow: hidden;
   transition: 200ms ease-out box-shadow;
+  position: relative;
 }
 
-.product-item__container:hover {
+.product__card:hover {
   box-shadow: 0px 2px 11px 4px rgb(0 0 0 / 8%);
 }
 
-.product-item__image {
+.product__image {
   width: 100px;
   height: 80px;
   background-size: cover;
   background-position: center center;
 }
 
-.product-item__info {
+.product__info {
   margin-left: 10px;
+  line-height: 1.2em;
 }
 
-.product-list {
+.menu-list {
   width: 100%;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-top: 30px;
+  margin-top: 25px;
 }
 
-.product-filters {
+.menu-filters {
   width: 18%;
 }
 
 .products {
   display: flex;
   align-items: flex-start;
-  /* justify-content: space-between; */
   flex-wrap: wrap;
   flex-direction: column;
   width: 78%;
 }
 
-.product-filter {
-  margin-bottom: 10px;
+.menu-filter {
+  margin-bottom: 15px;
   padding: 8px 20px;
   font-size: 11px;
   color: #000;
@@ -78,7 +79,7 @@
   border-radius: 22px;
 }
 
-.product-filter:first-child {
+.menu-filter:first-child {
   background-color: #f4d88d;
 }
 
@@ -86,7 +87,43 @@
   font-size: 20px;
   font-weight: 500;
   width: 100%;
-  margin-bottom: 20px;
+  margin: 20px 0;
+}
+
+.category-header:first-child {
+  margin-top: 0;
+}
+
+.product__title {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.product__price {
+  color: #07bf69;
+  font-size: 13px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.product__description {
+  color: #888;
+  font-size: 12px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: 95%;
+  white-space: nowrap;
+}
+
+.product__add-button {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+
+.product__add-button:hover {
+  background-color: #07bf69;
+  color: white;
 }
 
 @media screen and (min-width: 1200px) {

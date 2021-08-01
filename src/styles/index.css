@@ -9,5 +9,5 @@
 
 /* Features */
 @import './features/restaurant';
-@import './features/product';
+@import './features/menu';
 @import './features/cart';

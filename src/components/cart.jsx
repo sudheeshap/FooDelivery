@@ -67,7 +67,7 @@ export default function Cart({ items }) {
       <div className="cart__button-container">
         <button
           type="button"
-          className="form__button form__button--lg"
+          className="form__button form__button--lg form__button--green form__button--shadow"
           disabled={newItems.length === 0 && 'disabled'}
         >
           Proceed to Checkout
