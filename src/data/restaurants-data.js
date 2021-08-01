@@ -15,7 +15,7 @@ const RESTAURANTS_DATA = [
     distance: '1 km',
     is_open: true,
     is_featured: true,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -31,7 +31,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: true,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '10% off',
   },
   {
@@ -47,7 +47,7 @@ const RESTAURANTS_DATA = [
     distance: '2 km',
     is_open: true,
     is_featured: true,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -63,7 +63,7 @@ const RESTAURANTS_DATA = [
     distance: '2 km',
     is_open: true,
     is_featured: true,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '20% off',
   },
   {
@@ -79,7 +79,7 @@ const RESTAURANTS_DATA = [
     distance: '2 km',
     is_open: true,
     is_featured: true,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -95,7 +95,7 @@ const RESTAURANTS_DATA = [
     distance: '2 km',
     is_open: true,
     is_featured: true,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -111,7 +111,7 @@ const RESTAURANTS_DATA = [
     distance: '2 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: true,
+    delivery_charge: 6,
     offer: '',
   },
   {
@@ -127,7 +127,7 @@ const RESTAURANTS_DATA = [
     distance: '2 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -143,7 +143,7 @@ const RESTAURANTS_DATA = [
     distance: '2 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -159,7 +159,7 @@ const RESTAURANTS_DATA = [
     distance: '2 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -175,7 +175,7 @@ const RESTAURANTS_DATA = [
     distance: '2 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: true,
+    delivery_charge: 6,
     offer: '',
   },
   {
@@ -191,7 +191,7 @@ const RESTAURANTS_DATA = [
     distance: '2 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: true,
+    delivery_charge: 6,
     offer: '',
   },
   {
@@ -207,7 +207,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: true,
+    delivery_charge: 6,
     offer: '',
   },
   {
@@ -223,7 +223,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -239,7 +239,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -255,7 +255,7 @@ const RESTAURANTS_DATA = [
     distance: '2.8 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -271,7 +271,7 @@ const RESTAURANTS_DATA = [
     distance: '2.8 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -287,7 +287,7 @@ const RESTAURANTS_DATA = [
     distance: '2.8 km',
     is_open: false,
     is_featured: false,
-    has_free_delivery: true,
+    delivery_charge: 6,
     offer: '',
   },
   {
@@ -303,7 +303,7 @@ const RESTAURANTS_DATA = [
     distance: '2.8 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -319,7 +319,7 @@ const RESTAURANTS_DATA = [
     distance: '2.8 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -335,7 +335,7 @@ const RESTAURANTS_DATA = [
     distance: '2.8 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -351,7 +351,7 @@ const RESTAURANTS_DATA = [
     distance: '2.8 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -367,7 +367,7 @@ const RESTAURANTS_DATA = [
     distance: '2.8 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '10% off',
   },
   {
@@ -383,7 +383,7 @@ const RESTAURANTS_DATA = [
     distance: '2.8 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -399,7 +399,7 @@ const RESTAURANTS_DATA = [
     distance: '2.8 km',
     is_open: false,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -415,7 +415,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -431,7 +431,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -447,7 +447,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -463,7 +463,7 @@ const RESTAURANTS_DATA = [
     distance: '3.4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -479,7 +479,7 @@ const RESTAURANTS_DATA = [
     distance: '3.4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -495,7 +495,7 @@ const RESTAURANTS_DATA = [
     distance: '3.4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -511,7 +511,7 @@ const RESTAURANTS_DATA = [
     distance: '3.4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -527,7 +527,7 @@ const RESTAURANTS_DATA = [
     distance: '3.4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -543,7 +543,7 @@ const RESTAURANTS_DATA = [
     distance: '3.4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -559,7 +559,7 @@ const RESTAURANTS_DATA = [
     distance: '3.4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -575,7 +575,7 @@ const RESTAURANTS_DATA = [
     distance: '3.4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -591,7 +591,7 @@ const RESTAURANTS_DATA = [
     distance: '3.4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -607,7 +607,7 @@ const RESTAURANTS_DATA = [
     distance: '3.4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -623,7 +623,7 @@ const RESTAURANTS_DATA = [
     distance: '3.4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -639,7 +639,7 @@ const RESTAURANTS_DATA = [
     distance: '3.4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -655,7 +655,7 @@ const RESTAURANTS_DATA = [
     distance: '3.4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -671,7 +671,7 @@ const RESTAURANTS_DATA = [
     distance: '3.4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -687,7 +687,7 @@ const RESTAURANTS_DATA = [
     distance: '3.4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -703,7 +703,7 @@ const RESTAURANTS_DATA = [
     distance: '3.4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -719,7 +719,7 @@ const RESTAURANTS_DATA = [
     distance: '3.4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -735,7 +735,7 @@ const RESTAURANTS_DATA = [
     distance: '3.4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -751,7 +751,7 @@ const RESTAURANTS_DATA = [
     distance: '3.4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -767,7 +767,7 @@ const RESTAURANTS_DATA = [
     distance: '3.4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -783,7 +783,7 @@ const RESTAURANTS_DATA = [
     distance: '3.4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -799,7 +799,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -815,7 +815,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -831,7 +831,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -847,7 +847,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -863,7 +863,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -879,7 +879,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -895,7 +895,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -911,7 +911,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -927,7 +927,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -943,7 +943,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -959,7 +959,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -975,7 +975,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -991,7 +991,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -1007,7 +1007,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -1023,7 +1023,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -1039,7 +1039,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -1055,7 +1055,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -1071,7 +1071,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -1087,7 +1087,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -1103,7 +1103,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -1119,7 +1119,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -1135,7 +1135,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -1151,7 +1151,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -1167,7 +1167,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -1183,7 +1183,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -1199,7 +1199,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -1215,7 +1215,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -1231,7 +1231,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -1247,7 +1247,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -1263,7 +1263,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -1279,7 +1279,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -1295,7 +1295,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -1311,7 +1311,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -1327,7 +1327,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -1343,7 +1343,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -1359,7 +1359,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -1375,7 +1375,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -1391,7 +1391,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -1407,7 +1407,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -1423,7 +1423,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -1439,7 +1439,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -1455,7 +1455,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -1471,7 +1471,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -1487,7 +1487,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -1503,7 +1503,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -1519,7 +1519,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -1535,7 +1535,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -1551,7 +1551,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -1567,7 +1567,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -1583,7 +1583,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -1599,7 +1599,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -1615,7 +1615,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -1631,7 +1631,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -1647,7 +1647,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -1663,7 +1663,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -1679,7 +1679,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -1695,7 +1695,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -1711,7 +1711,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -1727,7 +1727,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -1743,7 +1743,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -1759,7 +1759,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -1775,7 +1775,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -1791,7 +1791,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -1807,7 +1807,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -1823,7 +1823,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -1839,7 +1839,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -1855,7 +1855,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -1871,7 +1871,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -1887,7 +1887,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -1903,7 +1903,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -1919,7 +1919,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -1935,7 +1935,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -1951,7 +1951,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -1967,7 +1967,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -1983,7 +1983,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -1999,7 +1999,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -2015,7 +2015,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -2031,7 +2031,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -2047,7 +2047,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -2063,7 +2063,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -2079,7 +2079,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -2095,7 +2095,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -2111,7 +2111,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -2127,7 +2127,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -2143,7 +2143,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -2159,7 +2159,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -2175,7 +2175,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -2191,7 +2191,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -2207,7 +2207,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -2223,7 +2223,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -2239,7 +2239,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -2255,7 +2255,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -2271,7 +2271,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -2287,7 +2287,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -2303,7 +2303,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -2319,7 +2319,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -2335,7 +2335,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -2351,7 +2351,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -2367,7 +2367,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -2383,7 +2383,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -2399,7 +2399,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -2415,7 +2415,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -2431,7 +2431,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: false,
     is_featured: true,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -2447,7 +2447,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: false,
     is_featured: true,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -2463,7 +2463,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: false,
     is_featured: true,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -2479,7 +2479,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: false,
     is_featured: true,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -2495,7 +2495,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: false,
     is_featured: true,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -2511,7 +2511,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: false,
     is_featured: true,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -2527,7 +2527,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: false,
     is_featured: true,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -2543,7 +2543,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: false,
     is_featured: true,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -2559,7 +2559,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: false,
     is_featured: true,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -2575,7 +2575,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: false,
     is_featured: true,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -2591,7 +2591,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: false,
     is_featured: true,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -2607,7 +2607,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: false,
     is_featured: true,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -2623,7 +2623,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: false,
     is_featured: true,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -2639,7 +2639,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: false,
     is_featured: true,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -2655,7 +2655,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: false,
     is_featured: true,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -2671,7 +2671,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: false,
     is_featured: true,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -2687,7 +2687,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: false,
     is_featured: true,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -2703,7 +2703,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: false,
     is_featured: true,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -2719,7 +2719,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: false,
     is_featured: true,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -2735,7 +2735,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: false,
     is_featured: true,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -2751,7 +2751,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: false,
     is_featured: true,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -2767,7 +2767,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: false,
     is_featured: true,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -2783,7 +2783,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: false,
     is_featured: true,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -2799,7 +2799,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: false,
     is_featured: true,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -2815,7 +2815,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: false,
     is_featured: true,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -2831,7 +2831,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: false,
     is_featured: true,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -2847,7 +2847,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: false,
     is_featured: true,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -2863,7 +2863,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -2879,7 +2879,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -2895,7 +2895,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -2911,7 +2911,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -2927,7 +2927,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -2943,7 +2943,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -2959,7 +2959,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -2975,7 +2975,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -2991,7 +2991,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -3007,7 +3007,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -3023,7 +3023,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -3039,7 +3039,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -3055,7 +3055,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -3071,7 +3071,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -3087,7 +3087,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -3103,7 +3103,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -3119,7 +3119,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -3135,7 +3135,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -3151,7 +3151,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -3167,7 +3167,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -3183,7 +3183,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -3199,7 +3199,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -3215,7 +3215,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
   {
@@ -3231,7 +3231,7 @@ const RESTAURANTS_DATA = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    has_free_delivery: false,
+    delivery_charge: 0,
     offer: '',
   },
 ];

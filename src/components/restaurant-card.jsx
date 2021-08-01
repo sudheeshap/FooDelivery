@@ -18,7 +18,7 @@ export default function RestaurantCard({ restaurant }) {
           {restaurant.cuisines.replaceAll(',', ' • ')}
         </div>
         {restaurant.is_featured && <div className="restaurant-list__card-featured">Featured</div>}
-        {restaurant.has_free_delivery && (
+        {!!restaurant.delivery_charge && (
           <div className="restaurant-list__card-free-delivery">Free delivery</div>
         )}
         <div className="restaurant-list__card-rating">
