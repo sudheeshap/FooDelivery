@@ -6,14 +6,16 @@
   margin: 0 auto;
 }
 
-.container-left {
+.menu-container {
   width: 68%;
 }
 
-.container-right {
+.cart-container {
   width: 28%;
   display: flex;
   justify-content: center;
+  position: sticky;
+  top: 0;
 }
 
 .product__card {
@@ -58,6 +60,8 @@
 
 .menu-filters {
   width: 18%;
+  position: sticky;
+  top: 0;
 }
 
 .products {
@@ -77,6 +81,10 @@
   cursor: pointer;
   background-color: #f8f8f8;
   border-radius: 22px;
+}
+
+.menu-filter:hover {
+  background-color: #cdd3d5;
 }
 
 .menu-filter:first-child {

@@ -29,6 +29,11 @@
   padding: 10px 15px;
 }
 
+.navbar__cart--disabled {
+  color: #ababab;
+  pointer-events: none;
+}
+
 .navbar__user {
   background-size: cover;
   background-position: center center;

@@ -6,8 +6,8 @@ export default function Cart({ items }) {
   const deliveryFee = 0;
   const total = subTotal + deliveryFee;
   const newItems = [
-    { quantity: 1, amount: 10, name: 'Yogurt and granola' },
-    { quantity: 1, amount: 20, name: 'Cinnamon Apple Protein Pancakes 2 Pieces' },
+    { id: 1, quantity: 1, amount: 10, name: 'Yogurt and granola' },
+    { id: 2, quantity: 1, amount: 20, name: 'Cinnamon Apple Protein Pancakes 2 Pieces' },
   ];
   return (
     <div className="cart">
@@ -23,7 +23,7 @@ export default function Cart({ items }) {
       {newItems.length > 0 && (
         <div className="cart__item-list">
           {newItems.map((item) => (
-            <div className="cart__item">
+            <div className="cart__item" key={item.id}>
               <div className="cart__item-name">{item.name}</div>
 
               <div className="cart__item-actions">

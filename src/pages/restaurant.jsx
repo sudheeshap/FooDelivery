@@ -47,11 +47,11 @@ export default function Restaurant() {
 
   return (
     <section className="main-container">
-      <section className="container-left">
+      <section className="menu-container">
         <RestaurantCard restaurant={restaurant} />
         <MenuList menuGroups={menuGroups} />
       </section>
-      <section className="container-right">
+      <section className="cart-container">
         <Cart items={cartItems} />
       </section>
     </section>
