@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 
-import Cart from '../components/cart';
-import MenuList from '../components/menu-list';
-import RestaurantCard from '../components/restaurant-card';
+import Cart from '../components/Cart';
+import MenuList from '../components/MenuList';
+import RestaurantCard from '../components/RestaurantCard';
 import DATA_RESTAURANTS from '../data/restaurant.data';
 import DATA_MENU_GROUPS from '../data/menu-groups';
 
