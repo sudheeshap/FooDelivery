@@ -7,7 +7,12 @@ export default function Cart({ items }) {
   const total = subTotal + deliveryFee;
   const newItems = [
     { id: 1, quantity: 1, amount: 10, name: 'Yogurt and granola' },
-    { id: 2, quantity: 1, amount: 20, name: 'Cinnamon Apple Protein Pancakes 2 Pieces' },
+    {
+      id: 2,
+      quantity: 1,
+      amount: 20,
+      name: 'Cinnamon Apple Protein Pancakes 2 Pieces',
+    },
   ];
   return (
     <div className="cart">
@@ -35,7 +40,9 @@ export default function Cart({ items }) {
                   <span className="cart__counter-button">
                     <i className="icon bi-dash-circle" />
                   </span>
-                  <span className="cart__counter-quantity">{item.quantity}</span>
+                  <span className="cart__counter-quantity">
+                    {item.quantity}
+                  </span>
                   <span className="cart__counter-button">
                     <i className="icon bi-plus-circle" />
                   </span>

@@ -79,7 +79,7 @@ export default function RestaurantList() {
             <Link
               to={`/restaurant/${restaurant.slug}`}
               key={restaurant.id}
-              className="restaurant-list__card-container"
+              className="restaurant__card-container"
             >
               <RestaurantCard restaurant={restaurant} />
             </Link>

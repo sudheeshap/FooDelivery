@@ -1,0 +1,12 @@
+.footer__navbar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0 auto;
+  height: 100px;
+  max-width: 1200px;
+}
+
+.footer__nav {
+  margin: 10px;
+}

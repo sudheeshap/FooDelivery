@@ -17,15 +17,9 @@ const restaurantSlice = createSlice({
     },
   },
   extraReducers: (builder) => {
-    builder
-      // .addCase(fetchRestaurants.pending, (state, action) => {
-      //   // state.status = 'loading';
-      // })
-      .addCase(fetchRestaurants.fulfilled, (state, action) => {
-        console.log(state, action);
-        // return action.payload;
-        state.entities = action.payload;
-      });
+    builder.addCase(fetchRestaurants.fulfilled, (state, action) => {
+      state.entities = action.payload;
+    });
   },
 });
 

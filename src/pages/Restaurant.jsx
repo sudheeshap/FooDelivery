@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 
-import Cart from '../components/Cart';
 import MenuList from '../components/MenuList';
 import RestaurantCard from '../components/RestaurantCard';
 import DATA_RESTAURANTS from '../data/restaurant.data';
 import DATA_MENU_GROUPS from '../data/menu-groups';
+import Cart from '../components/Cart';
 
 export default function Restaurant() {
   const cartItems = [];
@@ -24,14 +24,7 @@ export default function Restaurant() {
     has_free_delivery: false,
     offer: '',
   };
-  // const menuModel = {
-  //   id: null,
-  //   name: '',
-  //   description: '',
-  //   price: null,
-  //   calories: null,
-  //   images: [],
-  // };
+
   const { slug } = useParams();
   const [restaurant, setRestaurant] = useState(restaurantModel);
   const [menuGroups, setMenus] = useState([]);

@@ -4,6 +4,7 @@
 /* Layout */
 @import './layout/layout';
 @import './layout/header';
+@import './layout/footer';
 @import './layout/jumbotron';
 @import './layout/form';
 
