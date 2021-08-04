@@ -17,9 +17,13 @@ export default function RestaurantCard({ restaurant }) {
         <div className="restaurant-list__card-subtitle">
           {restaurant.cuisines.replaceAll(',', ' • ')}
         </div>
-        {restaurant.is_featured && <div className="restaurant-list__card-featured">Featured</div>}
+        {restaurant.is_featured && (
+          <div className="restaurant-list__card-featured">Featured</div>
+        )}
         {!!restaurant.delivery_charge && (
-          <div className="restaurant-list__card-free-delivery">Free delivery</div>
+          <div className="restaurant-list__card-free-delivery">
+            Free delivery
+          </div>
         )}
         <div className="restaurant-list__card-rating">
           <i className="restaurant-list__card-icon bi bi-star-fill" />
@@ -42,7 +46,9 @@ export default function RestaurantCard({ restaurant }) {
           )}
         </div>
       </div>
-      {!restaurant.is_open && <div className="restaurant-list__card-overlay">Closed</div>}
+      {!restaurant.is_open && (
+        <div className="restaurant-list__card-overlay">Closed</div>
+      )}
     </div>
   );
 }

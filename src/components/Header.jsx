@@ -20,7 +20,11 @@ export default function Header() {
         </div>
         <div className="navbar__section">
           <div className="navbar__item">
-            <div className={`navbar__cart ${isLoggedIn ? '' : 'navbar__cart--disabled'}`}>
+            <div
+              className={`navbar__cart ${
+                isLoggedIn ? '' : 'navbar__cart--disabled'
+              }`}
+            >
               <i className="bi-bag" />
             </div>
           </div>

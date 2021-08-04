@@ -13,7 +13,7 @@ import {
   selectSortBy,
 } from '../redux/restaurant/restaurant.selectors';
 import { fetchRestaurants } from '../redux/restaurant/restaurant.thunks';
-import RestaurantCard from './restaurant-card';
+import RestaurantCard from './RestaurantCard';
 
 export default function RestaurantList() {
   const filterOptions = [

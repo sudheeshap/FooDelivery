@@ -1,6 +1,6 @@
 import React from 'react';
 import { PropTypes } from 'prop-types';
-import ProductCard from './product-card';
+import ProductCard from './ProductCard';
 
 export default function MenuList({ menuGroups }) {
   return (

@@ -18,7 +18,10 @@ export default function ProductCard({ product }) {
           <span>AED </span>
           <span>{product.price}</span>
         </div>
-        <button type="button" className="form__button form__button--sm product__add-button">
+        <button
+          type="button"
+          className="form__button form__button--sm product__add-button"
+        >
           Add
         </button>
       </div>
