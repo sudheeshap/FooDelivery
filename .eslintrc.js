@@ -14,5 +14,12 @@ module.exports = {
   plugins: ['react'],
   rules: {
     'object-curly-newline': 'off',
+    'no-param-reassign': [
+      'error',
+      {
+        props: true,
+        ignorePropertyModificationsFor: ['state'],
+      },
+    ],
   },
 };

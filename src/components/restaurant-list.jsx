@@ -1,9 +1,43 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
-import DATA_RESTAURANTS from '../data/restaurants';
+
+import DATA_RESTAURANTS from '../data/restaurant.data';
+import {
+  addFilter,
+  removeFilter,
+} from '../redux/restaurant/restaurant.reducer';
+import {
+  selectFilters,
+  selectRestaurants,
+  selectSortBy,
+} from '../redux/restaurant/restaurant.selectors';
+import { fetchRestaurants } from '../redux/restaurant/restaurant.thunks';
 import RestaurantCard from './restaurant-card';
 
 export default function RestaurantList() {
+  const filterOptions = [
+    { value: 'offer', text: 'Offers' },
+    { value: 'fast_delivery', text: 'Fast delivery (Less than 30 min)' },
+    { value: 'free_delivery', text: 'Free delivery' },
+  ];
+  const restaurants = useSelector(selectRestaurants);
+  const filters = useSelector(selectFilters);
+  const sortBy = useSelector(selectSortBy);
+  const dispatch = useDispatch();
+
+  // Load restaurants
+  useEffect(() => {
+    dispatch(fetchRestaurants({ filters, sortBy }));
+  }, [filters.length, sortBy]);
+
+  const handleClickFilter = (value) => {
+    if (filters.includes(value)) {
+      return dispatch(removeFilter({ filter: value }));
+    }
+    return dispatch(addFilter({ filter: value }));
+  };
+
   return (
     <section className="restaurant-list__wrapper">
       <div className="restaurant-list__container">
@@ -15,11 +49,20 @@ export default function RestaurantList() {
           <div className="restaurant-list__actions">
             <div className="restaurant-list__filters">
               <span>Filter by</span>
-              <span className="restaurant-list__filter restaurant-list__filter--active">
-                Offers
-              </span>
-              <span className="restaurant-list__filter">Fast delivery (Less than 30 min)</span>
-              <span className="restaurant-list__filter">Free delivery</span>
+              {filterOptions.map((filter) => (
+                <button
+                  type="button"
+                  onClick={() => handleClickFilter(filter.value)}
+                  className={`restaurant-list__filter ${
+                    filters.includes(filter.value)
+                      ? 'restaurant-list__filter--active'
+                      : ''
+                  }`}
+                  key={filter.value}
+                >
+                  {filter.text}
+                </button>
+              ))}
             </div>
             <div className="restaurant-list__sort">
               <span>Sort by</span>
@@ -32,7 +75,7 @@ export default function RestaurantList() {
           </div>
         </div>
         <div className="restaurant-list">
-          {DATA_RESTAURANTS.map((restaurant) => (
+          {restaurants.map((restaurant) => (
             <Link
               to={`/restaurant/${restaurant.slug}`}
               key={restaurant.id}

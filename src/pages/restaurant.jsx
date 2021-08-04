@@ -4,7 +4,7 @@ import { useParams } from 'react-router-dom';
 import Cart from '../components/cart';
 import MenuList from '../components/menu-list';
 import RestaurantCard from '../components/restaurant-card';
-import DATA_RESTAURANTS from '../data/restaurants';
+import DATA_RESTAURANTS from '../data/restaurant.data';
 import DATA_MENU_GROUPS from '../data/menu-groups';
 
 export default function Restaurant() {

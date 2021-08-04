@@ -111,6 +111,8 @@
 }
 
 .restaurant-list__filter {
+  appearance: none;
+  border: none;
   cursor: pointer;
   padding: 5px 10px;
   background-color: #e5e5e5;

@@ -1,6 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 import INITIAL_STATE from '../initial-state';
+import { fetchRestaurants } from './restaurant.thunks';
 
 const restaurantSlice = createSlice({
   name: 'restaurant',
@@ -10,8 +11,21 @@ const restaurantSlice = createSlice({
       state.filters.push(action.payload.filter);
     },
     removeFilter(state, action) {
-      return state.filters.filter((filter) => filter !== action.payload.filter);
+      state.filters = state.filters.filter(
+        (filter) => filter !== action.payload.filter,
+      );
     },
+  },
+  extraReducers: (builder) => {
+    builder
+      // .addCase(fetchRestaurants.pending, (state, action) => {
+      //   // state.status = 'loading';
+      // })
+      .addCase(fetchRestaurants.fulfilled, (state, action) => {
+        console.log(state, action);
+        // return action.payload;
+        state.entities = action.payload;
+      });
   },
 });
 
