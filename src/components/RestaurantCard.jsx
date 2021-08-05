@@ -6,7 +6,7 @@ export default function RestaurantCard({ restaurant }) {
     <div className="restaurant__card">
       <div
         className="restaurant__card-image"
-        style={{ backgroundImage: `url(${restaurant.photo_highlight})` }}
+        style={{ backgroundImage: `url(${restaurant.cover_photo})` }}
       />
       <div
         className="restaurant__card-logo"

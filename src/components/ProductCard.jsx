@@ -8,7 +8,7 @@ export default function ProductCard({ product }) {
       <div
         className="product__image"
         style={{
-          backgroundImage: `url(${product.images[0]?.url || food})`,
+          backgroundImage: `url(${product.photo_thumb || food})`,
         }}
       />
       <div className="product__info">

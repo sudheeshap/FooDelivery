@@ -16,7 +16,7 @@ export default function Restaurant() {
     slug: '',
     cuisines: '',
     rating: null,
-    photo_highlight: '',
+    cover_photo: '',
     delivery_in: '',
     distance: '',
     is_open: true,
