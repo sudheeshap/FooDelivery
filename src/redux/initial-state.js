@@ -1,7 +1,7 @@
 const INITIAL_STATE = {
   restaurant: {
     filters: [],
-    sortBy: '',
+    sortById: '',
     entities: [],
   },
   product: {

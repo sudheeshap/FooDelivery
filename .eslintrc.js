@@ -21,5 +21,6 @@ module.exports = {
         ignorePropertyModificationsFor: ['state'],
       },
     ],
+    'implicit-arrow-linebreak': 'always',
   },
 };

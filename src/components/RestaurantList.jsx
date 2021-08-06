@@ -10,7 +10,7 @@ import {
 import {
   selectFilters,
   selectRestaurants,
-  selectSortBy,
+  selectSortById,
 } from '../redux/restaurant/restaurant.selectors';
 import { fetchRestaurants } from '../redux/restaurant/restaurant.thunks';
 import RestaurantCard from './RestaurantCard';
@@ -21,15 +21,23 @@ export default function RestaurantList() {
     { value: 'fast_delivery', text: 'Fast delivery (Less than 30 min)' },
     { value: 'free_delivery', text: 'Free delivery' },
   ];
+  const sortOptions = [
+    { value: 'if_featured', text: 'Featured' },
+    { value: 'distance', text: 'Distance' },
+    { value: 'delivery_in', text: 'Fast delivery' },
+  ];
   const restaurants = useSelector(selectRestaurants);
   const filters = useSelector(selectFilters);
-  const sortBy = useSelector(selectSortBy);
+  const sortById = useSelector(selectSortById);
+  const pageNumber = 1;
+  const pageSize = 20;
   const dispatch = useDispatch();
 
   // Load restaurants
   useEffect(() => {
-    dispatch(fetchRestaurants({ filters, sortBy }));
-  }, [filters.length, sortBy]);
+    console.log(filters, sortById, pageNumber, pageSize);
+    dispatch(fetchRestaurants({ filters, sortById, pageNumber, pageSize }));
+  }, [filters.length, sortById]);
 
   const handleClickFilter = (value) => {
     if (filters.includes(value)) {
@@ -49,27 +57,29 @@ export default function RestaurantList() {
           <div className="restaurant-list__actions">
             <div className="restaurant-list__filters">
               <span>Filter by</span>
-              {filterOptions.map((filter) => (
+              {filterOptions.map((option) => (
                 <button
                   type="button"
-                  onClick={() => handleClickFilter(filter.value)}
+                  onClick={() => handleClickFilter(option.value)}
                   className={`restaurant-list__filter ${
-                    filters.includes(filter.value)
+                    filters.includes(option.value)
                       ? 'restaurant-list__filter--active'
                       : ''
                   }`}
-                  key={filter.value}
+                  key={option.value}
                 >
-                  {filter.text}
+                  {option.text}
                 </button>
               ))}
             </div>
             <div className="restaurant-list__sort">
               <span>Sort by</span>
               <select>
-                <option value="featured">Featured</option>
-                <option value="distance">Distance</option>
-                <option value="fast_delivery">Fast delivery</option>
+                {sortOptions.map((option) => (
+                  <option value={option.value} key={option.value}>
+                    {option.text}
+                  </option>
+                ))}
               </select>
             </div>
           </div>

@@ -3,9 +3,9 @@ import { useParams } from 'react-router-dom';
 
 import MenuList from '../components/MenuList';
 import RestaurantCard from '../components/RestaurantCard';
-import DATA_RESTAURANTS from '../data/restaurant.data';
 import DATA_MENU_GROUPS from '../data/menu-groups';
 import Cart from '../components/Cart';
+import { getRestaurantBySlug } from '../services/restaurant.service';
 
 export default function Restaurant() {
   const cartItems = [];
@@ -30,7 +30,7 @@ export default function Restaurant() {
   const [menuGroups, setMenus] = useState([]);
 
   useEffect(() => {
-    const restorantData = DATA_RESTAURANTS.find((res) => res.slug === slug);
+    const restorantData = getRestaurantBySlug(slug);
     const groups = DATA_MENU_GROUPS;
     window.scrollTo(0, 0);
 

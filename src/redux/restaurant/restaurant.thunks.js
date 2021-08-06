@@ -1,18 +1,11 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
 
-import DATA_RESTAURANTS from '../../data/restaurant.data';
+import { getRestaurants } from '../../services/restaurant.service';
 
-// prettier-ignore
 export const fetchRestaurants = createAsyncThunk(
   'restaurant/fetchRestaurants',
-  async ({ filters }) => {
-    const restaurants = await DATA_RESTAURANTS.filter((restaurant) => {
-      if (filters.includes('offer')) {
-        return !!restaurant.offer;
-      }
-
-      return true;
-    });
+  async (searchConfig) => {
+    const restaurants = await getRestaurants(searchConfig);
 
     return restaurants;
   },

@@ -7,18 +7,17 @@ export const selectRestaurants = createSelector(
   (state) => state.entities || [],
 );
 
-// prettier-ignore
-export const selectRestaurant = (id) => createSelector(
-  [selectRestaurants],
-  (restaurants) => restaurants.filter((rs) => rs.id === id),
-);
-
 export const selectFilters = createSelector(
   [selectRestaurantState],
   (state) => state.filters || [],
 );
 
-export const selectSortBy = createSelector(
+// export const selectRestaurantBySlug = (slug) =>
+//   createSelector([selectRestaurants], (restaurants) =>
+//     restaurants.filter((restaurant) => restaurant.slug === slug),
+//   );
+
+export const selectSortById = createSelector(
   [selectRestaurantState],
-  (state) => state.sortBy,
+  (state) => state.sortById,
 );

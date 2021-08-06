@@ -20,7 +20,7 @@ export default function RestaurantCard({ restaurant }) {
         {restaurant.is_featured && (
           <div className="restaurant__card-featured">Featured</div>
         )}
-        {!!restaurant.delivery_charge && (
+        {!restaurant.delivery_charge && (
           <div className="restaurant__card-free-delivery">Free delivery</div>
         )}
         <div className="restaurant__card-rating">
