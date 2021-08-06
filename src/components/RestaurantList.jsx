@@ -6,6 +6,7 @@ import DATA_RESTAURANTS from '../data/restaurant.data';
 import {
   addFilter,
   removeFilter,
+  sortByType,
 } from '../redux/restaurant/restaurant.reducer';
 import {
   selectFilters,
@@ -22,7 +23,7 @@ export default function RestaurantList() {
     { value: 'free_delivery', text: 'Free delivery' },
   ];
   const sortOptions = [
-    { value: 'if_featured', text: 'Featured' },
+    { value: 'is_featured', text: 'Featured' },
     { value: 'distance', text: 'Distance' },
     { value: 'delivery_in', text: 'Fast delivery' },
   ];
@@ -30,7 +31,7 @@ export default function RestaurantList() {
   const filters = useSelector(selectFilters);
   const sortById = useSelector(selectSortById);
   const pageNumber = 1;
-  const pageSize = 20;
+  const pageSize = 15;
   const dispatch = useDispatch();
 
   // Load restaurants
@@ -45,6 +46,9 @@ export default function RestaurantList() {
     }
     return dispatch(addFilter({ filter: value }));
   };
+
+  const handleChangeSort = ({ target }) =>
+    dispatch(sortByType({ type: target.value }));
 
   return (
     <section className="restaurant-list__wrapper">
@@ -74,7 +78,7 @@ export default function RestaurantList() {
             </div>
             <div className="restaurant-list__sort">
               <span>Sort by</span>
-              <select>
+              <select onChange={handleChangeSort}>
                 {sortOptions.map((option) => (
                   <option value={option.value} key={option.value}>
                     {option.text}
@@ -94,6 +98,12 @@ export default function RestaurantList() {
               <RestaurantCard restaurant={restaurant} />
             </Link>
           ))}
+          {restaurants.length > 0 && (
+            <div className="restaurant__card-container restaurant__card-container--dummy" />
+          )}
+          {restaurants.length === 0 && (
+            <div className="restaurant__empty-state">No restaurants found</div>
+          )}
         </div>
       </div>
     </section>

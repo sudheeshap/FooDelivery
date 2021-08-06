@@ -10,7 +10,7 @@ const DATA_RESTAURANTS = [
     distance: '2 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t4.ftcdn.net/jpg/02/30/96/69/240_F_230966912_NBFpX2V5Uvnw14EWaITYarAgDLK1MK5a.jpg',
@@ -74,7 +74,7 @@ const DATA_RESTAURANTS = [
     distance: '1.5 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t3.ftcdn.net/jpg/02/59/99/08/240_F_259990876_jkctaxeaGLXLO6OyOUg5w1uGZEp5puFP.jpg',
@@ -90,7 +90,7 @@ const DATA_RESTAURANTS = [
     distance: '2 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t4.ftcdn.net/jpg/01/75/77/63/240_F_175776359_qNmjiABh5kKh74MuS4udR54ibgk6CNrt.jpg',
@@ -122,7 +122,7 @@ const DATA_RESTAURANTS = [
     distance: '3 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t3.ftcdn.net/jpg/01/29/77/74/240_F_129777464_0qNCK13O07BAhVtJJYrKsDzxPlvUzlhq.jpg',
@@ -138,7 +138,7 @@ const DATA_RESTAURANTS = [
     distance: '4.5 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t4.ftcdn.net/jpg/01/79/54/15/240_F_179541526_EMI6Znq5tVKcAlPZrqKe9hWveRY8W5Va.jpg',
@@ -154,7 +154,7 @@ const DATA_RESTAURANTS = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t3.ftcdn.net/jpg/02/23/21/22/240_F_223212249_QNRXh00afvpCvG2glyqrQlhEOywNHjeX.jpg',
@@ -218,7 +218,7 @@ const DATA_RESTAURANTS = [
     distance: '2 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t3.ftcdn.net/jpg/01/29/77/74/240_F_129777464_0qNCK13O07BAhVtJJYrKsDzxPlvUzlhq.jpg',
@@ -234,7 +234,7 @@ const DATA_RESTAURANTS = [
     distance: '3 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t3.ftcdn.net/jpg/02/04/19/10/240_F_204191040_1U9eerl6t3Uxe7BDQC6TWEzDXA8PeTQV.jpg',
@@ -250,7 +250,7 @@ const DATA_RESTAURANTS = [
     distance: '4.5 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t4.ftcdn.net/jpg/02/83/98/03/240_F_283980349_0VggtTJBYajfh7zR7ZZaEJKjhNSYONhF.jpg',
@@ -266,7 +266,7 @@ const DATA_RESTAURANTS = [
     distance: '3 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t4.ftcdn.net/jpg/01/36/12/51/240_F_136125172_bFDXnzz3MBHS2wotR82GuzkZfW17HkKj.jpg',
@@ -298,7 +298,7 @@ const DATA_RESTAURANTS = [
     distance: '3 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t3.ftcdn.net/jpg/03/38/50/86/240_F_338508649_3NX24xFwIq2JXB4z8fLiZ592v4CJDiP7.jpg',
@@ -314,7 +314,7 @@ const DATA_RESTAURANTS = [
     distance: '4.5 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t3.ftcdn.net/jpg/03/38/50/86/240_F_338508649_3NX24xFwIq2JXB4z8fLiZ592v4CJDiP7.jpg',
@@ -330,7 +330,7 @@ const DATA_RESTAURANTS = [
     distance: '2.5 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t3.ftcdn.net/jpg/02/59/99/08/240_F_259990876_jkctaxeaGLXLO6OyOUg5w1uGZEp5puFP.jpg',
@@ -346,7 +346,7 @@ const DATA_RESTAURANTS = [
     distance: '2 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t4.ftcdn.net/jpg/02/83/11/75/240_F_283117539_fj1KVl0YLritXaC6jjxpclfSGTQRgxcC.jpg',
@@ -362,7 +362,7 @@ const DATA_RESTAURANTS = [
     distance: '2.5 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 7,
+    delivery_charge: 4,
     offer: '10% off',
     cover_photo:
       'https://t4.ftcdn.net/jpg/01/36/12/51/240_F_136125172_bFDXnzz3MBHS2wotR82GuzkZfW17HkKj.jpg',
@@ -378,7 +378,7 @@ const DATA_RESTAURANTS = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t4.ftcdn.net/jpg/02/83/11/75/240_F_283117539_fj1KVl0YLritXaC6jjxpclfSGTQRgxcC.jpg',
@@ -394,7 +394,7 @@ const DATA_RESTAURANTS = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t3.ftcdn.net/jpg/03/38/50/86/240_F_338508649_3NX24xFwIq2JXB4z8fLiZ592v4CJDiP7.jpg',
@@ -410,7 +410,7 @@ const DATA_RESTAURANTS = [
     distance: '2 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t4.ftcdn.net/jpg/01/79/54/15/240_F_179541526_EMI6Znq5tVKcAlPZrqKe9hWveRY8W5Va.jpg',
@@ -426,7 +426,7 @@ const DATA_RESTAURANTS = [
     distance: '4.5 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t3.ftcdn.net/jpg/02/59/99/08/240_F_259990876_jkctaxeaGLXLO6OyOUg5w1uGZEp5puFP.jpg',
@@ -442,7 +442,7 @@ const DATA_RESTAURANTS = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t3.ftcdn.net/jpg/02/04/19/10/240_F_204191040_1U9eerl6t3Uxe7BDQC6TWEzDXA8PeTQV.jpg',
@@ -458,7 +458,7 @@ const DATA_RESTAURANTS = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t4.ftcdn.net/jpg/02/83/11/75/240_F_283117539_fj1KVl0YLritXaC6jjxpclfSGTQRgxcC.jpg',
@@ -474,7 +474,7 @@ const DATA_RESTAURANTS = [
     distance: '3 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t3.ftcdn.net/jpg/02/02/23/04/240_F_202230462_RPDa0DF3UD4AIXdYWEtS1oBwH52aECuV.jpg',
@@ -490,7 +490,7 @@ const DATA_RESTAURANTS = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t3.ftcdn.net/jpg/02/02/23/04/240_F_202230462_RPDa0DF3UD4AIXdYWEtS1oBwH52aECuV.jpg',
@@ -506,7 +506,7 @@ const DATA_RESTAURANTS = [
     distance: '4.5 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t3.ftcdn.net/jpg/00/80/20/36/240_F_80203627_NVVMMGck8yL0G3PchS0XmLsI4xx3YUQm.jpg',
@@ -522,7 +522,7 @@ const DATA_RESTAURANTS = [
     distance: '3 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t4.ftcdn.net/jpg/01/79/54/15/240_F_179541526_EMI6Znq5tVKcAlPZrqKe9hWveRY8W5Va.jpg',
@@ -538,7 +538,7 @@ const DATA_RESTAURANTS = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t4.ftcdn.net/jpg/01/36/12/51/240_F_136125172_bFDXnzz3MBHS2wotR82GuzkZfW17HkKj.jpg',
@@ -554,7 +554,7 @@ const DATA_RESTAURANTS = [
     distance: '2.5 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t4.ftcdn.net/jpg/01/76/31/27/240_F_176312743_oEbVGIalTEAnPGYjJcX5H9N1MSkhmTvQ.jpg',
@@ -570,7 +570,7 @@ const DATA_RESTAURANTS = [
     distance: '2.5 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t3.ftcdn.net/jpg/02/04/19/10/240_F_204191040_1U9eerl6t3Uxe7BDQC6TWEzDXA8PeTQV.jpg',
@@ -586,7 +586,7 @@ const DATA_RESTAURANTS = [
     distance: '2.5 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t3.ftcdn.net/jpg/02/23/21/22/240_F_223212249_QNRXh00afvpCvG2glyqrQlhEOywNHjeX.jpg',
@@ -602,7 +602,7 @@ const DATA_RESTAURANTS = [
     distance: '4.5 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t3.ftcdn.net/jpg/02/72/83/76/240_F_272837618_6qpf6VkgYCWbFYdqS2e8CENWWqfbameX.jpg',
@@ -634,7 +634,7 @@ const DATA_RESTAURANTS = [
     distance: '2 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t4.ftcdn.net/jpg/01/36/12/51/240_F_136125172_bFDXnzz3MBHS2wotR82GuzkZfW17HkKj.jpg',
@@ -650,7 +650,7 @@ const DATA_RESTAURANTS = [
     distance: '3 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t3.ftcdn.net/jpg/02/72/83/76/240_F_272837618_6qpf6VkgYCWbFYdqS2e8CENWWqfbameX.jpg',
@@ -666,7 +666,7 @@ const DATA_RESTAURANTS = [
     distance: '2.5 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t4.ftcdn.net/jpg/01/30/02/57/240_F_130025712_Ep0vdSQgFNEOOStuVUfhhy7Z3C8Qq0Cu.jpg',
@@ -682,7 +682,7 @@ const DATA_RESTAURANTS = [
     distance: '4.5 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t4.ftcdn.net/jpg/01/30/02/57/240_F_130025712_Ep0vdSQgFNEOOStuVUfhhy7Z3C8Qq0Cu.jpg',
@@ -698,7 +698,7 @@ const DATA_RESTAURANTS = [
     distance: '2 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t3.ftcdn.net/jpg/02/04/19/10/240_F_204191040_1U9eerl6t3Uxe7BDQC6TWEzDXA8PeTQV.jpg',
@@ -714,7 +714,7 @@ const DATA_RESTAURANTS = [
     distance: '3 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t3.ftcdn.net/jpg/02/02/23/04/240_F_202230462_RPDa0DF3UD4AIXdYWEtS1oBwH52aECuV.jpg',
@@ -730,7 +730,7 @@ const DATA_RESTAURANTS = [
     distance: '2.5 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t3.ftcdn.net/jpg/02/72/83/76/240_F_272837618_6qpf6VkgYCWbFYdqS2e8CENWWqfbameX.jpg',
@@ -746,7 +746,7 @@ const DATA_RESTAURANTS = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t4.ftcdn.net/jpg/02/83/98/03/240_F_283980349_0VggtTJBYajfh7zR7ZZaEJKjhNSYONhF.jpg',
@@ -762,7 +762,7 @@ const DATA_RESTAURANTS = [
     distance: '2 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t3.ftcdn.net/jpg/01/29/77/74/240_F_129777464_0qNCK13O07BAhVtJJYrKsDzxPlvUzlhq.jpg',
@@ -778,7 +778,7 @@ const DATA_RESTAURANTS = [
     distance: '3 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t3.ftcdn.net/jpg/03/38/50/86/240_F_338508649_3NX24xFwIq2JXB4z8fLiZ592v4CJDiP7.jpg',
@@ -794,7 +794,7 @@ const DATA_RESTAURANTS = [
     distance: '3 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t3.ftcdn.net/jpg/00/73/59/92/240_F_73599247_feSxTKsOi4eLaclriyE4tAJ7hmJLKlIp.jpg',
@@ -810,7 +810,7 @@ const DATA_RESTAURANTS = [
     distance: '3 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t3.ftcdn.net/jpg/00/80/20/36/240_F_80203627_NVVMMGck8yL0G3PchS0XmLsI4xx3YUQm.jpg',
@@ -842,7 +842,7 @@ const DATA_RESTAURANTS = [
     distance: '3 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t3.ftcdn.net/jpg/02/04/19/10/240_F_204191040_1U9eerl6t3Uxe7BDQC6TWEzDXA8PeTQV.jpg',
@@ -858,7 +858,7 @@ const DATA_RESTAURANTS = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t3.ftcdn.net/jpg/02/55/69/54/240_F_255695423_r08p5jQrWyJFCKdUaAMHuibq2YD5CmLu.jpg',
@@ -874,7 +874,7 @@ const DATA_RESTAURANTS = [
     distance: '2.5 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t3.ftcdn.net/jpg/02/02/23/04/240_F_202230462_RPDa0DF3UD4AIXdYWEtS1oBwH52aECuV.jpg',
@@ -890,7 +890,7 @@ const DATA_RESTAURANTS = [
     distance: '4.5 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t4.ftcdn.net/jpg/02/83/98/03/240_F_283980349_0VggtTJBYajfh7zR7ZZaEJKjhNSYONhF.jpg',
@@ -906,7 +906,7 @@ const DATA_RESTAURANTS = [
     distance: '2.5 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t4.ftcdn.net/jpg/01/30/02/57/240_F_130025712_Ep0vdSQgFNEOOStuVUfhhy7Z3C8Qq0Cu.jpg',
@@ -922,7 +922,7 @@ const DATA_RESTAURANTS = [
     distance: '2 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t3.ftcdn.net/jpg/02/02/23/04/240_F_202230462_RPDa0DF3UD4AIXdYWEtS1oBwH52aECuV.jpg',
@@ -938,7 +938,7 @@ const DATA_RESTAURANTS = [
     distance: '4.5 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t4.ftcdn.net/jpg/01/36/12/51/240_F_136125172_bFDXnzz3MBHS2wotR82GuzkZfW17HkKj.jpg',
@@ -954,7 +954,7 @@ const DATA_RESTAURANTS = [
     distance: '4.5 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t4.ftcdn.net/jpg/02/30/96/69/240_F_230966912_NBFpX2V5Uvnw14EWaITYarAgDLK1MK5a.jpg',
@@ -970,7 +970,7 @@ const DATA_RESTAURANTS = [
     distance: '2 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t3.ftcdn.net/jpg/02/04/19/10/240_F_204191040_1U9eerl6t3Uxe7BDQC6TWEzDXA8PeTQV.jpg',
@@ -986,7 +986,7 @@ const DATA_RESTAURANTS = [
     distance: '2.5 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t3.ftcdn.net/jpg/02/72/83/76/240_F_272837618_6qpf6VkgYCWbFYdqS2e8CENWWqfbameX.jpg',
@@ -1002,7 +1002,7 @@ const DATA_RESTAURANTS = [
     distance: '3 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t4.ftcdn.net/jpg/01/79/54/15/240_F_179541526_EMI6Znq5tVKcAlPZrqKe9hWveRY8W5Va.jpg',
@@ -1018,7 +1018,7 @@ const DATA_RESTAURANTS = [
     distance: '2.5 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t4.ftcdn.net/jpg/02/30/96/69/240_F_230966912_NBFpX2V5Uvnw14EWaITYarAgDLK1MK5a.jpg',
@@ -1034,7 +1034,7 @@ const DATA_RESTAURANTS = [
     distance: '2.5 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t4.ftcdn.net/jpg/01/75/77/63/240_F_175776359_qNmjiABh5kKh74MuS4udR54ibgk6CNrt.jpg',
@@ -1050,7 +1050,7 @@ const DATA_RESTAURANTS = [
     distance: '3 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t4.ftcdn.net/jpg/01/30/02/57/240_F_130025712_Ep0vdSQgFNEOOStuVUfhhy7Z3C8Qq0Cu.jpg',
@@ -1066,7 +1066,7 @@ const DATA_RESTAURANTS = [
     distance: '2.5 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t4.ftcdn.net/jpg/02/83/11/75/240_F_283117539_fj1KVl0YLritXaC6jjxpclfSGTQRgxcC.jpg',
@@ -1082,7 +1082,7 @@ const DATA_RESTAURANTS = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t4.ftcdn.net/jpg/02/83/98/03/240_F_283980349_0VggtTJBYajfh7zR7ZZaEJKjhNSYONhF.jpg',
@@ -1098,7 +1098,7 @@ const DATA_RESTAURANTS = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t3.ftcdn.net/jpg/00/80/20/36/240_F_80203627_NVVMMGck8yL0G3PchS0XmLsI4xx3YUQm.jpg',
@@ -1114,7 +1114,7 @@ const DATA_RESTAURANTS = [
     distance: '3 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t4.ftcdn.net/jpg/02/30/96/69/240_F_230966912_NBFpX2V5Uvnw14EWaITYarAgDLK1MK5a.jpg',
@@ -1130,7 +1130,7 @@ const DATA_RESTAURANTS = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t3.ftcdn.net/jpg/02/72/83/76/240_F_272837618_6qpf6VkgYCWbFYdqS2e8CENWWqfbameX.jpg',
@@ -1146,7 +1146,7 @@ const DATA_RESTAURANTS = [
     distance: '4.5 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t3.ftcdn.net/jpg/03/38/50/86/240_F_338508649_3NX24xFwIq2JXB4z8fLiZ592v4CJDiP7.jpg',
@@ -1162,7 +1162,7 @@ const DATA_RESTAURANTS = [
     distance: '4.5 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t4.ftcdn.net/jpg/02/83/11/75/240_F_283117539_fj1KVl0YLritXaC6jjxpclfSGTQRgxcC.jpg',
@@ -1178,7 +1178,7 @@ const DATA_RESTAURANTS = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t3.ftcdn.net/jpg/00/73/59/92/240_F_73599247_feSxTKsOi4eLaclriyE4tAJ7hmJLKlIp.jpg',
@@ -1194,7 +1194,7 @@ const DATA_RESTAURANTS = [
     distance: '2 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t3.ftcdn.net/jpg/02/04/19/10/240_F_204191040_1U9eerl6t3Uxe7BDQC6TWEzDXA8PeTQV.jpg',
@@ -1210,7 +1210,7 @@ const DATA_RESTAURANTS = [
     distance: '3 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t3.ftcdn.net/jpg/02/59/99/08/240_F_259990876_jkctaxeaGLXLO6OyOUg5w1uGZEp5puFP.jpg',
@@ -1226,7 +1226,7 @@ const DATA_RESTAURANTS = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t3.ftcdn.net/jpg/00/73/59/92/240_F_73599247_feSxTKsOi4eLaclriyE4tAJ7hmJLKlIp.jpg',
@@ -1242,7 +1242,7 @@ const DATA_RESTAURANTS = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t4.ftcdn.net/jpg/01/36/12/51/240_F_136125172_bFDXnzz3MBHS2wotR82GuzkZfW17HkKj.jpg',
@@ -1258,7 +1258,7 @@ const DATA_RESTAURANTS = [
     distance: '2 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t3.ftcdn.net/jpg/02/02/23/04/240_F_202230462_RPDa0DF3UD4AIXdYWEtS1oBwH52aECuV.jpg',
@@ -1274,7 +1274,7 @@ const DATA_RESTAURANTS = [
     distance: '3 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t3.ftcdn.net/jpg/02/04/19/10/240_F_204191040_1U9eerl6t3Uxe7BDQC6TWEzDXA8PeTQV.jpg',
@@ -1290,7 +1290,7 @@ const DATA_RESTAURANTS = [
     distance: '3 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t4.ftcdn.net/jpg/01/79/54/15/240_F_179541526_EMI6Znq5tVKcAlPZrqKe9hWveRY8W5Va.jpg',
@@ -1306,7 +1306,7 @@ const DATA_RESTAURANTS = [
     distance: '3 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t4.ftcdn.net/jpg/02/83/98/03/240_F_283980349_0VggtTJBYajfh7zR7ZZaEJKjhNSYONhF.jpg',
@@ -1338,7 +1338,7 @@ const DATA_RESTAURANTS = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t4.ftcdn.net/jpg/01/75/77/63/240_F_175776359_qNmjiABh5kKh74MuS4udR54ibgk6CNrt.jpg',
@@ -1354,7 +1354,7 @@ const DATA_RESTAURANTS = [
     distance: '4.5 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t3.ftcdn.net/jpg/02/55/69/54/240_F_255695423_r08p5jQrWyJFCKdUaAMHuibq2YD5CmLu.jpg',
@@ -1370,7 +1370,7 @@ const DATA_RESTAURANTS = [
     distance: '2.5 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t3.ftcdn.net/jpg/02/04/19/10/240_F_204191040_1U9eerl6t3Uxe7BDQC6TWEzDXA8PeTQV.jpg',
@@ -1386,7 +1386,7 @@ const DATA_RESTAURANTS = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t3.ftcdn.net/jpg/03/38/50/86/240_F_338508649_3NX24xFwIq2JXB4z8fLiZ592v4CJDiP7.jpg',
@@ -1402,7 +1402,7 @@ const DATA_RESTAURANTS = [
     distance: '4.5 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t4.ftcdn.net/jpg/01/36/12/51/240_F_136125172_bFDXnzz3MBHS2wotR82GuzkZfW17HkKj.jpg',
@@ -1418,7 +1418,7 @@ const DATA_RESTAURANTS = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t3.ftcdn.net/jpg/02/59/99/08/240_F_259990876_jkctaxeaGLXLO6OyOUg5w1uGZEp5puFP.jpg',
@@ -1434,7 +1434,7 @@ const DATA_RESTAURANTS = [
     distance: '2 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t3.ftcdn.net/jpg/01/29/77/74/240_F_129777464_0qNCK13O07BAhVtJJYrKsDzxPlvUzlhq.jpg',
@@ -1450,7 +1450,7 @@ const DATA_RESTAURANTS = [
     distance: '4.5 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t3.ftcdn.net/jpg/02/02/23/04/240_F_202230462_RPDa0DF3UD4AIXdYWEtS1oBwH52aECuV.jpg',
@@ -1466,7 +1466,7 @@ const DATA_RESTAURANTS = [
     distance: '2 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 9,
     offer: '',
     cover_photo:
       'https://t3.ftcdn.net/jpg/01/29/77/74/240_F_129777464_0qNCK13O07BAhVtJJYrKsDzxPlvUzlhq.jpg',
@@ -1482,7 +1482,7 @@ const DATA_RESTAURANTS = [
     distance: '3 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t4.ftcdn.net/jpg/01/30/02/57/240_F_130025712_Ep0vdSQgFNEOOStuVUfhhy7Z3C8Qq0Cu.jpg',
@@ -1498,7 +1498,7 @@ const DATA_RESTAURANTS = [
     distance: '2.5 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t4.ftcdn.net/jpg/02/30/96/69/240_F_230966912_NBFpX2V5Uvnw14EWaITYarAgDLK1MK5a.jpg',
@@ -1514,7 +1514,7 @@ const DATA_RESTAURANTS = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t4.ftcdn.net/jpg/01/30/02/57/240_F_130025712_Ep0vdSQgFNEOOStuVUfhhy7Z3C8Qq0Cu.jpg',
@@ -1530,7 +1530,7 @@ const DATA_RESTAURANTS = [
     distance: '4.5 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t4.ftcdn.net/jpg/01/36/12/51/240_F_136125172_bFDXnzz3MBHS2wotR82GuzkZfW17HkKj.jpg',
@@ -1546,7 +1546,7 @@ const DATA_RESTAURANTS = [
     distance: '4.5 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t3.ftcdn.net/jpg/02/72/83/76/240_F_272837618_6qpf6VkgYCWbFYdqS2e8CENWWqfbameX.jpg',
@@ -1562,7 +1562,7 @@ const DATA_RESTAURANTS = [
     distance: '3 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t3.ftcdn.net/jpg/02/02/23/04/240_F_202230462_RPDa0DF3UD4AIXdYWEtS1oBwH52aECuV.jpg',
@@ -1578,7 +1578,7 @@ const DATA_RESTAURANTS = [
     distance: '4.5 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 9,
     offer: '',
     cover_photo:
       'https://t3.ftcdn.net/jpg/00/73/59/92/240_F_73599247_feSxTKsOi4eLaclriyE4tAJ7hmJLKlIp.jpg',
@@ -1594,7 +1594,7 @@ const DATA_RESTAURANTS = [
     distance: '4.5 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t4.ftcdn.net/jpg/01/79/54/15/240_F_179541526_EMI6Znq5tVKcAlPZrqKe9hWveRY8W5Va.jpg',
@@ -1610,7 +1610,7 @@ const DATA_RESTAURANTS = [
     distance: '2 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t3.ftcdn.net/jpg/02/04/19/10/240_F_204191040_1U9eerl6t3Uxe7BDQC6TWEzDXA8PeTQV.jpg',
@@ -1626,7 +1626,7 @@ const DATA_RESTAURANTS = [
     distance: '2 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t3.ftcdn.net/jpg/03/38/50/86/240_F_338508649_3NX24xFwIq2JXB4z8fLiZ592v4CJDiP7.jpg',
@@ -1642,7 +1642,7 @@ const DATA_RESTAURANTS = [
     distance: '2 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t3.ftcdn.net/jpg/02/72/83/76/240_F_272837618_6qpf6VkgYCWbFYdqS2e8CENWWqfbameX.jpg',
@@ -1658,7 +1658,7 @@ const DATA_RESTAURANTS = [
     distance: '2.5 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t3.ftcdn.net/jpg/02/02/23/04/240_F_202230462_RPDa0DF3UD4AIXdYWEtS1oBwH52aECuV.jpg',
@@ -1674,7 +1674,7 @@ const DATA_RESTAURANTS = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t4.ftcdn.net/jpg/01/79/54/15/240_F_179541526_EMI6Znq5tVKcAlPZrqKe9hWveRY8W5Va.jpg',
@@ -1690,7 +1690,7 @@ const DATA_RESTAURANTS = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t4.ftcdn.net/jpg/02/30/96/69/240_F_230966912_NBFpX2V5Uvnw14EWaITYarAgDLK1MK5a.jpg',
@@ -1706,7 +1706,7 @@ const DATA_RESTAURANTS = [
     distance: '3 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t4.ftcdn.net/jpg/01/79/54/15/240_F_179541526_EMI6Znq5tVKcAlPZrqKe9hWveRY8W5Va.jpg',
@@ -1722,7 +1722,7 @@ const DATA_RESTAURANTS = [
     distance: '2 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 7,
     offer: '',
     cover_photo:
       'https://t3.ftcdn.net/jpg/02/23/21/22/240_F_223212249_QNRXh00afvpCvG2glyqrQlhEOywNHjeX.jpg',
@@ -1738,7 +1738,7 @@ const DATA_RESTAURANTS = [
     distance: '4.5 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t3.ftcdn.net/jpg/02/04/19/10/240_F_204191040_1U9eerl6t3Uxe7BDQC6TWEzDXA8PeTQV.jpg',
@@ -1754,7 +1754,7 @@ const DATA_RESTAURANTS = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t3.ftcdn.net/jpg/00/80/20/36/240_F_80203627_NVVMMGck8yL0G3PchS0XmLsI4xx3YUQm.jpg',
@@ -1770,7 +1770,7 @@ const DATA_RESTAURANTS = [
     distance: '2 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t3.ftcdn.net/jpg/02/04/19/10/240_F_204191040_1U9eerl6t3Uxe7BDQC6TWEzDXA8PeTQV.jpg',
@@ -1786,7 +1786,7 @@ const DATA_RESTAURANTS = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t4.ftcdn.net/jpg/02/83/98/03/240_F_283980349_0VggtTJBYajfh7zR7ZZaEJKjhNSYONhF.jpg',
@@ -1802,7 +1802,7 @@ const DATA_RESTAURANTS = [
     distance: '2 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t4.ftcdn.net/jpg/01/36/12/51/240_F_136125172_bFDXnzz3MBHS2wotR82GuzkZfW17HkKj.jpg',
@@ -1818,7 +1818,7 @@ const DATA_RESTAURANTS = [
     distance: '4.5 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t3.ftcdn.net/jpg/02/02/23/04/240_F_202230462_RPDa0DF3UD4AIXdYWEtS1oBwH52aECuV.jpg',
@@ -1834,7 +1834,7 @@ const DATA_RESTAURANTS = [
     distance: '4.5 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t3.ftcdn.net/jpg/02/59/99/08/240_F_259990876_jkctaxeaGLXLO6OyOUg5w1uGZEp5puFP.jpg',
@@ -1850,7 +1850,7 @@ const DATA_RESTAURANTS = [
     distance: '4.5 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t3.ftcdn.net/jpg/02/55/69/54/240_F_255695423_r08p5jQrWyJFCKdUaAMHuibq2YD5CmLu.jpg',
@@ -1866,7 +1866,7 @@ const DATA_RESTAURANTS = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t4.ftcdn.net/jpg/02/83/11/75/240_F_283117539_fj1KVl0YLritXaC6jjxpclfSGTQRgxcC.jpg',
@@ -1882,7 +1882,7 @@ const DATA_RESTAURANTS = [
     distance: '2 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t4.ftcdn.net/jpg/02/83/98/03/240_F_283980349_0VggtTJBYajfh7zR7ZZaEJKjhNSYONhF.jpg',
@@ -1898,7 +1898,7 @@ const DATA_RESTAURANTS = [
     distance: '2 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t3.ftcdn.net/jpg/01/29/77/74/240_F_129777464_0qNCK13O07BAhVtJJYrKsDzxPlvUzlhq.jpg',
@@ -1914,7 +1914,7 @@ const DATA_RESTAURANTS = [
     distance: '4.5 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t3.ftcdn.net/jpg/02/55/69/54/240_F_255695423_r08p5jQrWyJFCKdUaAMHuibq2YD5CmLu.jpg',
@@ -1930,7 +1930,7 @@ const DATA_RESTAURANTS = [
     distance: '2 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t4.ftcdn.net/jpg/01/79/54/15/240_F_179541526_EMI6Znq5tVKcAlPZrqKe9hWveRY8W5Va.jpg',
@@ -1946,7 +1946,7 @@ const DATA_RESTAURANTS = [
     distance: '3 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t3.ftcdn.net/jpg/03/38/50/86/240_F_338508649_3NX24xFwIq2JXB4z8fLiZ592v4CJDiP7.jpg',
@@ -1962,7 +1962,7 @@ const DATA_RESTAURANTS = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t4.ftcdn.net/jpg/01/30/02/57/240_F_130025712_Ep0vdSQgFNEOOStuVUfhhy7Z3C8Qq0Cu.jpg',
@@ -1978,7 +1978,7 @@ const DATA_RESTAURANTS = [
     distance: '2.5 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t3.ftcdn.net/jpg/00/73/59/92/240_F_73599247_feSxTKsOi4eLaclriyE4tAJ7hmJLKlIp.jpg',
@@ -1994,7 +1994,7 @@ const DATA_RESTAURANTS = [
     distance: '3 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t4.ftcdn.net/jpg/01/30/02/57/240_F_130025712_Ep0vdSQgFNEOOStuVUfhhy7Z3C8Qq0Cu.jpg',
@@ -2010,7 +2010,7 @@ const DATA_RESTAURANTS = [
     distance: '2.5 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t4.ftcdn.net/jpg/01/36/12/51/240_F_136125172_bFDXnzz3MBHS2wotR82GuzkZfW17HkKj.jpg',
@@ -2026,7 +2026,7 @@ const DATA_RESTAURANTS = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t4.ftcdn.net/jpg/01/75/77/63/240_F_175776359_qNmjiABh5kKh74MuS4udR54ibgk6CNrt.jpg',
@@ -2042,7 +2042,7 @@ const DATA_RESTAURANTS = [
     distance: '2 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 8,
     offer: '',
     cover_photo:
       'https://t3.ftcdn.net/jpg/00/80/20/36/240_F_80203627_NVVMMGck8yL0G3PchS0XmLsI4xx3YUQm.jpg',
@@ -2058,7 +2058,7 @@ const DATA_RESTAURANTS = [
     distance: '3 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t3.ftcdn.net/jpg/02/04/19/10/240_F_204191040_1U9eerl6t3Uxe7BDQC6TWEzDXA8PeTQV.jpg',
@@ -2074,7 +2074,7 @@ const DATA_RESTAURANTS = [
     distance: '3 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t3.ftcdn.net/jpg/01/29/77/74/240_F_129777464_0qNCK13O07BAhVtJJYrKsDzxPlvUzlhq.jpg',
@@ -2090,7 +2090,7 @@ const DATA_RESTAURANTS = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t4.ftcdn.net/jpg/02/30/96/69/240_F_230966912_NBFpX2V5Uvnw14EWaITYarAgDLK1MK5a.jpg',
@@ -2122,7 +2122,7 @@ const DATA_RESTAURANTS = [
     distance: '3 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t4.ftcdn.net/jpg/02/83/11/75/240_F_283117539_fj1KVl0YLritXaC6jjxpclfSGTQRgxcC.jpg',
@@ -2138,7 +2138,7 @@ const DATA_RESTAURANTS = [
     distance: '2 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t3.ftcdn.net/jpg/03/38/50/86/240_F_338508649_3NX24xFwIq2JXB4z8fLiZ592v4CJDiP7.jpg',
@@ -2154,7 +2154,7 @@ const DATA_RESTAURANTS = [
     distance: '2 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t3.ftcdn.net/jpg/02/55/69/54/240_F_255695423_r08p5jQrWyJFCKdUaAMHuibq2YD5CmLu.jpg',
@@ -2170,7 +2170,7 @@ const DATA_RESTAURANTS = [
     distance: '3 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t3.ftcdn.net/jpg/02/02/23/04/240_F_202230462_RPDa0DF3UD4AIXdYWEtS1oBwH52aECuV.jpg',
@@ -2186,7 +2186,7 @@ const DATA_RESTAURANTS = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t4.ftcdn.net/jpg/02/83/98/03/240_F_283980349_0VggtTJBYajfh7zR7ZZaEJKjhNSYONhF.jpg',
@@ -2202,7 +2202,7 @@ const DATA_RESTAURANTS = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t3.ftcdn.net/jpg/02/23/21/22/240_F_223212249_QNRXh00afvpCvG2glyqrQlhEOywNHjeX.jpg',
@@ -2218,7 +2218,7 @@ const DATA_RESTAURANTS = [
     distance: '2.5 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t4.ftcdn.net/jpg/01/75/77/63/240_F_175776359_qNmjiABh5kKh74MuS4udR54ibgk6CNrt.jpg',
@@ -2234,7 +2234,7 @@ const DATA_RESTAURANTS = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t3.ftcdn.net/jpg/02/04/19/10/240_F_204191040_1U9eerl6t3Uxe7BDQC6TWEzDXA8PeTQV.jpg',
@@ -2250,7 +2250,7 @@ const DATA_RESTAURANTS = [
     distance: '2 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t3.ftcdn.net/jpg/02/04/19/10/240_F_204191040_1U9eerl6t3Uxe7BDQC6TWEzDXA8PeTQV.jpg',
@@ -2282,7 +2282,7 @@ const DATA_RESTAURANTS = [
     distance: '2 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t3.ftcdn.net/jpg/02/59/99/08/240_F_259990876_jkctaxeaGLXLO6OyOUg5w1uGZEp5puFP.jpg',
@@ -2314,7 +2314,7 @@ const DATA_RESTAURANTS = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t3.ftcdn.net/jpg/02/02/23/04/240_F_202230462_RPDa0DF3UD4AIXdYWEtS1oBwH52aECuV.jpg',
@@ -2330,7 +2330,7 @@ const DATA_RESTAURANTS = [
     distance: '2.5 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t4.ftcdn.net/jpg/02/83/11/75/240_F_283117539_fj1KVl0YLritXaC6jjxpclfSGTQRgxcC.jpg',
@@ -2346,7 +2346,7 @@ const DATA_RESTAURANTS = [
     distance: '2 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t3.ftcdn.net/jpg/02/23/21/22/240_F_223212249_QNRXh00afvpCvG2glyqrQlhEOywNHjeX.jpg',
@@ -2362,7 +2362,7 @@ const DATA_RESTAURANTS = [
     distance: '2 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t4.ftcdn.net/jpg/02/30/96/69/240_F_230966912_NBFpX2V5Uvnw14EWaITYarAgDLK1MK5a.jpg',
@@ -2378,7 +2378,7 @@ const DATA_RESTAURANTS = [
     distance: '2 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t3.ftcdn.net/jpg/00/73/59/92/240_F_73599247_feSxTKsOi4eLaclriyE4tAJ7hmJLKlIp.jpg',
@@ -2394,7 +2394,7 @@ const DATA_RESTAURANTS = [
     distance: '2.5 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t3.ftcdn.net/jpg/01/29/77/74/240_F_129777464_0qNCK13O07BAhVtJJYrKsDzxPlvUzlhq.jpg',
@@ -2410,7 +2410,7 @@ const DATA_RESTAURANTS = [
     distance: '2 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t3.ftcdn.net/jpg/02/04/19/10/240_F_204191040_1U9eerl6t3Uxe7BDQC6TWEzDXA8PeTQV.jpg',
@@ -2426,7 +2426,7 @@ const DATA_RESTAURANTS = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t3.ftcdn.net/jpg/02/04/19/10/240_F_204191040_1U9eerl6t3Uxe7BDQC6TWEzDXA8PeTQV.jpg',
@@ -2442,7 +2442,7 @@ const DATA_RESTAURANTS = [
     distance: '2.5 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t4.ftcdn.net/jpg/01/75/77/63/240_F_175776359_qNmjiABh5kKh74MuS4udR54ibgk6CNrt.jpg',
@@ -2458,7 +2458,7 @@ const DATA_RESTAURANTS = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t3.ftcdn.net/jpg/00/80/20/36/240_F_80203627_NVVMMGck8yL0G3PchS0XmLsI4xx3YUQm.jpg',
@@ -2474,7 +2474,7 @@ const DATA_RESTAURANTS = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t4.ftcdn.net/jpg/01/76/31/27/240_F_176312743_oEbVGIalTEAnPGYjJcX5H9N1MSkhmTvQ.jpg',
@@ -2490,7 +2490,7 @@ const DATA_RESTAURANTS = [
     distance: '3 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t3.ftcdn.net/jpg/02/72/83/76/240_F_272837618_6qpf6VkgYCWbFYdqS2e8CENWWqfbameX.jpg',
@@ -2506,7 +2506,7 @@ const DATA_RESTAURANTS = [
     distance: '3 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t4.ftcdn.net/jpg/01/79/54/15/240_F_179541526_EMI6Znq5tVKcAlPZrqKe9hWveRY8W5Va.jpg',
@@ -2522,7 +2522,7 @@ const DATA_RESTAURANTS = [
     distance: '4.5 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t3.ftcdn.net/jpg/03/38/50/86/240_F_338508649_3NX24xFwIq2JXB4z8fLiZ592v4CJDiP7.jpg',
@@ -2538,7 +2538,7 @@ const DATA_RESTAURANTS = [
     distance: '3 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t3.ftcdn.net/jpg/02/04/19/10/240_F_204191040_1U9eerl6t3Uxe7BDQC6TWEzDXA8PeTQV.jpg',
@@ -2554,7 +2554,7 @@ const DATA_RESTAURANTS = [
     distance: '4 km',
     is_open: false,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t4.ftcdn.net/jpg/01/36/12/51/240_F_136125172_bFDXnzz3MBHS2wotR82GuzkZfW17HkKj.jpg',
@@ -2570,7 +2570,7 @@ const DATA_RESTAURANTS = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t3.ftcdn.net/jpg/00/80/20/36/240_F_80203627_NVVMMGck8yL0G3PchS0XmLsI4xx3YUQm.jpg',
@@ -2586,7 +2586,7 @@ const DATA_RESTAURANTS = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t4.ftcdn.net/jpg/02/30/96/69/240_F_230966912_NBFpX2V5Uvnw14EWaITYarAgDLK1MK5a.jpg',
@@ -2602,7 +2602,7 @@ const DATA_RESTAURANTS = [
     distance: '2.5 km',
     is_open: false,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t3.ftcdn.net/jpg/02/04/19/10/240_F_204191040_1U9eerl6t3Uxe7BDQC6TWEzDXA8PeTQV.jpg',
@@ -2618,7 +2618,7 @@ const DATA_RESTAURANTS = [
     distance: '2 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t3.ftcdn.net/jpg/02/02/23/04/240_F_202230462_RPDa0DF3UD4AIXdYWEtS1oBwH52aECuV.jpg',
@@ -2634,7 +2634,7 @@ const DATA_RESTAURANTS = [
     distance: '2.5 km',
     is_open: true,
     is_featured: true,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t3.ftcdn.net/jpg/01/29/77/74/240_F_129777464_0qNCK13O07BAhVtJJYrKsDzxPlvUzlhq.jpg',
@@ -2650,7 +2650,7 @@ const DATA_RESTAURANTS = [
     distance: '2 km',
     is_open: true,
     is_featured: true,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t4.ftcdn.net/jpg/02/30/96/69/240_F_230966912_NBFpX2V5Uvnw14EWaITYarAgDLK1MK5a.jpg',
@@ -2666,7 +2666,7 @@ const DATA_RESTAURANTS = [
     distance: '3 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t3.ftcdn.net/jpg/02/59/99/08/240_F_259990876_jkctaxeaGLXLO6OyOUg5w1uGZEp5puFP.jpg',
@@ -2682,7 +2682,7 @@ const DATA_RESTAURANTS = [
     distance: '2.5 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t3.ftcdn.net/jpg/02/55/69/54/240_F_255695423_r08p5jQrWyJFCKdUaAMHuibq2YD5CmLu.jpg',
@@ -2698,7 +2698,7 @@ const DATA_RESTAURANTS = [
     distance: '2.5 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t3.ftcdn.net/jpg/02/04/19/10/240_F_204191040_1U9eerl6t3Uxe7BDQC6TWEzDXA8PeTQV.jpg',
@@ -2714,7 +2714,7 @@ const DATA_RESTAURANTS = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t3.ftcdn.net/jpg/01/29/77/74/240_F_129777464_0qNCK13O07BAhVtJJYrKsDzxPlvUzlhq.jpg',
@@ -2730,7 +2730,7 @@ const DATA_RESTAURANTS = [
     distance: '4 km',
     is_open: false,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t4.ftcdn.net/jpg/01/30/02/57/240_F_130025712_Ep0vdSQgFNEOOStuVUfhhy7Z3C8Qq0Cu.jpg',
@@ -2746,7 +2746,7 @@ const DATA_RESTAURANTS = [
     distance: '2.5 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t3.ftcdn.net/jpg/02/23/21/22/240_F_223212249_QNRXh00afvpCvG2glyqrQlhEOywNHjeX.jpg',
@@ -2762,7 +2762,7 @@ const DATA_RESTAURANTS = [
     distance: '3 km',
     is_open: false,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t3.ftcdn.net/jpg/02/55/69/54/240_F_255695423_r08p5jQrWyJFCKdUaAMHuibq2YD5CmLu.jpg',
@@ -2778,7 +2778,7 @@ const DATA_RESTAURANTS = [
     distance: '2 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t3.ftcdn.net/jpg/02/59/99/08/240_F_259990876_jkctaxeaGLXLO6OyOUg5w1uGZEp5puFP.jpg',
@@ -2794,7 +2794,7 @@ const DATA_RESTAURANTS = [
     distance: '2 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t4.ftcdn.net/jpg/01/30/02/57/240_F_130025712_Ep0vdSQgFNEOOStuVUfhhy7Z3C8Qq0Cu.jpg',
@@ -2810,7 +2810,7 @@ const DATA_RESTAURANTS = [
     distance: '3 km',
     is_open: true,
     is_featured: true,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t4.ftcdn.net/jpg/02/83/98/03/240_F_283980349_0VggtTJBYajfh7zR7ZZaEJKjhNSYONhF.jpg',
@@ -2826,7 +2826,7 @@ const DATA_RESTAURANTS = [
     distance: '2.5 km',
     is_open: false,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t4.ftcdn.net/jpg/01/75/77/63/240_F_175776359_qNmjiABh5kKh74MuS4udR54ibgk6CNrt.jpg',
@@ -2842,7 +2842,7 @@ const DATA_RESTAURANTS = [
     distance: '4.5 km',
     is_open: true,
     is_featured: true,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t3.ftcdn.net/jpg/00/73/59/92/240_F_73599247_feSxTKsOi4eLaclriyE4tAJ7hmJLKlIp.jpg',
@@ -2858,7 +2858,7 @@ const DATA_RESTAURANTS = [
     distance: '2.5 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t4.ftcdn.net/jpg/01/76/31/27/240_F_176312743_oEbVGIalTEAnPGYjJcX5H9N1MSkhmTvQ.jpg',
@@ -2874,7 +2874,7 @@ const DATA_RESTAURANTS = [
     distance: '2 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t3.ftcdn.net/jpg/03/38/50/86/240_F_338508649_3NX24xFwIq2JXB4z8fLiZ592v4CJDiP7.jpg',
@@ -2890,7 +2890,7 @@ const DATA_RESTAURANTS = [
     distance: '2 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t3.ftcdn.net/jpg/01/29/77/74/240_F_129777464_0qNCK13O07BAhVtJJYrKsDzxPlvUzlhq.jpg',
@@ -2906,7 +2906,7 @@ const DATA_RESTAURANTS = [
     distance: '4.5 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t4.ftcdn.net/jpg/01/75/77/63/240_F_175776359_qNmjiABh5kKh74MuS4udR54ibgk6CNrt.jpg',
@@ -2922,7 +2922,7 @@ const DATA_RESTAURANTS = [
     distance: '2.5 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t3.ftcdn.net/jpg/00/80/20/36/240_F_80203627_NVVMMGck8yL0G3PchS0XmLsI4xx3YUQm.jpg',
@@ -2938,7 +2938,7 @@ const DATA_RESTAURANTS = [
     distance: '4.5 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t4.ftcdn.net/jpg/01/30/02/57/240_F_130025712_Ep0vdSQgFNEOOStuVUfhhy7Z3C8Qq0Cu.jpg',
@@ -2954,7 +2954,7 @@ const DATA_RESTAURANTS = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t4.ftcdn.net/jpg/01/36/12/51/240_F_136125172_bFDXnzz3MBHS2wotR82GuzkZfW17HkKj.jpg',
@@ -2970,7 +2970,7 @@ const DATA_RESTAURANTS = [
     distance: '4 km',
     is_open: true,
     is_featured: true,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t4.ftcdn.net/jpg/02/83/11/75/240_F_283117539_fj1KVl0YLritXaC6jjxpclfSGTQRgxcC.jpg',
@@ -3002,7 +3002,7 @@ const DATA_RESTAURANTS = [
     distance: '4.5 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t3.ftcdn.net/jpg/02/55/69/54/240_F_255695423_r08p5jQrWyJFCKdUaAMHuibq2YD5CmLu.jpg',
@@ -3018,7 +3018,7 @@ const DATA_RESTAURANTS = [
     distance: '3 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t4.ftcdn.net/jpg/01/75/77/63/240_F_175776359_qNmjiABh5kKh74MuS4udR54ibgk6CNrt.jpg',
@@ -3034,7 +3034,7 @@ const DATA_RESTAURANTS = [
     distance: '2.5 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t3.ftcdn.net/jpg/02/23/21/22/240_F_223212249_QNRXh00afvpCvG2glyqrQlhEOywNHjeX.jpg',
@@ -3050,7 +3050,7 @@ const DATA_RESTAURANTS = [
     distance: '3 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t3.ftcdn.net/jpg/02/02/23/04/240_F_202230462_RPDa0DF3UD4AIXdYWEtS1oBwH52aECuV.jpg',
@@ -3066,7 +3066,7 @@ const DATA_RESTAURANTS = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t4.ftcdn.net/jpg/01/36/12/51/240_F_136125172_bFDXnzz3MBHS2wotR82GuzkZfW17HkKj.jpg',
@@ -3082,7 +3082,7 @@ const DATA_RESTAURANTS = [
     distance: '2 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t3.ftcdn.net/jpg/02/72/83/76/240_F_272837618_6qpf6VkgYCWbFYdqS2e8CENWWqfbameX.jpg',
@@ -3098,7 +3098,7 @@ const DATA_RESTAURANTS = [
     distance: '3 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t3.ftcdn.net/jpg/02/04/19/10/240_F_204191040_1U9eerl6t3Uxe7BDQC6TWEzDXA8PeTQV.jpg',
@@ -3114,7 +3114,7 @@ const DATA_RESTAURANTS = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t3.ftcdn.net/jpg/02/04/19/10/240_F_204191040_1U9eerl6t3Uxe7BDQC6TWEzDXA8PeTQV.jpg',
@@ -3130,7 +3130,7 @@ const DATA_RESTAURANTS = [
     distance: '4 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t4.ftcdn.net/jpg/01/30/02/57/240_F_130025712_Ep0vdSQgFNEOOStuVUfhhy7Z3C8Qq0Cu.jpg',
@@ -3146,7 +3146,7 @@ const DATA_RESTAURANTS = [
     distance: '4.5 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t4.ftcdn.net/jpg/01/36/12/51/240_F_136125172_bFDXnzz3MBHS2wotR82GuzkZfW17HkKj.jpg',
@@ -3162,7 +3162,7 @@ const DATA_RESTAURANTS = [
     distance: '2 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t3.ftcdn.net/jpg/02/55/69/54/240_F_255695423_r08p5jQrWyJFCKdUaAMHuibq2YD5CmLu.jpg',
@@ -3178,7 +3178,7 @@ const DATA_RESTAURANTS = [
     distance: '3 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t3.ftcdn.net/jpg/02/02/23/04/240_F_202230462_RPDa0DF3UD4AIXdYWEtS1oBwH52aECuV.jpg',
@@ -3194,7 +3194,7 @@ const DATA_RESTAURANTS = [
     distance: '3 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t3.ftcdn.net/jpg/03/38/50/86/240_F_338508649_3NX24xFwIq2JXB4z8fLiZ592v4CJDiP7.jpg',
@@ -3210,7 +3210,7 @@ const DATA_RESTAURANTS = [
     distance: '2.5 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t4.ftcdn.net/jpg/02/30/96/69/240_F_230966912_NBFpX2V5Uvnw14EWaITYarAgDLK1MK5a.jpg',
@@ -3226,7 +3226,7 @@ const DATA_RESTAURANTS = [
     distance: '2.5 km',
     is_open: true,
     is_featured: false,
-    delivery_charge: 0,
+    delivery_charge: 5,
     offer: '',
     cover_photo:
       'https://t3.ftcdn.net/jpg/02/04/19/10/240_F_204191040_1U9eerl6t3Uxe7BDQC6TWEzDXA8PeTQV.jpg',

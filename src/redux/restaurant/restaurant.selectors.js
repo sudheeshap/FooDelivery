@@ -19,5 +19,5 @@ export const selectFilters = createSelector(
 
 export const selectSortById = createSelector(
   [selectRestaurantState],
-  (state) => state.sortById,
+  (state) => state.sortById || 'is_featured',
 );

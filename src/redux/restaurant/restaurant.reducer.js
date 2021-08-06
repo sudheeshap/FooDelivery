@@ -15,6 +15,9 @@ const restaurantSlice = createSlice({
         (filter) => filter !== action.payload.filter,
       );
     },
+    sortByType(state, action) {
+      state.sortById = action.payload.type;
+    },
   },
   extraReducers: (builder) => {
     builder.addCase(fetchRestaurants.fulfilled, (state, action) => {
@@ -23,6 +26,6 @@ const restaurantSlice = createSlice({
   },
 });
 
-export const { addFilter, removeFilter } = restaurantSlice.actions;
+export const { addFilter, removeFilter, sortByType } = restaurantSlice.actions;
 
 export default restaurantSlice.reducer;

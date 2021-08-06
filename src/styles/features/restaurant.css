@@ -11,6 +11,10 @@
   margin: 0 auto;
 }
 
+.restaurant__card-container--dummy {
+  pointer-events: none;
+}
+
 .restaurant-list {
   display: flex;
   justify-content: space-between;
@@ -251,6 +255,12 @@
 
 .icon-star {
   color: #f6ab2b;
+}
+
+.restaurant__empty-state {
+  text-align: center;
+  width: 100%;
+  padding: 150px 0;
 }
 
 @media only screen and (min-width: 600px) {
