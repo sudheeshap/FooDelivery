@@ -10,8 +10,7 @@ import {
 } from '../redux/restaurant/restaurant.reducer';
 import {
   selectRestaurants,
-  selectSearch,
-  selectTotal,
+  selectSearchlist,
 } from '../redux/restaurant/restaurant.selectors';
 import { fetchRestaurants } from '../redux/restaurant/restaurant.thunks';
 import RestaurantCard from './RestaurantCard';
@@ -28,8 +27,8 @@ export default function RestaurantList() {
     { value: 'delivery_in', text: 'Fast delivery' },
   ];
   const restaurants = useSelector(selectRestaurants);
-  const { filters, sortBy, pagination } = useSelector(selectSearch);
-  const total = useSelector(selectTotal);
+  const { filters, sortBy, currentPage, perPage, total } =
+    useSelector(selectSearchlist);
   const dispatch = useDispatch();
   const remainingCount = total - restaurants.length;
 
@@ -38,10 +37,11 @@ export default function RestaurantList() {
       fetchRestaurants({
         filters,
         sortBy,
-        pagination,
+        currentPage,
+        perPage,
       }),
     );
-  }, [filters.length, sortBy, pagination.currentPage]);
+  }, [filters.length, sortBy, currentPage]);
 
   const handleClickFilter = (value) => {
     if (filters.includes(value)) {
@@ -54,7 +54,7 @@ export default function RestaurantList() {
     dispatch(applySort({ type: target.value }));
 
   const handleClickPagination = () =>
-    dispatch(loadMore({ page: pagination.currentPage + 1 }));
+    dispatch(loadMore({ page: currentPage + 1 }));
 
   return (
     <section className="restaurant-list__wrapper">

@@ -31,7 +31,7 @@ const sortCallback = (sortBy, resA, resB) => {
 };
 
 /**
- * Returns restaurant list based on the search config
+ * Returns restaurant list based on the searchlist config
  */
 export const getRestaurantList = (search) => {
   const restaurants = DATA_RESTAURANTS.filter(
@@ -39,8 +39,8 @@ export const getRestaurantList = (search) => {
   ).sort(sortCallback.bind(null, search.sortBy));
 
   const results = restaurants.slice(
-    (search.pagination.currentPage - 1) * search.pagination.perPage,
-    search.pagination.currentPage * search.pagination.perPage,
+    (search.currentPage - 1) * search.perPage,
+    search.currentPage * search.perPage,
   );
 
   return {

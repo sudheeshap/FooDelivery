@@ -8,27 +8,27 @@ const restaurantSlice = createSlice({
   initialState: INITIAL_STATE.restaurant,
   reducers: {
     addFilter(state, action) {
-      state.search.filters.push(action.payload.filter);
-      state.search.pagination.currentPage = 1;
+      state.searchlist.filters.push(action.payload.filter);
+      state.searchlist.currentPage = 1;
     },
     removeFilter(state, action) {
-      state.search.filters = state.search.filters.filter(
+      state.searchlist.filters = state.searchlist.filters.filter(
         (filter) => filter !== action.payload.filter,
       );
-      state.search.pagination.currentPage = 1;
+      state.searchlist.currentPage = 1;
     },
     applySort(state, action) {
-      state.search.sortBy = action.payload.type;
-      state.search.pagination.currentPage = 1;
+      state.searchlist.sortBy = action.payload.type;
+      state.searchlist.currentPage = 1;
     },
     loadMore(state, action) {
-      state.search.pagination.currentPage = action.payload.page;
+      state.searchlist.currentPage = action.payload.page;
     },
   },
   extraReducers: (builder) => {
     builder.addCase(fetchRestaurants.fulfilled, (state, action) => {
       state.entities = action.payload.results;
-      state.total = action.payload.total;
+      state.searchlist.total = action.payload.total;
     });
   },
 });

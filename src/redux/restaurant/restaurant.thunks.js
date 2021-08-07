@@ -9,7 +9,7 @@ export const fetchRestaurants = createAsyncThunk(
     const state = getState();
 
     // Page changed
-    if (search.pagination.currentPage > 1) {
+    if (search.currentPage > 1) {
       return {
         results: [...state.restaurant.entities, ...restaurantList.results],
         total: restaurantList.total,

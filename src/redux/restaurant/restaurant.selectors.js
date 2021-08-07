@@ -7,29 +7,9 @@ export const selectRestaurants = createSelector(
   (state) => state.entities || [],
 );
 
-export const selectSearch = createSelector(
+export const selectSearchlist = createSelector(
   [selectRestaurantState],
-  (state) => state.search,
-);
-
-export const selectSearchFilters = createSelector(
-  [selectSearch],
-  (search) => search.filters || [],
-);
-
-export const selectSearchSortBy = createSelector(
-  [selectSearch],
-  (search) => search.sortBy,
-);
-
-export const selectSearchPagination = createSelector(
-  [selectSearch],
-  (search) => search.pagination,
-);
-
-export const selectTotal = createSelector(
-  [selectRestaurantState],
-  (state) => state.total,
+  (state) => state.searchlist,
 );
 
 export const selectRestaurantBySlug = (slug) =>
