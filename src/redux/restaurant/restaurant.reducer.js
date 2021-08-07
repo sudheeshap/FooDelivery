@@ -8,24 +8,32 @@ const restaurantSlice = createSlice({
   initialState: INITIAL_STATE.restaurant,
   reducers: {
     addFilter(state, action) {
-      state.filters.push(action.payload.filter);
+      state.search.filters.push(action.payload.filter);
+      state.search.pagination.currentPage = 1;
     },
     removeFilter(state, action) {
-      state.filters = state.filters.filter(
+      state.search.filters = state.search.filters.filter(
         (filter) => filter !== action.payload.filter,
       );
+      state.search.pagination.currentPage = 1;
     },
-    sortByType(state, action) {
-      state.sortById = action.payload.type;
+    applySort(state, action) {
+      state.search.sortBy = action.payload.type;
+      state.search.pagination.currentPage = 1;
+    },
+    loadMore(state, action) {
+      state.search.pagination.currentPage = action.payload.page;
     },
   },
   extraReducers: (builder) => {
     builder.addCase(fetchRestaurants.fulfilled, (state, action) => {
-      state.entities = action.payload;
+      state.entities = action.payload.results;
+      state.total = action.payload.total;
     });
   },
 });
 
-export const { addFilter, removeFilter, sortByType } = restaurantSlice.actions;
+export const { addFilter, removeFilter, applySort, loadMore } =
+  restaurantSlice.actions;
 
 export default restaurantSlice.reducer;

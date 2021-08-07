@@ -2,16 +2,16 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 
-import DATA_RESTAURANTS from '../data/restaurant.data';
 import {
   addFilter,
   removeFilter,
-  sortByType,
+  applySort,
+  loadMore,
 } from '../redux/restaurant/restaurant.reducer';
 import {
-  selectFilters,
   selectRestaurants,
-  selectSortById,
+  selectSearch,
+  selectTotal,
 } from '../redux/restaurant/restaurant.selectors';
 import { fetchRestaurants } from '../redux/restaurant/restaurant.thunks';
 import RestaurantCard from './RestaurantCard';
@@ -28,17 +28,20 @@ export default function RestaurantList() {
     { value: 'delivery_in', text: 'Fast delivery' },
   ];
   const restaurants = useSelector(selectRestaurants);
-  const filters = useSelector(selectFilters);
-  const sortById = useSelector(selectSortById);
-  const pageNumber = 1;
-  const pageSize = 15;
+  const { filters, sortBy, pagination } = useSelector(selectSearch);
+  const total = useSelector(selectTotal);
   const dispatch = useDispatch();
+  const remainingCount = total - restaurants.length;
 
-  // Load restaurants
   useEffect(() => {
-    console.log(filters, sortById, pageNumber, pageSize);
-    dispatch(fetchRestaurants({ filters, sortById, pageNumber, pageSize }));
-  }, [filters.length, sortById]);
+    dispatch(
+      fetchRestaurants({
+        filters,
+        sortBy,
+        pagination,
+      }),
+    );
+  }, [filters.length, sortBy, pagination.currentPage]);
 
   const handleClickFilter = (value) => {
     if (filters.includes(value)) {
@@ -48,15 +51,19 @@ export default function RestaurantList() {
   };
 
   const handleChangeSort = ({ target }) =>
-    dispatch(sortByType({ type: target.value }));
+    dispatch(applySort({ type: target.value }));
+
+  const handleClickPagination = () =>
+    dispatch(loadMore({ page: pagination.currentPage + 1 }));
 
   return (
     <section className="restaurant-list__wrapper">
       <div className="restaurant-list__container">
         <div className="restaurant-list__header">
           <div className="restaurant-list__count">
-            <span>{DATA_RESTAURANTS.length}</span>
-            <span> restaurants</span>
+            <span>
+              {restaurants.length} of {total} restaurants
+            </span>
           </div>
           <div className="restaurant-list__actions">
             <div className="restaurant-list__filters">
@@ -105,6 +112,18 @@ export default function RestaurantList() {
             <div className="restaurant__empty-state">No restaurants found</div>
           )}
         </div>
+
+        {remainingCount > 0 && (
+          <div className="restaurant__pagination">
+            <button
+              type="button"
+              className="form__button restaurant__pagination-button"
+              onClick={handleClickPagination}
+            >
+              Load more
+            </button>
+          </div>
+        )}
       </div>
     </section>
   );

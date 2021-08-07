@@ -11,10 +11,6 @@
   margin: 0 auto;
 }
 
-.restaurant__card-container--dummy {
-  pointer-events: none;
-}
-
 .restaurant-list {
   display: flex;
   justify-content: space-between;
@@ -33,6 +29,11 @@
   box-sizing: border-box;
   text-decoration: none;
   color: inherit;
+}
+
+.restaurant__card-container--dummy {
+  pointer-events: none;
+  height: auto;
 }
 
 .restaurant__card {
@@ -101,6 +102,7 @@
 
 .restaurant-list__count {
   font-size: 14px;
+  display: flex;
 }
 
 .restaurant-list__header {
@@ -260,7 +262,23 @@
 .restaurant__empty-state {
   text-align: center;
   width: 100%;
-  padding: 150px 0;
+  padding: 240px 0;
+}
+
+.restaurant__pagination {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.restaurant__pagination-button {
+  margin: 0 auto;
+  border: 1px solid #6366f1;
+  background-color: #f5f5f5;
+  color: #6366f1;
+}
+
+.restaurant__pagination-button:hover {
+  background-color: #e1e2ff;
 }
 
 @media only screen and (min-width: 600px) {

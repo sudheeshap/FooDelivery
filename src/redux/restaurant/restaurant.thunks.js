@@ -1,13 +1,22 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
 
-import { getRestaurants } from '../../services/restaurant.service';
+import { getRestaurantList } from '../../services/restaurant.service';
 
 export const fetchRestaurants = createAsyncThunk(
   'restaurant/fetchRestaurants',
-  async (searchConfig) => {
-    const restaurants = await getRestaurants(searchConfig);
+  async (search, { getState }) => {
+    const restaurantList = await getRestaurantList(search);
+    const state = getState();
 
-    return restaurants;
+    // Page changed
+    if (search.pagination.currentPage > 1) {
+      return {
+        results: [...state.restaurant.entities, ...restaurantList.results],
+        total: restaurantList.total,
+      };
+    }
+
+    return restaurantList;
   },
 );
 

@@ -7,17 +7,32 @@ export const selectRestaurants = createSelector(
   (state) => state.entities || [],
 );
 
-export const selectFilters = createSelector(
+export const selectSearch = createSelector(
   [selectRestaurantState],
-  (state) => state.filters || [],
+  (state) => state.search,
 );
 
-// export const selectRestaurantBySlug = (slug) =>
-//   createSelector([selectRestaurants], (restaurants) =>
-//     restaurants.filter((restaurant) => restaurant.slug === slug),
-//   );
-
-export const selectSortById = createSelector(
-  [selectRestaurantState],
-  (state) => state.sortById || 'is_featured',
+export const selectSearchFilters = createSelector(
+  [selectSearch],
+  (search) => search.filters || [],
 );
+
+export const selectSearchSortBy = createSelector(
+  [selectSearch],
+  (search) => search.sortBy,
+);
+
+export const selectSearchPagination = createSelector(
+  [selectSearch],
+  (search) => search.pagination,
+);
+
+export const selectTotal = createSelector(
+  [selectRestaurantState],
+  (state) => state.total,
+);
+
+export const selectRestaurantBySlug = (slug) =>
+  createSelector([selectRestaurants], (restaurants) =>
+    restaurants.filter((restaurant) => restaurant.slug === slug),
+  );

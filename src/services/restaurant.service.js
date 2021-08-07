@@ -23,26 +23,30 @@ const filterCallback = (filters, restaurant) => {
 /**
  * Callback to sort restaurants
  */
-const sortCallback = (sortById, resA, resB) => {
-  if (sortById === 'is_featured') {
-    return resA[sortById] < resB[sortById] ? 1 : -1;
+const sortCallback = (sortBy, resA, resB) => {
+  if (sortBy === 'is_featured') {
+    return resA[sortBy] < resB[sortBy] ? 1 : -1;
   }
-  return resA[sortById] > resB[sortById] ? 1 : -1;
+  return resA[sortBy] > resB[sortBy] ? 1 : -1;
 };
 
 /**
- * Returns restaurants based on the search config
+ * Returns restaurant list based on the search config
  */
-export const getRestaurants = function ({
-  filters,
-  sortById,
-  pageNumber,
-  pageSize,
-}) {
-  console.log(sortById, pageNumber, pageSize);
-  return DATA_RESTAURANTS.filter(filterCallback.bind(null, filters))
-    .sort(sortCallback.bind(null, sortById))
-    .slice((pageNumber - 1) * pageSize, pageNumber * pageSize);
+export const getRestaurantList = (search) => {
+  const restaurants = DATA_RESTAURANTS.filter(
+    filterCallback.bind(null, search.filters),
+  ).sort(sortCallback.bind(null, search.sortBy));
+
+  const results = restaurants.slice(
+    (search.pagination.currentPage - 1) * search.pagination.perPage,
+    search.pagination.currentPage * search.pagination.perPage,
+  );
+
+  return {
+    results,
+    total: restaurants.length,
+  };
 };
 
 /**

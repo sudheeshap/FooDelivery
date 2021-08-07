@@ -1,7 +1,14 @@
 const INITIAL_STATE = {
   restaurant: {
-    filters: [],
-    sortById: '',
+    search: {
+      filters: [],
+      sortBy: 'is_featured',
+      pagination: {
+        currentPage: 1,
+        perPage: 15,
+      },
+    },
+    total: 0,
     entities: [],
   },
   product: {
