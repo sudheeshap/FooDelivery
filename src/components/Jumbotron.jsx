@@ -4,14 +4,19 @@ import { useDispatch, useSelector } from 'react-redux';
 import { updateFilterQuery } from '../redux/restaurant/restaurant.reducer';
 import { selectSearchlistFilterQuery } from '../redux/restaurant/restaurant.selectors';
 import SearchInput from './SearchInput';
+import useDebounce from '../hooks/useDebounce';
 
 export default function Jumbotron() {
   const dispatch = useDispatch();
   const searchQuery = useSelector(selectSearchlistFilterQuery);
 
-  const handleChangeSearch = ({ target }) => {
-    dispatch(updateFilterQuery({ query: target.value }));
-  };
+  /**
+   * Handle search input change
+   */
+  const handleChangeSearch = useDebounce(
+    ({ target }) => dispatch(updateFilterQuery({ query: target.value })),
+    300,
+  );
 
   return (
     <section className="jumbotron">
