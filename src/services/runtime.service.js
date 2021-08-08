@@ -1,5 +1,5 @@
 /**
- * Returns restaurant by slug
+ * Returns filter options
  */
 export const getFilterOptions = () => [
   { value: 'offer', text: 'Offers' },
@@ -7,6 +7,9 @@ export const getFilterOptions = () => [
   { value: 'free_delivery', text: 'Free delivery' },
 ];
 
+/**
+ * Returns sort options
+ */
 export const getSortOptions = () => [
   { value: 'is_featured', text: 'Featured' },
   { value: 'distance', text: 'Distance' },

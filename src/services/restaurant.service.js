@@ -7,7 +7,7 @@ import {
 /**
  * Hydrate restaurant data
  */
-export const hydrateModelRestaurant = (data) => {
+const hydrateModelRestaurant = (data) => {
   const model = new RestaurantModel();
   model.id = data.id;
   model.name = data.name;
@@ -20,7 +20,7 @@ export const hydrateModelRestaurant = (data) => {
   model.distance = data.distance;
   model.isOpen = data.is_open;
   model.isFeatured = data.is_featured;
-  model.deliveryCharge = data.delivery_charge;
+  model.deliveryFee = data.delivery_fee;
   model.offer = data.offer;
 
   return { ...model };

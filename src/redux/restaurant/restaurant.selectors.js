@@ -1,7 +1,13 @@
 import { createSelector } from '@reduxjs/toolkit';
 
+/**
+ * Select restaurant state
+ */
 const selectRestaurantState = (state) => state.restaurant;
 
+/**
+ * Select restaurants
+ */
 export const selectRestaurants = createSelector(
   [selectRestaurantState],
   (state) => state.entities || [],

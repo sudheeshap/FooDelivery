@@ -1,23 +1,32 @@
 import React from 'react';
 import { PropTypes } from 'prop-types';
+import CartItem from './CartItem';
 
-export default function Cart({ items }) {
-  const subTotal = items.reduce((accumulator, total) => total + accumulator, 0);
-  const deliveryFee = 0;
-  const total = subTotal + deliveryFee;
-  const newItems = [
-    { id: 1, quantity: 1, amount: 10, name: 'Yogurt and granola' },
-    {
-      id: 2,
-      quantity: 1,
-      amount: 20,
-      name: 'Cinnamon Apple Protein Pancakes 2 Pieces',
-    },
-  ];
+export default function Cart({
+  items,
+  restaurantName,
+  deliveryFee,
+  subTotal,
+  grandTotal,
+}) {
+  // const total = subTotal + deliveryFee;
+  // const newItems = [
+  //   { id: 1, quantity: 1, amount: 10, name: 'Yogurt and granola' },
+  //   {
+  //     id: 2,
+  //     quantity: 1,
+  //     amount: 20,
+  //     name: 'Cinnamon Apple Protein Pancakes 2 Pieces',
+  //   },
+  // ];
+
+  // const subTotal = items.reduce((accumulator, total) => total + accumulator, 0);
+
   return (
     <div className="cart">
       <h2 className="cart__title">Your cart</h2>
-      {newItems.length === 0 && (
+      <div>{restaurantName}</div>
+      {items.length === 0 && (
         <div className="cart__empty-box">
           <div>
             <i className="icon bi-bag" />
@@ -25,40 +34,22 @@ export default function Cart({ items }) {
           <div>No items added yet</div>
         </div>
       )}
-      {newItems.length > 0 && (
+      {items.length > 0 && (
         <div className="cart__item-list">
-          {newItems.map((item) => (
-            <div className="cart__item" key={item.id}>
-              <div className="cart__item-name">{item.name}</div>
-
-              <div className="cart__item-actions">
-                <div className="cart__item-amount">
-                  <span>AED </span>
-                  <span>{item.quantity * item.amount}</span>
-                </div>
-                <div className="cart__counter">
-                  <span className="cart__counter-button">
-                    <i className="icon bi-dash-circle" />
-                  </span>
-                  <span className="cart__counter-quantity">
-                    {item.quantity}
-                  </span>
-                  <span className="cart__counter-button">
-                    <i className="icon bi-plus-circle" />
-                  </span>
-                </div>
-                <div className="cart__item-remove">
-                  <i className="icon bi-x-square" />
-                </div>
-              </div>
-            </div>
+          {items.map((item) => (
+            <CartItem
+              quantity={item.quantity}
+              price={item.product}
+              name={item.name}
+              key={item.id}
+            />
           ))}
         </div>
       )}
       <div className="cart__amount-container">
         <h4 className="cart__delivery-amount">
           <span>Delivery fee</span>
-          <span className={deliveryFee === 0 && 'cart__text-highlight'}>
+          <span className={deliveryFee === 0 ? 'cart__text-highlight' : ''}>
             {deliveryFee > 0 ? deliveryFee : 'Free'}
           </span>
         </h4>
@@ -68,14 +59,14 @@ export default function Cart({ items }) {
         </h4>
         <h3 className="cart__total">
           <span>Total</span>
-          <span>{total}</span>
+          <span>{grandTotal}</span>
         </h3>
       </div>
       <div className="cart__button-container">
         <button
           type="button"
           className="form__button form__button--lg form__button--green form__button--shadow"
-          disabled={newItems.length === 0 && 'disabled'}
+          disabled={items.length === 0 && 'disabled'}
         >
           Proceed to Checkout
         </button>
@@ -84,6 +75,16 @@ export default function Cart({ items }) {
   );
 }
 
+Cart.defaultProps = {
+  deliveryFee: 0,
+  subTotal: 0,
+  grandTotal: 0,
+};
+
 Cart.propTypes = {
+  restaurantName: PropTypes.string.isRequired,
+  subTotal: PropTypes.number,
+  grandTotal: PropTypes.number,
+  deliveryFee: PropTypes.number,
   items: PropTypes.instanceOf(Array).isRequired,
 };

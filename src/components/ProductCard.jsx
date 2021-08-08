@@ -2,7 +2,7 @@ import React from 'react';
 import { PropTypes } from 'prop-types';
 import food from '../assets/images/food-placeholder.jpg';
 
-export default function ProductCard({ product }) {
+export default function ProductCard({ product, onAdd }) {
   return (
     <div className="product__card">
       <div
@@ -21,6 +21,7 @@ export default function ProductCard({ product }) {
         <button
           type="button"
           className="form__button form__button--sm product__add-button"
+          onClick={onAdd}
         >
           Add
         </button>
@@ -31,4 +32,5 @@ export default function ProductCard({ product }) {
 
 ProductCard.propTypes = {
   product: PropTypes.instanceOf(Object).isRequired,
+  onAdd: PropTypes.func.isRequired,
 };

@@ -57,7 +57,7 @@ export default class RestaurantModel {
   /**
    * Delivery charge
    */
-  deliveryCharge = 0;
+  deliveryFee = 0;
 
   /**
    * Available offer

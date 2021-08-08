@@ -25,7 +25,7 @@ const filterCallback = (filters, restaurant) => {
 
   // Filter by type: free delivery
   if (filters.types.includes('free_delivery')) {
-    isValid = isValid && !restaurant.delivery_charge;
+    isValid = isValid && !restaurant.delivery_fee;
   }
 
   return isValid;
