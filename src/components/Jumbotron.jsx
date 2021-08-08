@@ -1,6 +1,18 @@
 import React from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+
+import { updateFilterQuery } from '../redux/restaurant/restaurant.reducer';
+import { selectSearchlistFilterQuery } from '../redux/restaurant/restaurant.selectors';
+import SearchInput from './SearchInput';
 
 export default function Jumbotron() {
+  const dispatch = useDispatch();
+  const searchQuery = useSelector(selectSearchlistFilterQuery);
+
+  const handleChangeSearch = ({ target }) => {
+    dispatch(updateFilterQuery({ query: target.value }));
+  };
+
   return (
     <section className="jumbotron">
       <div className="jumbotron__image-container">
@@ -23,13 +35,10 @@ export default function Jumbotron() {
           Delivering the food of your choice, on time.
         </h4>
         <div>
-          <input
-            type="text"
-            name=""
-            autoComplete="off"
-            autoCorrect="off"
-            className="form__input form__input--lg"
+          <SearchInput
             placeholder="Search for a restaurant"
+            query={searchQuery}
+            onChange={handleChangeSearch}
           />
         </div>
       </div>

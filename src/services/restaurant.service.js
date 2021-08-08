@@ -5,15 +5,26 @@ import DATA_RESTAURANTS from '../data/restaurant.data';
  */
 const filterCallback = (filters, restaurant) => {
   let isValid = true;
-  if (filters.includes('offer')) {
-    isValid = !!restaurant.offer;
+
+  // Filter by search query
+  if (filters.query) {
+    isValid = restaurant.name
+      .toLowerCase()
+      .includes(filters.query.trim().toLowerCase());
   }
 
-  if (filters.includes('fast_delivery')) {
+  // Filter by type: offer
+  if (filters.types.includes('offer')) {
+    isValid = isValid && !!restaurant.offer;
+  }
+
+  // Filter by type: fast delivery
+  if (filters.types.includes('fast_delivery')) {
     isValid = isValid && Number(restaurant.delivery_in.split(' ')[2]) <= 30;
   }
 
-  if (filters.includes('free_delivery')) {
+  // Filter by type: free delivery
+  if (filters.types.includes('free_delivery')) {
     isValid = isValid && !restaurant.delivery_charge;
   }
 

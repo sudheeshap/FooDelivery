@@ -1,5 +1,6 @@
 .form__input {
   appearance: none;
+  outline: none;
   border: 1px solid #abc;
   display: block;
   width: 100%;
@@ -10,12 +11,19 @@
   color: #212529;
   background-color: #fff;
   border-radius: 0.25rem;
-  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
 .form__input--lg {
   width: 400px;
   height: 35px;
+}
+
+.form__input-search {
+  transition: box-shadow 200ms ease-out;
+}
+
+.form__input-search:focus {
+  box-shadow: 1px 1px 10px rgb(100 100 100 / 50%);
 }
 
 .form__button {

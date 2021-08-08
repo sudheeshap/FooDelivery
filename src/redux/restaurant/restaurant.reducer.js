@@ -7,17 +7,14 @@ const restaurantSlice = createSlice({
   name: 'restaurant',
   initialState: INITIAL_STATE.restaurant,
   reducers: {
-    addFilter(state, action) {
-      state.searchlist.filters.push(action.payload.filter);
+    updateFilterQuery(state, action) {
+      state.searchlist.filters.query = action.payload.query;
+    },
+    updateFilterTypes(state, action) {
+      state.searchlist.filters.types = action.payload.types;
       state.searchlist.currentPage = 1;
     },
-    removeFilter(state, action) {
-      state.searchlist.filters = state.searchlist.filters.filter(
-        (filter) => filter !== action.payload.filter,
-      );
-      state.searchlist.currentPage = 1;
-    },
-    applySort(state, action) {
+    updateSort(state, action) {
       state.searchlist.sortBy = action.payload.type;
       state.searchlist.currentPage = 1;
     },
@@ -33,7 +30,7 @@ const restaurantSlice = createSlice({
   },
 });
 
-export const { addFilter, removeFilter, applySort, loadMore } =
+export const { updateFilterTypes, updateFilterQuery, updateSort, loadMore } =
   restaurantSlice.actions;
 
 export default restaurantSlice.reducer;

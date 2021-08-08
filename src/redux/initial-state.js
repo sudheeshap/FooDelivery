@@ -1,7 +1,10 @@
 const INITIAL_STATE = {
   restaurant: {
     searchlist: {
-      filters: [],
+      filters: {
+        types: [],
+        query: '',
+      },
       sortBy: 'is_featured',
       currentPage: 1,
       perPage: 15,
