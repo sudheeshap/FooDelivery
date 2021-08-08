@@ -17,19 +17,15 @@ import {
   selectSearchlistTotal,
 } from '../redux/restaurant/restaurant.selectors';
 import { fetchRestaurants } from '../redux/restaurant/restaurant.thunks';
+import { getFilterOptions, getSortOptions } from '../services/runtime.service';
 import RestaurantCard from './RestaurantCard';
 
 export default function RestaurantList() {
-  const filterOptions = [
-    { value: 'offer', text: 'Offers' },
-    { value: 'fast_delivery', text: 'Fast delivery (Less than 30 min)' },
-    { value: 'free_delivery', text: 'Free delivery' },
-  ];
-  const sortOptions = [
-    { value: 'is_featured', text: 'Featured' },
-    { value: 'distance', text: 'Distance' },
-    { value: 'delivery_in', text: 'Fast delivery' },
-  ];
+  // Options
+  const filterOptions = getFilterOptions();
+  const sortOptions = getSortOptions();
+
+  // Selectors
   const restaurants = useSelector(selectRestaurants);
   const filterTypes = useSelector(selectSearchlistFilterTypes);
   const filterQuery = useSelector(selectSearchlistFilterQuery);
@@ -52,6 +48,9 @@ export default function RestaurantList() {
     );
   }, [filterTypes.length, filterQuery, sortBy, currentPage]);
 
+  /**
+   * Clicked on filter types
+   */
   const handleClickFilterTypes = (value) => {
     const types = filterTypes.includes(value)
       ? filterTypes.filter((t) => t !== value)
@@ -60,9 +59,15 @@ export default function RestaurantList() {
     dispatch(updateFilterTypes({ types }));
   };
 
+  /**
+   * Sort changed
+   */
   const handleChangeSort = ({ target }) =>
     dispatch(updateSort({ type: target.value }));
 
+  /**
+   * Clicked on pagination
+   */
   const handleClickPagination = () =>
     dispatch(loadMore({ page: currentPage + 1 }));
 

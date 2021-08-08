@@ -5,33 +5,22 @@ import MenuList from '../components/MenuList';
 import RestaurantCard from '../components/RestaurantCard';
 import DATA_MENU_GROUPS from '../data/menu-groups';
 import Cart from '../components/Cart';
-import { getRestaurantBySlug } from '../services/restaurant.service';
+import RestaurantModel from '../models/restaurant.model';
+import { loadRestaurant } from '../services/restaurant.service';
 
 export default function Restaurant() {
   const cartItems = [];
-  const restaurantModel = {
-    id: null,
-    name: '',
-    logo: '',
-    slug: '',
-    cuisines: '',
-    rating: null,
-    cover_photo: '',
-    delivery_in: '',
-    distance: '',
-    is_open: true,
-    is_featured: false,
-    has_free_delivery: false,
-    offer: '',
-  };
+  const restaurantModel = new RestaurantModel();
 
   const { slug } = useParams();
   const [restaurant, setRestaurant] = useState(restaurantModel);
   const [menuGroups, setMenus] = useState([]);
 
   useEffect(() => {
-    const restorantData = getRestaurantBySlug(slug);
+    const restorantData = loadRestaurant(slug);
     const groups = DATA_MENU_GROUPS;
+
+    // Scroll on top of the page
     window.scrollTo(0, 0);
 
     setRestaurant(restorantData);

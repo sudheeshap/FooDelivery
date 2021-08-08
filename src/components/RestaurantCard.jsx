@@ -6,7 +6,7 @@ export default function RestaurantCard({ restaurant }) {
     <div className="restaurant__card">
       <div
         className="restaurant__card-image"
-        style={{ backgroundImage: `url(${restaurant.cover_photo})` }}
+        style={{ backgroundImage: `url(${restaurant.coverPhoto})` }}
       />
       <div
         className="restaurant__card-logo"
@@ -17,10 +17,10 @@ export default function RestaurantCard({ restaurant }) {
         <div className="restaurant__card-subtitle">
           {restaurant.cuisines.replaceAll(',', ' • ')}
         </div>
-        {restaurant.is_featured && (
+        {restaurant.isFeatured && (
           <div className="restaurant__card-featured">Featured</div>
         )}
-        {!restaurant.delivery_charge && (
+        {!restaurant.deliveryCharge && (
           <div className="restaurant__card-free-delivery">Free delivery</div>
         )}
         <div className="restaurant__card-rating">
@@ -30,7 +30,7 @@ export default function RestaurantCard({ restaurant }) {
         <div className="restaurant__card-more">
           <div className="restaurant__card-point">
             <i className="restaurant__card-icon bi bi-clock" />
-            <span>{restaurant.delivery_in}</span>
+            <span>{restaurant.deliveryIn}</span>
           </div>
           <div className="restaurant__card-point">
             <i className="restaurant__card-icon bi bi-geo-alt" />
@@ -44,7 +44,7 @@ export default function RestaurantCard({ restaurant }) {
           )}
         </div>
       </div>
-      {!restaurant.is_open && (
+      {!restaurant.isOpen && (
         <div className="restaurant__card-overlay">Closed</div>
       )}
     </div>

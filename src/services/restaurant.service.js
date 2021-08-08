@@ -1,67 +1,49 @@
-import DATA_RESTAURANTS from '../data/restaurant.data';
+import RestaurantModel from '../models/restaurant.model';
+import {
+  getDataRestaurant,
+  getDataRestaurantList,
+} from '../api/restaurant-api.service';
 
 /**
- * Callback to filter restaurants
+ * Hydrate restaurant data
  */
-const filterCallback = (filters, restaurant) => {
-  let isValid = true;
+export const hydrateModelRestaurant = (data) => {
+  const model = new RestaurantModel();
+  model.id = data.id;
+  model.name = data.name;
+  model.logo = data.logo;
+  model.slug = data.slug;
+  model.cuisines = data.cuisines;
+  model.rating = data.rating;
+  model.coverPhoto = data.cover_photo;
+  model.deliveryIn = data.delivery_in;
+  model.distance = data.distance;
+  model.isOpen = data.is_open;
+  model.isFeatured = data.is_featured;
+  model.deliveryCharge = data.delivery_charge;
+  model.offer = data.offer;
 
-  // Filter by search query
-  if (filters.query) {
-    isValid = restaurant.name
-      .toLowerCase()
-      .includes(filters.query.trim().toLowerCase());
-  }
-
-  // Filter by type: offer
-  if (filters.types.includes('offer')) {
-    isValid = isValid && !!restaurant.offer;
-  }
-
-  // Filter by type: fast delivery
-  if (filters.types.includes('fast_delivery')) {
-    isValid = isValid && Number(restaurant.delivery_in.split(' ')[2]) <= 30;
-  }
-
-  // Filter by type: free delivery
-  if (filters.types.includes('free_delivery')) {
-    isValid = isValid && !restaurant.delivery_charge;
-  }
-
-  return isValid;
+  return { ...model };
 };
 
 /**
- * Callback to sort restaurants
+ * Returns restaurant list based on the search config
  */
-const sortCallback = (sortBy, resA, resB) => {
-  if (sortBy === 'is_featured') {
-    return resA[sortBy] < resB[sortBy] ? 1 : -1;
-  }
-  return resA[sortBy] > resB[sortBy] ? 1 : -1;
-};
+export const listRestaurants = (search) => {
+  const restaurantList = getDataRestaurantList(search);
 
-/**
- * Returns restaurant list based on the searchlist config
- */
-export const getRestaurantList = (search) => {
-  const restaurants = DATA_RESTAURANTS.filter(
-    filterCallback.bind(null, search.filters),
-  ).sort(sortCallback.bind(null, search.sortBy));
-
-  const results = restaurants.slice(
-    (search.currentPage - 1) * search.perPage,
-    search.currentPage * search.perPage,
+  const models = restaurantList.results.map((result) =>
+    hydrateModelRestaurant(result),
   );
 
   return {
-    results,
-    total: restaurants.length,
+    models,
+    total: restaurantList.total,
   };
 };
 
 /**
  * Returns restaurant by slug
  */
-export const getRestaurantBySlug = (slug) =>
-  DATA_RESTAURANTS.find((restaurant) => restaurant.slug === slug);
+export const loadRestaurant = (slug) =>
+  hydrateModelRestaurant(getDataRestaurant(slug));
