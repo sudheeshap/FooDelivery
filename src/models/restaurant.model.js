@@ -1,4 +1,6 @@
-export default class RestaurantModel {
+import ModelAbstract from './model.abstract';
+
+export default class RestaurantModel extends ModelAbstract {
   /**
    * ID
    */

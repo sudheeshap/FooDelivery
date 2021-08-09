@@ -1,25 +1,9 @@
 import React from 'react';
 import { PropTypes } from 'prop-types';
-import { useDispatch } from 'react-redux';
 
 import ProductCard from './ProductCard';
-import { addItem } from '../redux/cart/cart.reducer';
-import CartItemModel from '../models/cart-item.model';
 
-export default function MenuList({ menuGroups }) {
-  const dispatch = useDispatch();
-
-  /**
-   * Handle add product
-   */
-  const handleAddProduct = (product) => {
-    const cartItem = new CartItemModel();
-    cartItem.id = product.id;
-    cartItem.product = product;
-
-    dispatch(addItem({ item: { ...cartItem } }));
-  };
-
+export default function MenuList({ menuGroups, addProduct }) {
   return (
     <section className="menu-list">
       <div className="menu-filters">
@@ -37,7 +21,7 @@ export default function MenuList({ menuGroups }) {
               <ProductCard
                 key={product.id}
                 product={product}
-                onAdd={() => handleAddProduct(product)}
+                addProduct={addProduct}
               />
             ))}
           </React.Fragment>
@@ -49,4 +33,5 @@ export default function MenuList({ menuGroups }) {
 
 MenuList.propTypes = {
   menuGroups: PropTypes.instanceOf(Array).isRequired,
+  addProduct: PropTypes.func.isRequired,
 };

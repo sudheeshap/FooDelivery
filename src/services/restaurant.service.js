@@ -23,7 +23,7 @@ const hydrateModelRestaurant = (data) => {
   model.deliveryFee = data.delivery_fee;
   model.offer = data.offer;
 
-  return { ...model };
+  return model;
 };
 
 /**
@@ -33,7 +33,7 @@ export const listRestaurants = (search) => {
   const restaurantList = getDataRestaurantList(search);
 
   const models = restaurantList.results.map((result) =>
-    hydrateModelRestaurant(result),
+    hydrateModelRestaurant(result).toObject(),
   );
 
   return {

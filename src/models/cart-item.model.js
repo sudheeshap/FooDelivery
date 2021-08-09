@@ -1,4 +1,6 @@
-export default class CartItemModel {
+import ModelAbstract from './model.abstract';
+
+export default class CartItemModel extends ModelAbstract {
   /**
    * ID
    */

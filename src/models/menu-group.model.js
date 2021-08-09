@@ -1,4 +1,6 @@
-export default class MenuGroupModel {
+import ModelAbstract from './model.abstract';
+
+export default class MenuGroupModel extends ModelAbstract {
   /**
    * ID
    */
