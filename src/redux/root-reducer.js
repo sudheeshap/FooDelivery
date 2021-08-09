@@ -1,12 +1,12 @@
 import { combineReducers } from '@reduxjs/toolkit';
 
 import cartReducer from './cart/cart.reducer';
-import productReducer from './product/product.reducer';
 import restaurantReducer from './restaurant/restaurant.reducer';
+import menuGroupReducer from './menu-group/menu-group.reducer';
 
 const rootReducer = combineReducers({
   restaurant: restaurantReducer,
-  product: productReducer,
+  menuGroup: menuGroupReducer,
   cart: cartReducer,
 });
 

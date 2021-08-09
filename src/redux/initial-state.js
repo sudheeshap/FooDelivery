@@ -12,7 +12,7 @@ const INITIAL_STATE = {
     },
     entities: [],
   },
-  product: {
+  menuGroup: {
     entities: [],
   },
   cart: {

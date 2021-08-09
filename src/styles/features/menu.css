@@ -42,13 +42,16 @@
 .product__image {
   width: 100px;
   height: 80px;
+  flex-shrink: 0;
   background-size: cover;
   background-position: center center;
 }
 
 .product__info {
-  margin-left: 10px;
+  padding-left: 10px;
   line-height: 1.2em;
+  width: calc(100% - 100px);
+  box-sizing: border-box;
 }
 
 .menu-list {
@@ -121,7 +124,7 @@
   font-size: 12px;
   text-overflow: ellipsis;
   overflow: hidden;
-  max-width: 95%;
+  max-width: 75%;
   white-space: nowrap;
 }
 

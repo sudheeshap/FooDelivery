@@ -4,7 +4,7 @@ import { useDispatch } from 'react-redux';
 
 import ProductCard from './ProductCard';
 import { addItem } from '../redux/cart/cart.reducer';
-import CartItem from './CartItem';
+import CartItemModel from '../models/cart-item.model';
 
 export default function MenuList({ menuGroups }) {
   const dispatch = useDispatch();
@@ -13,11 +13,11 @@ export default function MenuList({ menuGroups }) {
    * Handle add product
    */
   const handleAddProduct = (product) => {
-    const cartItem = new CartItem();
+    const cartItem = new CartItemModel();
     cartItem.id = product.id;
     cartItem.product = product;
 
-    dispatch(addItem({ item: cartItem }));
+    dispatch(addItem({ item: { ...cartItem } }));
   };
 
   return (

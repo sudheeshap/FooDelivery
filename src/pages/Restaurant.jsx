@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 
 import {
   selectCartGrandTotal,
@@ -12,9 +12,13 @@ import MenuList from '../components/MenuList';
 import RestaurantCard from '../components/RestaurantCard';
 import RestaurantModel from '../models/restaurant.model';
 import { loadRestaurant } from '../services/restaurant.service';
-import listMenuGroups from '../services/menu-group.service';
+import { selectMenuGroups } from '../redux/menu-group/menu-group.selectors';
+import { fetchMenuGroups } from '../redux/menu-group/menu-group.thunks';
 
 export default function Restaurant() {
+  const dispatch = useDispatch();
+
+  const menuGroups = useSelector(selectMenuGroups);
   const cartItems = useSelector(selectCartItems);
   const subTotal = useSelector(selectCartSubTotal);
   const grandTotal = useSelector(selectCartGrandTotal);
@@ -22,20 +26,17 @@ export default function Restaurant() {
 
   const { slug } = useParams();
   const [restaurant, setRestaurant] = useState(restaurantModel);
-  const [menuGroups, setMenuGroups] = useState([]);
 
   /**
-   * Load restaurant based on slug
+   * Load restaurant and menu groups based on slug
    */
   useEffect(() => {
-    const restorantObj = loadRestaurant(slug);
-    const groups = listMenuGroups();
+    setRestaurant(loadRestaurant(slug));
+
+    dispatch(fetchMenuGroups());
 
     // Scroll to top of the page
     window.scrollTo(0, 0);
-
-    setRestaurant(restorantObj);
-    setMenuGroups(groups);
   }, [slug]);
 
   return (

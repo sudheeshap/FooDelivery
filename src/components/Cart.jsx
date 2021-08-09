@@ -39,8 +39,8 @@ export default function Cart({
           {items.map((item) => (
             <CartItem
               quantity={item.quantity}
-              price={item.product}
-              name={item.name}
+              price={item.product.price}
+              name={item.product.name}
               key={item.id}
             />
           ))}

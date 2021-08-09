@@ -24,7 +24,9 @@ const hydrateModelMenuGroup = (data) => {
   const model = new MenuGroupModel();
   model.id = data.id;
   model.name = data.name;
-  model.products = data.products.map((product) => hydrateModelProduct(product));
+  model.products = data.products.map((product) => ({
+    ...hydrateModelProduct(product),
+  }));
 
   return { ...model };
 };

@@ -2,6 +2,9 @@ import { createAsyncThunk } from '@reduxjs/toolkit';
 
 import { listRestaurants } from '../../services/restaurant.service';
 
+/**
+ * Fetch restaurants for the search config
+ */
 export const fetchRestaurants = createAsyncThunk(
   'restaurant/fetchRestaurants',
   async (search, { getState }) => {

@@ -1,5 +1,3 @@
-import ProductModel from './product.model';
-
 export default class CartItemModel {
   /**
    * ID
@@ -14,5 +12,5 @@ export default class CartItemModel {
   /**
    * Product
    */
-  product = new ProductModel();
+  product = null;
 }
