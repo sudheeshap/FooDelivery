@@ -1,4 +1,6 @@
-export default class ProductModel {
+import ModelAbstract from './model.abstract';
+
+export default class ProductModel extends ModelAbstract {
   /**
    * ID
    */

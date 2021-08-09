@@ -14,7 +14,7 @@ const hydrateModelProduct = (data) => {
   model.calories = data.calories;
   model.photoThumbnail = data.photo_thumb;
 
-  return { ...model };
+  return model;
 };
 
 /**
@@ -28,7 +28,7 @@ const hydrateModelMenuGroup = (data) => {
     ...hydrateModelProduct(product),
   }));
 
-  return { ...model };
+  return model;
 };
 
 /**
@@ -37,5 +37,5 @@ const hydrateModelMenuGroup = (data) => {
 export default function listMenuGroups() {
   const menuGroups = getDataMenuGroups();
 
-  return menuGroups.map((group) => hydrateModelMenuGroup(group));
+  return menuGroups.map((group) => hydrateModelMenuGroup(group).toObject());
 }
