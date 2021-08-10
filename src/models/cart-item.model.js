@@ -19,5 +19,5 @@ export default class CartItemModel extends ModelAbstract {
   /**
    * Quantity
    */
-  quantity = 0;
+  quantity = 1;
 }

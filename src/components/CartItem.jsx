@@ -1,7 +1,7 @@
 import React from 'react';
 import { PropTypes } from 'prop-types';
 
-export default function CartItem({ item }) {
+export default function CartItem({ item, addItem, removeItem, clearItem }) {
   return (
     <div className="cart__item">
       <div className="cart__item-name">{item.name}</div>
@@ -12,17 +12,30 @@ export default function CartItem({ item }) {
           <span>{item.price}</span>
         </div>
         <div className="cart__counter">
-          <span className="cart__counter-button">
+          <button
+            type="button"
+            className="cart__counter-button"
+            onClick={() => removeItem(item)}
+          >
             <i className="icon bi-dash-circle" />
-          </span>
+          </button>
           <span className="cart__counter-quantity">{item.quantity}</span>
-          <span className="cart__counter-button">
+          <button
+            type="button"
+            className="cart__counter-button"
+            onClick={() => addItem(item)}
+          >
             <i className="icon bi-plus-circle" />
-          </span>
+          </button>
         </div>
-        <div className="cart__item-remove">
+        <button
+          type="button"
+          tooltip="Remove from cart"
+          className="cart__item-remove"
+          onClick={() => clearItem(item)}
+        >
           <i className="icon bi-x-square" />
-        </div>
+        </button>
       </div>
     </div>
   );
@@ -30,4 +43,7 @@ export default function CartItem({ item }) {
 
 CartItem.propTypes = {
   item: PropTypes.instanceOf(Object).isRequired,
+  addItem: PropTypes.func.isRequired,
+  removeItem: PropTypes.func.isRequired,
+  clearItem: PropTypes.func.isRequired,
 };

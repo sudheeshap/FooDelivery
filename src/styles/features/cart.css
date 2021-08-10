@@ -78,7 +78,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 0;
+  padding: 8px 0;
   font-size: 11px;
 }
 
@@ -88,7 +88,7 @@
 
 .cart__item-name {
   text-align: left;
-  font-size: 13px;
+  font-size: 12px;
 }
 
 .cart__item-actions {
@@ -108,8 +108,8 @@
 }
 
 .cart__item-amount {
-  color: #666;
   font-weight: bold;
+  font-size: 10px;
   margin: 0 5px;
   flex-shrink: 0;
 }
@@ -124,4 +124,11 @@
 .cart__item-remove {
   cursor: pointer;
   color: #ff0000;
+}
+
+.cart__counter-button,
+.cart__item-remove {
+  appearance: none;
+  background: 0;
+  border: none;
 }

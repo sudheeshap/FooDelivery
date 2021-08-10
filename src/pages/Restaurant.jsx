@@ -16,6 +16,7 @@ import { addProduct } from '../redux/menu-group/menu-group.thunks';
 import { selectRestaurantSelected } from '../redux/restaurant/restaurant.selectors';
 import { fetchRestaurant } from '../redux/restaurant/restaurant.thunks';
 import RestaurantModel from '../models/restaurant.model';
+import { addItem, clearItem, removeItem } from '../redux/cart/cart.reducer';
 
 export default function Restaurant() {
   const { slug } = useParams();
@@ -28,6 +29,16 @@ export default function Restaurant() {
   const cartItems = useSelector(selectCartItems);
   const subTotal = useSelector(selectCartSubTotal);
   const grandTotal = useSelector(selectCartGrandTotal);
+
+  /**
+   * Load restaurant and menu groups based on slug
+   */
+  useEffect(() => {
+    dispatch(fetchRestaurant(slug));
+
+    // Scroll to top of the page
+    window.scrollTo(0, 0);
+  }, [slug]);
 
   /**
    * Returns cart details
@@ -51,20 +62,31 @@ export default function Restaurant() {
   const cartDetails = getCartDetails();
 
   /**
-   * Load restaurant and menu groups based on slug
-   */
-  useEffect(() => {
-    dispatch(fetchRestaurant(slug));
-
-    // Scroll to top of the page
-    window.scrollTo(0, 0);
-  }, [slug]);
-
-  /**
-   * Handle add product
+   * Handle add product from product list
    */
   const handleAddProduct = (product) => {
     dispatch(addProduct({ product }));
+  };
+
+  /**
+   * Handle add cart item from cart list
+   */
+  const handleAddCartItem = (item) => {
+    dispatch(addItem({ item }));
+  };
+
+  /**
+   * Handle remove item quantity from cart list
+   */
+  const handleRemoveCartItem = (item) => {
+    dispatch(removeItem({ item }));
+  };
+
+  /**
+   * Handle clear item
+   */
+  const handleClearCartItem = (item) => {
+    dispatch(clearItem({ item }));
   };
 
   return (
@@ -74,7 +96,12 @@ export default function Restaurant() {
         <MenuList menuGroups={menuGroups} addProduct={handleAddProduct} />
       </section>
       <section className="cart-container">
-        <Cart details={cartDetails} />
+        <Cart
+          details={cartDetails}
+          addItem={handleAddCartItem}
+          removeItem={handleRemoveCartItem}
+          clearItem={handleClearCartItem}
+        />
       </section>
     </section>
   );

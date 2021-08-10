@@ -1,8 +1,9 @@
 import React from 'react';
 import { PropTypes } from 'prop-types';
+
 import CartItem from './CartItem';
 
-export default function Cart({ details }) {
+export default function Cart({ details, addItem, removeItem, clearItem }) {
   return (
     <div className="cart">
       <div className="cart__header">
@@ -23,11 +24,17 @@ export default function Cart({ details }) {
       {details.items.length > 0 && (
         <div className="cart__item-list">
           {details.items.map((item) => (
-            <CartItem item={item} key={item.id} />
+            <CartItem
+              item={item}
+              key={item.id}
+              addItem={addItem}
+              removeItem={removeItem}
+              clearItem={clearItem}
+            />
           ))}
         </div>
       )}
-      {details.restaurant && (
+      {details.restaurant && details.items.length > 0 && (
         <div className="cart__amount-container">
           <h5 className="cart__delivery-amount">
             <span>Delivery fee</span>
@@ -68,4 +75,7 @@ export default function Cart({ details }) {
 
 Cart.propTypes = {
   details: PropTypes.instanceOf(Object).isRequired,
+  addItem: PropTypes.func.isRequired,
+  removeItem: PropTypes.func.isRequired,
+  clearItem: PropTypes.func.isRequired,
 };

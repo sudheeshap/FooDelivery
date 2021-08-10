@@ -4,7 +4,7 @@ import CartItemModel from '../../models/cart-item.model';
 import listMenuGroups from '../../services/menu-group.service';
 import {
   addItem,
-  clearItems,
+  clearAllItems,
   updateCartRestaurant,
 } from '../cart/cart.reducer';
 
@@ -29,13 +29,9 @@ export const addProduct = createAsyncThunk(
     const selectedRestaurant = state.restaurant.selected;
     const cartRestaurant = state.cart.restaurant;
 
-    let cartItem = state.cart.items.find(
-      (item) => item.id === payload.product.id,
-    );
-
     // Adding from a different restaurant
     if (selectedRestaurant?.id !== cartRestaurant?.id) {
-      dispatch(clearItems());
+      dispatch(clearAllItems());
     }
 
     // Cart is empty OR adding from a different restaurant
@@ -46,16 +42,11 @@ export const addProduct = createAsyncThunk(
       dispatch(updateCartRestaurant({ restaurant: selectedRestaurant }));
     }
 
-    if (cartItem) {
-      cartItem = { ...cartItem };
-    } else {
-      cartItem = new CartItemModel().toObject();
-      cartItem.id = payload.product.id;
-      cartItem.name = payload.product.name;
-      cartItem.price = payload.product.price;
-    }
+    const cartItem = new CartItemModel().toObject();
 
-    cartItem.quantity += 1;
+    cartItem.id = payload.product.id;
+    cartItem.name = payload.product.name;
+    cartItem.price = payload.product.price;
 
     dispatch(addItem({ item: cartItem }));
   },
