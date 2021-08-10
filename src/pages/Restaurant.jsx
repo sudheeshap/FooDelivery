@@ -29,12 +29,26 @@ export default function Restaurant() {
   const subTotal = useSelector(selectCartSubTotal);
   const grandTotal = useSelector(selectCartGrandTotal);
 
-  const cartDetails = {
-    items: cartItems,
-    restaurant: cartRestaurant,
-    subTotal,
-    grandTotal,
+  /**
+   * Returns cart details
+   */
+  const getCartDetails = () => {
+    const cartDetails = {
+      items: [],
+      restaurant: null,
+      subTotal,
+      grandTotal,
+    };
+
+    if (selectedRestaurant.id === cartRestaurant?.id) {
+      cartDetails.items = cartItems;
+      cartDetails.restaurant = cartRestaurant;
+    }
+
+    return cartDetails;
   };
+
+  const cartDetails = getCartDetails();
 
   /**
    * Load restaurant and menu groups based on slug

@@ -45,6 +45,12 @@
 }
 
 .cart__subtotal,
+.cart__delivery-amount {
+  font-size: 13px;
+  margin: 15px 0;
+}
+
+.cart__subtotal,
 .cart__delivery-amount,
 .cart__total {
   display: flex;

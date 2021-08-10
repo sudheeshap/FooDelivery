@@ -2,7 +2,11 @@ import { createAsyncThunk } from '@reduxjs/toolkit';
 
 import CartItemModel from '../../models/cart-item.model';
 import listMenuGroups from '../../services/menu-group.service';
-import { addItem, updateCartRestaurant } from '../cart/cart.reducer';
+import {
+  addItem,
+  clearItems,
+  updateCartRestaurant,
+} from '../cart/cart.reducer';
 
 /**
  * Fetch menu groups
@@ -22,13 +26,24 @@ export const addProduct = createAsyncThunk(
   'menuGroup/addProduct',
   async (payload, { dispatch, getState }) => {
     const state = getState();
+    const selectedRestaurant = state.restaurant.selected;
+    const cartRestaurant = state.cart.restaurant;
 
     let cartItem = state.cart.items.find(
       (item) => item.id === payload.product.id,
     );
 
-    if (state.cart.items.length === 0) {
-      dispatch(updateCartRestaurant({ restaurant: state.restaurant.selected }));
+    // Adding from a different restaurant
+    if (selectedRestaurant?.id !== cartRestaurant?.id) {
+      dispatch(clearItems());
+    }
+
+    // Cart is empty OR adding from a different restaurant
+    if (
+      state.cart.items.length === 0 ||
+      selectedRestaurant?.id !== cartRestaurant?.id
+    ) {
+      dispatch(updateCartRestaurant({ restaurant: selectedRestaurant }));
     }
 
     if (cartItem) {

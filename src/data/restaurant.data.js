@@ -2970,7 +2970,7 @@ const DATA_RESTAURANTS = [
     distance: '4 km',
     is_open: true,
     is_featured: true,
-    delivery_fee: 5,
+    delivery_fee: 6,
     offer: '',
     cover_photo:
       'https://t4.ftcdn.net/jpg/02/83/11/75/240_F_283117539_fj1KVl0YLritXaC6jjxpclfSGTQRgxcC.jpg',

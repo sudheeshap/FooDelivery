@@ -29,7 +29,7 @@ export default function Cart({ details }) {
       )}
       {details.restaurant && (
         <div className="cart__amount-container">
-          <h4 className="cart__delivery-amount">
+          <h5 className="cart__delivery-amount">
             <span>Delivery fee</span>
             <span
               className={
@@ -39,17 +39,17 @@ export default function Cart({ details }) {
               }
             >
               {details.restaurant.deliveryFee > 0
-                ? details.restaurant.deliveryFee
+                ? `AED ${details.restaurant.deliveryFee}`
                 : 'Free'}
             </span>
-          </h4>
-          <h4 className="cart__subtotal">
+          </h5>
+          <h5 className="cart__subtotal">
             <span>Subtotal</span>
-            <span>{details.subTotal}</span>
-          </h4>
+            <span>AED {details.subTotal}</span>
+          </h5>
           <h3 className="cart__total">
             <span>Total</span>
-            <span>{details.grandTotal}</span>
+            <span>AED {details.grandTotal}</span>
           </h3>
         </div>
       )}
