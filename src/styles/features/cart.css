@@ -132,3 +132,33 @@
   background: 0;
   border: none;
 }
+
+.cart__icon {
+  cursor: pointer;
+  font-size: 22px;
+  padding: 10px 15px;
+  position: relative;
+}
+
+.cart__icon--disabled {
+  color: #ababab;
+  pointer-events: none;
+}
+
+.cart__icon-count {
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  background-color: #ff8100;
+  font-size: 10px;
+  font-weight: bold;
+  color: white;
+  position: absolute;
+  top: 4px;
+  right: 2px;
+  padding: 2px;
+  z-index: 10;
+}

@@ -14,6 +14,16 @@ export const selectCartItems = createSelector(
 );
 
 /**
+ * Select cart item count
+ */
+export const selectCartItemCount = createSelector([selectCartItems], (items) =>
+  items.reduce(
+    (accumalatedQuantity, cartItem) => accumalatedQuantity + cartItem.quantity,
+    0,
+  ),
+);
+
+/**
  * Select cart restaurant
  */
 export const selectCartRestaurant = createSelector(

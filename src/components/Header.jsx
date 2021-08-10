@@ -1,8 +1,13 @@
 import React, { useState } from 'react';
+import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
+
+import CartIcon from './CartIcon';
+import { selectCartItemCount } from '../redux/cart/cart.selectors';
 
 export default function Header() {
   const [isLoggedIn] = useState(false);
+  const cartItemCount = useSelector(selectCartItemCount);
 
   return (
     <header>
@@ -20,13 +25,7 @@ export default function Header() {
         </div>
         <div className="navbar__section">
           <div className="navbar__item">
-            <div
-              className={`navbar__cart ${
-                isLoggedIn ? '' : 'navbar__cart--disabled'
-              }`}
-            >
-              <i className="bi-bag" />
-            </div>
+            <CartIcon count={cartItemCount} />
           </div>
 
           {isLoggedIn ? (

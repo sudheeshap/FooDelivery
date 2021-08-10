@@ -23,17 +23,6 @@
   margin-right: 20px;
 }
 
-.navbar__cart {
-  cursor: pointer;
-  font-size: 22px;
-  padding: 10px 15px;
-}
-
-.navbar__cart--disabled {
-  color: #ababab;
-  pointer-events: none;
-}
-
 .navbar__user {
   background-size: cover;
   background-position: center center;
