@@ -14,6 +14,30 @@ export const selectRestaurants = createSelector(
 );
 
 /**
+ * Select restaurant by ID
+ */
+export const selectRestaurantById = (id) =>
+  createSelector([selectRestaurants], (restaurants) =>
+    restaurants.filter((restaurant) => restaurant.id === id),
+  );
+
+/**
+ * Select restaurant by slug
+ */
+export const selectRestaurantBySlug = (slug) =>
+  createSelector([selectRestaurants], (restaurants) =>
+    restaurants.filter((restaurant) => restaurant.slug === slug),
+  );
+
+/**
+ * Select the selected restaurant
+ */
+export const selectRestaurantSelected = createSelector(
+  [selectRestaurantState],
+  (state) => state.selected,
+);
+
+/**
  * Select searchlist
  */
 export const selectSearchlist = createSelector(
@@ -76,8 +100,3 @@ export const selectSearchlistFilterQuery = createSelector(
   [selectSearchlistFilters],
   (filters) => filters.query,
 );
-
-export const selectRestaurantBySlug = (slug) =>
-  createSelector([selectRestaurants], (restaurants) =>
-    restaurants.filter((restaurant) => restaurant.slug === slug),
-  );

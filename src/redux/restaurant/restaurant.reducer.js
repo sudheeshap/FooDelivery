@@ -1,7 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 import INITIAL_STATE from '../initial-state';
-import { fetchRestaurants } from './restaurant.thunks';
+import { fetchRestaurant, fetchRestaurants } from './restaurant.thunks';
 
 const restaurantSlice = createSlice({
   name: 'restaurant',
@@ -26,6 +26,9 @@ const restaurantSlice = createSlice({
     builder.addCase(fetchRestaurants.fulfilled, (state, action) => {
       state.entities = action.payload.models;
       state.searchlist.total = action.payload.total;
+    });
+    builder.addCase(fetchRestaurant.fulfilled, (state, action) => {
+      state.selected = action.payload;
     });
   },
 });

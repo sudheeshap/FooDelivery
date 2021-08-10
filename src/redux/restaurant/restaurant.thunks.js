@@ -1,6 +1,10 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
 
-import { listRestaurants } from '../../services/restaurant.service';
+import {
+  listRestaurants,
+  loadRestaurant,
+} from '../../services/restaurant.service';
+import { fetchMenuGroups } from '../menu-group/menu-group.thunks';
 
 /**
  * Fetch restaurants for the search config
@@ -23,4 +27,17 @@ export const fetchRestaurants = createAsyncThunk(
   },
 );
 
-export default fetchRestaurants;
+/**
+ * Fetch restaurant by slug
+ */
+export const fetchRestaurant = createAsyncThunk(
+  'restaurant/fetchRestaurant',
+  async (slug, { dispatch }) => {
+    const restaurant = await loadRestaurant(slug);
+
+    // Fetch menu groups or the selected restaurant
+    dispatch(fetchMenuGroups());
+
+    return restaurant;
+  },
+);

@@ -46,4 +46,4 @@ export const listRestaurants = (search) => {
  * Returns restaurant by slug
  */
 export const loadRestaurant = (slug) =>
-  hydrateModelRestaurant(getDataRestaurant(slug));
+  hydrateModelRestaurant(getDataRestaurant(slug)).toObject();

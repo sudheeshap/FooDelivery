@@ -17,7 +17,7 @@ export default class ProductModel extends ModelAbstract {
   description = '';
 
   /**
-   * Description
+   * Price
    */
   price = 0;
 

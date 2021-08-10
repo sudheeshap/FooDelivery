@@ -14,17 +14,38 @@ export const selectCartItems = createSelector(
 );
 
 /**
+ * Select cart restaurant
+ */
+export const selectCartRestaurant = createSelector(
+  [selectCartState],
+  (state) => state.restaurant,
+);
+
+/**
  * Select sub total
  */
 export const selectCartSubTotal = createSelector(
-  [selectCartState],
-  (state) => state.subTotal,
+  [selectCartItems],
+  (cartItems) =>
+    cartItems.reduce(
+      (accumalatedQuantity, cartItem) =>
+        accumalatedQuantity + cartItem.quantity * cartItem.price,
+      0,
+    ),
+);
+
+/**
+ * Select delivery fee
+ */
+export const selectCartDeliveryFee = createSelector(
+  [selectCartRestaurant],
+  (restaurant) => (restaurant ? restaurant.deliveryFee : 0),
 );
 
 /**
  * Select grand total
  */
 export const selectCartGrandTotal = createSelector(
-  [selectCartState],
-  (state) => state.grandTotal,
+  [selectCartSubTotal, selectCartDeliveryFee],
+  (subTotal, deliveryFee) => subTotal + deliveryFee,
 );

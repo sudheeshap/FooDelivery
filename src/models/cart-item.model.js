@@ -7,12 +7,17 @@ export default class CartItemModel extends ModelAbstract {
   id = '';
 
   /**
+   * Name
+   */
+  name = '';
+
+  /**
+   * Price
+   */
+  price = 0;
+
+  /**
    * Quantity
    */
   quantity = 0;
-
-  /**
-   * Product
-   */
-  product = null;
 }

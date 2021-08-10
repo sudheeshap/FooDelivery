@@ -10,15 +10,14 @@ const INITIAL_STATE = {
       perPage: 15,
       total: 0,
     },
+    selected: null,
     entities: [],
   },
   menuGroup: {
     entities: [],
   },
   cart: {
-    restaurantId: '',
-    subTotal: 0,
-    grandTotal: 0,
+    restaurant: null,
     items: [],
   },
 };
