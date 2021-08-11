@@ -92,6 +92,7 @@
   background-color: #cdd3d5;
 }
 
+.menu-filter:focus,
 .menu-filter--active {
   background-color: #f4d88d;
 }

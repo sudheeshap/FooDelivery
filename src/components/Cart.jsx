@@ -1,9 +1,17 @@
 import React from 'react';
 import { PropTypes } from 'prop-types';
+import { useHistory } from 'react-router-dom';
 
 import CartItem from './CartItem';
+import Button from './Button';
 
 export default function Cart({ details, addItem, removeItem, clearItem }) {
+  const history = useHistory();
+
+  const handleClickCheckout = () => {
+    history.push('/checkout');
+  };
+
   return (
     <div className="cart">
       <div className="cart__header">
@@ -61,13 +69,15 @@ export default function Cart({ details, addItem, removeItem, clearItem }) {
         </div>
       )}
       <div className="cart__button-container">
-        <button
-          type="button"
-          className="form__button form__button--lg form__button--green form__button--shadow"
-          disabled={details.items.length === 0 && 'disabled'}
+        <Button
+          hasShadow
+          size="lg"
+          color="success"
+          disabled={details.items.length === 0}
+          onClick={handleClickCheckout}
         >
           Proceed to Checkout
-        </button>
+        </Button>
       </div>
     </div>
   );

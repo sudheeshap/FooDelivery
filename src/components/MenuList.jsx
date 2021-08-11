@@ -39,7 +39,7 @@ export default function MenuList({
             onClick={() => handleClickGroup(group, index)}
             onKeyDown={() => handleClickGroup(group, index)}
             role="button"
-            tabIndex="-1"
+            tabIndex="0"
           >
             {group.name}
           </div>

@@ -9,6 +9,7 @@ const restaurantSlice = createSlice({
   reducers: {
     updateFilterQuery(state, action) {
       state.searchlist.filters.query = action.payload.query;
+      state.searchlist.currentPage = 1;
     },
     updateFilterTypes(state, action) {
       state.searchlist.filters.types = action.payload.types;

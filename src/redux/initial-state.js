@@ -1,4 +1,11 @@
 const INITIAL_STATE = {
+  customer: {
+    id: '',
+    firstName: '',
+    lastName: '',
+    mobile: '',
+    email: '',
+  },
   restaurant: {
     searchlist: {
       filters: {
