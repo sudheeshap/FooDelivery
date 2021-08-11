@@ -11,10 +11,11 @@ const INITIAL_STATE = {
       total: 0,
     },
     selected: null,
-    entities: [],
+    collection: [],
   },
   menuGroup: {
-    entities: [],
+    selectedGroupId: '',
+    collection: [],
   },
   cart: {
     restaurant: null,

@@ -92,18 +92,18 @@
   background-color: #cdd3d5;
 }
 
-.menu-filter:first-child {
+.menu-filter--active {
   background-color: #f4d88d;
 }
 
-.category-header {
+.group-header {
   font-size: 20px;
   font-weight: 500;
   width: 100%;
   margin: 20px 0;
 }
 
-.category-header:first-child {
+.group-header:first-child {
   margin-top: 0;
 }
 

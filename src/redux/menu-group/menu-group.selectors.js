@@ -10,7 +10,7 @@ const selectMenuGroupState = (state) => state.menuGroup;
  */
 export const selectMenuGroups = createSelector(
   [selectMenuGroupState],
-  (state) => state.entities, // Mock data: It should be menu groups for selected restaurant)
+  (state) => state.collection, // Mock data: It should be menu groups for selected restaurant)
 );
 
 /**
@@ -30,3 +30,11 @@ export const selectMenuGroupProducts = (id) =>
     [selectMenuGroup(id)],
     (menuGroup) => menuGroup.products || [],
   );
+
+/**
+ * Select the selected menu group Id
+ */
+export const selectSelectedGroupId = createSelector(
+  [selectMenuGroupState],
+  (state) => state.selectedGroupId,
+);

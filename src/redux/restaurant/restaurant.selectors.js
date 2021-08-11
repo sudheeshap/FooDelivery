@@ -10,7 +10,7 @@ const selectRestaurantState = (state) => state.restaurant;
  */
 export const selectRestaurants = createSelector(
   [selectRestaurantState],
-  (state) => state.entities || [],
+  (state) => state.collection || [],
 );
 
 /**

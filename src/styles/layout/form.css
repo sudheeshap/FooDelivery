@@ -1,5 +1,8 @@
 .form__input {
   appearance: none;
+  background-color: #fff;
+  border-radius: 0.25rem;
+  color: #212529;
   outline: none;
   border: 1px solid #abc;
   display: block;
@@ -8,9 +11,6 @@
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #212529;
-  background-color: #fff;
-  border-radius: 0.25rem;
 }
 
 .form__input--lg {
@@ -40,6 +40,7 @@
   border: none;
   font-weight: bold;
   transition: background-color 200ms ease-out;
+  text-decoration: none;
 }
 
 .form__button:disabled {

@@ -24,7 +24,7 @@ const restaurantSlice = createSlice({
   },
   extraReducers: (builder) => {
     builder.addCase(fetchRestaurants.fulfilled, (state, action) => {
-      state.entities = action.payload.models;
+      state.collection = action.payload.models;
       state.searchlist.total = action.payload.total;
     });
     builder.addCase(fetchRestaurant.fulfilled, (state, action) => {

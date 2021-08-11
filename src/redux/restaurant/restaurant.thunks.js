@@ -18,7 +18,7 @@ export const fetchRestaurants = createAsyncThunk(
     // Page changed
     if (search.currentPage > 1) {
       return {
-        models: [...state.restaurant.entities, ...restaurantList.models],
+        models: [...state.restaurant.collection, ...restaurantList.models],
         total: restaurantList.total,
       };
     }

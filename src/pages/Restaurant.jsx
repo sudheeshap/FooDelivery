@@ -11,12 +11,17 @@ import {
 import Cart from '../components/Cart';
 import MenuList from '../components/MenuList';
 import RestaurantCard from '../components/RestaurantCard';
-import { selectMenuGroups } from '../redux/menu-group/menu-group.selectors';
+import {
+  selectMenuGroups,
+  selectSelectedGroupId,
+} from '../redux/menu-group/menu-group.selectors';
 import { addProduct } from '../redux/menu-group/menu-group.thunks';
 import { selectRestaurantSelected } from '../redux/restaurant/restaurant.selectors';
 import { fetchRestaurant } from '../redux/restaurant/restaurant.thunks';
 import RestaurantModel from '../models/restaurant.model';
 import { addItem, clearItem, removeItem } from '../redux/cart/cart.reducer';
+import { scrollToPosition } from '../services/browser.service';
+import { updateselectedGroupId } from '../redux/menu-group/menu-group.reducer';
 
 export default function Restaurant() {
   const { slug } = useParams();
@@ -26,6 +31,7 @@ export default function Restaurant() {
     useSelector(selectRestaurantSelected) || new RestaurantModel();
   const cartRestaurant = useSelector(selectCartRestaurant);
   const menuGroups = useSelector(selectMenuGroups);
+  const selectedGroupId = useSelector(selectSelectedGroupId);
   const cartItems = useSelector(selectCartItems);
   const subTotal = useSelector(selectCartSubTotal);
   const grandTotal = useSelector(selectCartGrandTotal);
@@ -37,7 +43,7 @@ export default function Restaurant() {
     dispatch(fetchRestaurant(slug));
 
     // Scroll to top of the page
-    window.scrollTo(0, 0);
+    scrollToPosition(0, 0);
   }, [slug]);
 
   /**
@@ -89,11 +95,23 @@ export default function Restaurant() {
     dispatch(clearItem({ item }));
   };
 
+  /**
+   * Handle group selection
+   */
+  const handleGroupSelection = (groupId) => {
+    dispatch(updateselectedGroupId({ groupId }));
+  };
+
   return (
     <section className="main-container">
       <section className="menu-container">
         <RestaurantCard restaurant={selectedRestaurant} />
-        <MenuList menuGroups={menuGroups} addProduct={handleAddProduct} />
+        <MenuList
+          menuGroups={menuGroups}
+          selectedGroupId={selectedGroupId}
+          addProduct={handleAddProduct}
+          selectGroup={handleGroupSelection}
+        />
       </section>
       <section className="cart-container">
         <Cart
