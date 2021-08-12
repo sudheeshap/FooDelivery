@@ -4,12 +4,12 @@ import { Redirect } from 'react-router-dom';
 
 import { selectCustomerIsLoggedIn } from '../redux/customer/customer.selectors';
 
-export default function Checkout() {
+export default function CheckoutPage() {
   const isLoggedIn = useSelector(selectCustomerIsLoggedIn);
 
   if (isLoggedIn) {
     return <div>Hello Checkout</div>;
   }
 
-  return <Redirect to="/signin" />;
+  return <Redirect to="/login" />;
 }

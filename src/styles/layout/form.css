@@ -1,29 +1,54 @@
+.form__input-container {
+  position: relative;
+}
 .form__input {
   appearance: none;
   background-color: #fff;
+  border: 1px solid #abc;
   border-radius: 0.25rem;
+  box-sizing: border-box;
   color: #212529;
   outline: none;
-  border: 1px solid #abc;
-  display: block;
   width: 100%;
-  padding: 0.375rem 0.75rem;
-  font-size: 1rem;
+  padding: 6px 10px;
+  font-size: 0.9rem;
   font-weight: 400;
   line-height: 1.5;
+  transition: box-shadow 200ms ease-out;
+}
+
+.form__input:focus {
+  box-shadow: 1px 1px 5px rgb(99 102 241 / 35%);
+  border: 1px solid rgb(99 102 241 / 40%);
 }
 
 .form__input--lg {
   width: 400px;
-  height: 35px;
+  height: 48px;
+  padding: 8px 15px;
+  font-size: 1rem;
 }
 
-.form__input-search {
-  transition: box-shadow 200ms ease-out;
+.form__input--lg:focus {
+  box-shadow: none;
+  border: 2px solid rgb(99 102 241 / 40%);
+  padding: 7px 14px;
 }
 
-.form__input-search:focus {
-  box-shadow: 1px 1px 10px rgb(100 100 100 / 50%);
+.form__input-icon {
+  color: #adadad;
+  position: absolute;
+  top: 17px;
+  right: 10px;
+}
+
+.form__field-group {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.form__field-group .form__input-container:not(:first-child) {
+  margin-left: 10px;
 }
 
 .form__button {
@@ -54,6 +79,11 @@
 
 .form__button--shadow:hover {
   box-shadow: rgb(126 125 125 / 15%) 0px 10px 20px 0px;
+}
+
+.form__button--primary {
+  background-color: #6366f1;
+  color: white;
 }
 
 .form__button--success {

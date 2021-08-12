@@ -23,7 +23,7 @@ import { addItem, clearItem, removeItem } from '../redux/cart/cart.reducer';
 import { scrollToPosition } from '../services/browser.service';
 import { updateselectedGroupId } from '../redux/menu-group/menu-group.reducer';
 
-export default function Restaurant() {
+export default function RestaurantPage() {
   const { slug } = useParams();
   const dispatch = useDispatch();
 

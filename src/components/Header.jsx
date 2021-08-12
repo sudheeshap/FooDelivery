@@ -42,7 +42,9 @@ export default function Header() {
             </div>
           ) : (
             <div className="navbar__item">
-              <span className="navbar__link">Login</span>
+              <Link to="/login" className="navbar__link">
+                Login
+              </Link>
             </div>
           )}
         </div>

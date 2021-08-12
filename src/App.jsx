@@ -3,10 +3,11 @@ import { Route, Switch } from 'react-router-dom';
 
 import Header from './components/Header';
 import Footer from './components/Footer';
-import Restaurant from './pages/Restaurant';
-import Home from './pages/Home';
-import Signin from './pages/Signin';
-import Checkout from './pages/Checkout';
+import RestaurantPage from './pages/RestaurantPage';
+import CheckoutPage from './pages/CheckoutPage';
+import LoginPage from './pages/LoginPage';
+import HomePage from './pages/HomePage';
+import RegisterPage from './pages/RegisterPage';
 
 function App() {
   return (
@@ -14,17 +15,20 @@ function App() {
       <Header />
       <main>
         <Switch>
-          <Route path="/signin">
-            <Signin />
+          <Route path="/register">
+            <RegisterPage />
+          </Route>
+          <Route path="/login">
+            <LoginPage />
           </Route>
           <Route path="/restaurant/:slug">
-            <Restaurant />
+            <RestaurantPage />
           </Route>
           <Route path="/checkout">
-            <Checkout />
+            <CheckoutPage />
           </Route>
           <Route path="/">
-            <Home />
+            <HomePage />
           </Route>
         </Switch>
       </main>

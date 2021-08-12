@@ -1,6 +1,23 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  min-height: 100%;
+}
+
+main {
+  flex-grow: 1;
 }
