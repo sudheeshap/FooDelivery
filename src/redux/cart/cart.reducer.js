@@ -48,6 +48,9 @@ const cartSlice = createSlice({
     updateCartRestaurant(state, action) {
       state.restaurant = action.payload.restaurant;
     },
+    resetCart() {
+      return INITIAL_STATE.cart;
+    },
   },
 });
 
@@ -57,6 +60,7 @@ export const {
   clearItem,
   clearAllItems,
   updateCartRestaurant,
+  resetCart,
 } = cartSlice.actions;
 
 export default cartSlice.reducer;

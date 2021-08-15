@@ -1,0 +1,17 @@
+.delivery__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+  flex-direction: column;
+}
+
+.delivery__icon {
+  color: #d8d8d8;
+  font-size: 80px;
+  margin-bottom: 30px;
+}
+
+.delivery__button {
+  margin-top: 30px;
+}

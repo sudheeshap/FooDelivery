@@ -19,6 +19,9 @@ const restaurantSlice = createSlice({
       state.searchlist.sortBy = action.payload.type;
       state.searchlist.currentPage = 1;
     },
+    updateCurrentPage(state, action) {
+      state.searchlist.currentPage = action.payload.currentPage;
+    },
     loadMore(state, action) {
       state.searchlist.currentPage = action.payload.page;
     },
@@ -34,7 +37,12 @@ const restaurantSlice = createSlice({
   },
 });
 
-export const { updateFilterTypes, updateFilterQuery, updateSort, loadMore } =
-  restaurantSlice.actions;
+export const {
+  updateFilterTypes,
+  updateFilterQuery,
+  updateSort,
+  updateCurrentPage,
+  loadMore,
+} = restaurantSlice.actions;
 
 export default restaurantSlice.reducer;

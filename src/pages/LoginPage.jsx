@@ -1,14 +1,33 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useHistory, useLocation } from 'react-router-dom';
 
 import FormInput from '../components/FormInput';
 import Button from '../components/Button';
+import { useAuth } from '../hooks/useAuth';
 
 const LoginPage = () => {
   const [state, setState] = useState({ email: '', password: '' });
+  const [error, setError] = useState('');
+  const { login, isLoading } = useAuth();
+  const history = useHistory();
+  const { search } = useLocation();
+  const redirectFrom = new URLSearchParams(search).get('redirect_from') || '';
+  const errors = {
+    'auth/user-not-found': 'User not found',
+  };
 
-  const handleSubmit = async (event) => {
+  const handleSubmit = (event) => {
     event.preventDefault();
+
+    login(state.email, state.password).then((response) => {
+      if (response.user) {
+        history.push(`/${redirectFrom}`);
+
+        return;
+      }
+
+      setError(response.code);
+    });
   };
 
   /**
@@ -43,13 +62,18 @@ const LoginPage = () => {
             required
           />
 
-          <Button type="submit" color="primary" hasShadow>
+          <div className="form__error">{errors[error]}</div>
+
+          <Button type="submit" color="primary" hasShadow isLoading={isLoading}>
             Login
           </Button>
 
           <div>
             <span>Don&apos;t have an account?</span>
-            <Link to="/register" className="login__link">
+            <Link
+              to={`/register?redirect_from=${redirectFrom}`}
+              className="login__link"
+            >
               Create an account
             </Link>
           </div>

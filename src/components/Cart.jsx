@@ -8,6 +8,9 @@ import Button from './Button';
 export default function Cart({ details, addItem, removeItem, clearItem }) {
   const history = useHistory();
 
+  /**
+   * Clicked on checkout button
+   */
   const handleClickCheckout = () => {
     history.push('/checkout');
   };
@@ -68,17 +71,19 @@ export default function Cart({ details, addItem, removeItem, clearItem }) {
           </h3>
         </div>
       )}
-      <div className="cart__button-container">
-        <Button
-          hasShadow
-          size="lg"
-          color="success"
-          disabled={details.items.length === 0}
-          onClick={handleClickCheckout}
-        >
-          Proceed to Checkout
-        </Button>
-      </div>
+      {details.isEnabledCheckout && (
+        <div className="cart__button-container">
+          <Button
+            hasShadow
+            size="lg"
+            color="success"
+            disabled={details.items.length === 0}
+            onClick={handleClickCheckout}
+          >
+            Proceed to Checkout
+          </Button>
+        </div>
+      )}
     </div>
   );
 }

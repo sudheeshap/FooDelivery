@@ -1,19 +1,35 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useHistory, useLocation } from 'react-router-dom';
 
 import FormInput from '../components/FormInput';
 import Button from '../components/Button';
+import { useAuth } from '../hooks/useAuth';
+import CustomerModel from '../models/customer.model';
 
 const RegisterPage = () => {
-  const [state, setState] = useState({
-    fname: '',
-    lname: '',
-    mobile: '',
-    email: '',
-  });
+  const { register, isLoading } = useAuth();
+  const history = useHistory();
+  const { search } = useLocation();
+  const redirectFrom = new URLSearchParams(search).get('redirect_from') || '';
 
+  const initialState = {
+    ...new CustomerModel(),
+    password: '',
+    passwordConfirm: '',
+  };
+  const [state, setState] = useState(initialState);
+
+  /**
+   * Handle form submit
+   */
   const handleSubmit = async (event) => {
     event.preventDefault();
+
+    register(state).then((response) => {
+      if (response) {
+        history.push(`/${redirectFrom}`);
+      }
+    });
   };
 
   /**
@@ -33,17 +49,17 @@ const RegisterPage = () => {
         <form onSubmit={handleSubmit} className="register-form">
           <div className="form__field-group">
             <FormInput
-              name="fname"
+              name="firstName"
               type="text"
-              value={state.fname}
+              value={state.firstName}
               placeholder="First name"
               onChange={handleInputChange}
               required
             />
             <FormInput
-              name="lname"
+              name="lastName"
               type="text"
-              value={state.lname}
+              value={state.lastName}
               placeholder="Last name"
               onChange={handleInputChange}
               required
@@ -82,7 +98,7 @@ const RegisterPage = () => {
             required
           />
 
-          <Button type="submit" color="primary" hasShadow>
+          <Button type="submit" color="primary" hasShadow isLoading={isLoading}>
             Create your account
           </Button>
 

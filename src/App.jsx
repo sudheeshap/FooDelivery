@@ -8,6 +8,7 @@ import CheckoutPage from './pages/CheckoutPage';
 import LoginPage from './pages/LoginPage';
 import HomePage from './pages/HomePage';
 import RegisterPage from './pages/RegisterPage';
+import DeliveryPage from './pages/DeliveryPage';
 
 function App() {
   return (
@@ -26,6 +27,9 @@ function App() {
           </Route>
           <Route path="/checkout">
             <CheckoutPage />
+          </Route>
+          <Route path="/delivery">
+            <DeliveryPage />
           </Route>
           <Route path="/">
             <HomePage />

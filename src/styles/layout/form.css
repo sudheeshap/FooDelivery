@@ -51,6 +51,11 @@
   margin-left: 10px;
 }
 
+.form__error {
+  font-size: 11px;
+  color: red;
+}
+
 .form__button {
   display: flex;
   align-items: center;
@@ -98,4 +103,10 @@
 
 .form__button--lg {
   padding: 15px 30px;
+}
+
+.form__button-icon--loading {
+  animation: loading 1s infinite linear;
+  font-size: 16px;
+  padding: 2px;
 }

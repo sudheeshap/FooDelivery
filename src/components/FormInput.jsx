@@ -12,6 +12,7 @@ const FormInput = ({ type, name, value, size, onChange, ...props }) => (
       value={value}
       className={`form__input form__input--${size} ${props.className}`}
       disabled={props.disabled}
+      required={props.required}
       onChange={onChange}
     />
     {props.icon && <i className={`form__input-icon bi-${props.icon}`} />}
@@ -27,6 +28,7 @@ FormInput.defaultProps = {
   className: '',
   placeholder: '',
   disabled: false,
+  required: false,
   onChange: null,
 };
 
@@ -39,6 +41,7 @@ FormInput.propTypes = {
   className: PropTypes.string,
   placeholder: PropTypes.string,
   disabled: PropTypes.bool,
+  required: PropTypes.bool,
   onChange: PropTypes.func,
 };
 

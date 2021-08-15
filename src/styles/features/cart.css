@@ -40,7 +40,6 @@
 }
 
 .cart__amount-container {
-  border-top: 1px solid #f5f5f5;
   border-bottom: 1px solid #f5f5f5;
 }
 
@@ -59,6 +58,7 @@
 }
 
 .cart__button-container {
+  border-top: 1px solid #f5f5f5;
   display: flex;
   align-items: center;
   justify-content: center;
