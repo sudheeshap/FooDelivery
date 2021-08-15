@@ -76,7 +76,9 @@ export default function CheckoutPage() {
           <div className="checkout__details-container">
             <section className="checkout__address-container">
               <h4>Address</h4>
-              <div className="checkout__card">{`${customerFullname}'s address`}</div>
+              {customerFullname && (
+                <div className="checkout__card">{`${customerFullname}'s address`}</div>
+              )}
               <div className="checkout__card">TODO</div>
             </section>
             <section className="checkout__payment-container">

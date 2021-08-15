@@ -18,7 +18,8 @@ export const selectCustomerId = createSelector(
  */
 export const selectCustomerFullname = createSelector(
   [selectCustomerState],
-  (customer) => [customer.firstName, customer.lastName].join(' '),
+  (customer) =>
+    [customer.firstName, customer.lastName].filter(Boolean).join(' '),
 );
 
 /**
