@@ -1,13 +1,39 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useSelector } from 'react-redux';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 
 import CartIcon from './CartIcon';
-import { selectCartItemCount } from '../redux/cart/cart.selectors';
+import {
+  selectCartItemCount,
+  selectCartRestaurant,
+} from '../redux/cart/cart.selectors';
+import { selectCustomerIsLoggedIn } from '../redux/customer/customer.selectors';
+import { useAuth } from '../hooks/useAuth';
 
 export default function Header() {
-  const [isLoggedIn] = useState(false);
+  const { logout } = useAuth();
+  const history = useHistory();
+
   const cartItemCount = useSelector(selectCartItemCount);
+  const cartRestaurant = useSelector(selectCartRestaurant);
+  const isLoggedIn = useSelector(selectCustomerIsLoggedIn);
+
+  /**
+   * Clicked on logout button
+   */
+  const handleClickLogout = (event) => {
+    event.preventDefault();
+
+    // Logout customer
+    logout();
+  };
+
+  /**
+   * Clicked on cart icon
+   */
+  const handleClickCart = () => {
+    history.push(`/restaurant/${cartRestaurant.slug}`);
+  };
 
   return (
     <header>
@@ -24,13 +50,9 @@ export default function Header() {
           </div>
         </div>
         <div className="navbar__section">
-          <div className="navbar__item">
-            <CartIcon count={cartItemCount} />
-          </div>
-
           {isLoggedIn ? (
             <div className="navbar__item">
-              <div
+              {/* <div
                 className="navbar__user"
                 style={{
                   backgroundImage:
@@ -38,7 +60,10 @@ export default function Header() {
                 }}
               >
                 <img alt="" />
-              </div>
+              </div> */}
+              <a href="/" className="navbar__link" onClick={handleClickLogout}>
+                Logout
+              </a>
             </div>
           ) : (
             <div className="navbar__item">
@@ -47,6 +72,10 @@ export default function Header() {
               </Link>
             </div>
           )}
+
+          <div className="navbar__item">
+            <CartIcon count={cartItemCount} onClick={handleClickCart} />
+          </div>
         </div>
       </nav>
     </header>

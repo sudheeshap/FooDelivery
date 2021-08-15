@@ -7,7 +7,7 @@ const customerSlice = createSlice({
   initialState: INITIAL_STATE.customer,
   reducers: {
     updateCustomer(state, action) {
-      state.customer = action.payload.customer;
+      return action.payload.customer;
     },
   },
 });

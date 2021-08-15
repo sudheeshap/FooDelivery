@@ -9,9 +9,14 @@
 @import './layout/jumbotron';
 @import './layout/form';
 
+/* Animation */
+@import './animation';
+
 /* Features */
 @import './features/restaurant';
 @import './features/menu';
 @import './features/cart';
 @import './features/login';
 @import './features/register';
+@import './features/checkout';
+@import './features/delivery';

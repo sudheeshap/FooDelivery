@@ -3,7 +3,7 @@ import { createSelector } from '@reduxjs/toolkit';
 /**
  * Select customer state
  */
-const selectCustomerState = (state) => state.menuGroup;
+const selectCustomerState = (state) => state.customer;
 
 /**
  * Select customer ID
@@ -11,6 +11,14 @@ const selectCustomerState = (state) => state.menuGroup;
 export const selectCustomerId = createSelector(
   [selectCustomerState],
   (customer) => customer.id,
+);
+
+/**
+ * Select customer full name
+ */
+export const selectCustomerFullname = createSelector(
+  [selectCustomerState],
+  (customer) => [customer.firstName, customer.lastName].join(' '),
 );
 
 /**

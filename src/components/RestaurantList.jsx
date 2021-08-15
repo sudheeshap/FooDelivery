@@ -1,11 +1,12 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 
 import {
   updateSort,
   loadMore,
   updateFilterTypes,
+  updateCurrentPage,
 } from '../redux/restaurant/restaurant.reducer';
 import {
   selectRestaurants,
@@ -35,6 +36,8 @@ export default function RestaurantList() {
   const total = useSelector(selectSearchlistTotal);
 
   const dispatch = useDispatch();
+  const history = useHistory();
+
   const remainingCount = total - restaurants.length;
 
   useEffect(() => {
@@ -70,6 +73,17 @@ export default function RestaurantList() {
    */
   const handleClickPagination = () =>
     dispatch(loadMore({ page: currentPage + 1 }));
+
+  /**
+   * Clicked on a restaurant
+   */
+  const handleClickRestaurant = (event, restaurant) => {
+    event.preventDefault();
+
+    dispatch(updateCurrentPage({ currentPage: 1 }));
+
+    history.push(`/restaurant/${restaurant.slug}`);
+  };
 
   return (
     <section className="restaurant-list__wrapper">
@@ -116,6 +130,7 @@ export default function RestaurantList() {
               to={`/restaurant/${restaurant.slug}`}
               key={restaurant.id}
               className="restaurant__card-container"
+              onClick={(e) => handleClickRestaurant(e, restaurant)}
             >
               <RestaurantCard restaurant={restaurant} />
             </Link>

@@ -8,9 +8,6 @@ import {
   selectCartRestaurant,
   selectCartSubTotal,
 } from '../redux/cart/cart.selectors';
-import Cart from '../components/Cart';
-import MenuList from '../components/MenuList';
-import RestaurantCard from '../components/RestaurantCard';
 import {
   selectMenuGroups,
   selectSelectedGroupId,
@@ -22,6 +19,9 @@ import RestaurantModel from '../models/restaurant.model';
 import { addItem, clearItem, removeItem } from '../redux/cart/cart.reducer';
 import { scrollToPosition } from '../services/browser.service';
 import { updateselectedGroupId } from '../redux/menu-group/menu-group.reducer';
+import Cart from '../components/Cart';
+import MenuList from '../components/MenuList';
+import RestaurantCard from '../components/RestaurantCard';
 
 export default function RestaurantPage() {
   const { slug } = useParams();
@@ -55,6 +55,7 @@ export default function RestaurantPage() {
       restaurant: null,
       subTotal,
       grandTotal,
+      isEnabledCheckout: true,
     };
 
     if (selectedRestaurant.id === cartRestaurant?.id) {
@@ -111,6 +112,7 @@ export default function RestaurantPage() {
           selectedGroupId={selectedGroupId}
           addProduct={handleAddProduct}
           selectGroup={handleGroupSelection}
+          isEnabled={selectedRestaurant.isOpen}
         />
       </section>
       <section className="cart-container">

@@ -2,7 +2,7 @@ import React from 'react';
 import { PropTypes } from 'prop-types';
 import food from '../assets/images/food-placeholder.jpg';
 
-export default function ProductCard({ product, addProduct }) {
+export default function ProductCard({ product, addProduct, isEnabled }) {
   return (
     <div className="product__card">
       <div
@@ -18,19 +18,26 @@ export default function ProductCard({ product, addProduct }) {
           <span>AED </span>
           <span>{product.price}</span>
         </div>
-        <button
-          type="button"
-          className="form__button form__button--sm product__add-button"
-          onClick={() => addProduct(product)}
-        >
-          Add
-        </button>
+        {isEnabled && (
+          <button
+            type="button"
+            className="form__button form__button--sm product__add-button"
+            onClick={() => addProduct(product)}
+          >
+            Add
+          </button>
+        )}
       </div>
     </div>
   );
 }
 
+ProductCard.defaultProps = {
+  isEnabled: false,
+};
+
 ProductCard.propTypes = {
+  isEnabled: PropTypes.bool,
   product: PropTypes.instanceOf(Object).isRequired,
   addProduct: PropTypes.func.isRequired,
 };

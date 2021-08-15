@@ -9,6 +9,7 @@ export default function MenuList({
   selectedGroupId,
   addProduct,
   selectGroup,
+  isEnabled,
 }) {
   const productRefs = [];
 
@@ -59,6 +60,7 @@ export default function MenuList({
                 key={product.id}
                 product={product}
                 addProduct={addProduct}
+                isEnabled={isEnabled}
               />
             ))}
           </React.Fragment>
@@ -69,6 +71,7 @@ export default function MenuList({
 }
 
 MenuList.propTypes = {
+  isEnabled: PropTypes.bool.isRequired,
   menuGroups: PropTypes.instanceOf(Array).isRequired,
   selectedGroupId: PropTypes.string.isRequired,
   addProduct: PropTypes.func.isRequired,
