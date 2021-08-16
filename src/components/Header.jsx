@@ -36,7 +36,7 @@ export default function Header() {
   };
 
   return (
-    <header>
+    <header className="header">
       <nav className="navbar">
         <div className="navbar__section">
           <div className="navbar__item">

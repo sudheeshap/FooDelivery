@@ -28,7 +28,8 @@ export default function Jumbotron() {
             type="text"
             size="lg"
             icon="search"
-            placeholder="Search for a restaurant"
+            placeholder="Search for a restaurant.."
+            className="jumbotron__input-search"
             onChange={handleChangeSearch}
           />
         </div>

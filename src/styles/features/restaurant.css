@@ -154,7 +154,7 @@
 }
 
 .restaurant__card-title {
-  font-size: 15px;
+  font-size: 1.2em;
   font-weight: bold;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -278,7 +278,7 @@
 
 @media only screen and (min-width: 600px) {
   .restaurant__card-container {
-    width: 46.6%;
+    width: 46.5%;
   }
 }
 

@@ -5,6 +5,7 @@
   justify-content: center;
   align-items: center;
   height: calc(100vh - 160px);
+  padding: 15px;
 }
 
 .register-container {
