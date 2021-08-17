@@ -1,0 +1,14 @@
+.image {
+  position: absolute;
+  opacity: 0;
+  transition: opacity 300ms ease-in;
+}
+
+.image--placeholder {
+  background-color: #f0f0f0;
+}
+
+.image--loaded {
+  position: static;
+  opacity: 1;
+}

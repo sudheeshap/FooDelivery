@@ -3,14 +3,17 @@
 @import-normalize;
 
 /* Layout */
-@import './layout/layout';
-@import './layout/header';
-@import './layout/footer';
-@import './layout/jumbotron';
-@import './layout/form';
+@import './layout';
 
 /* Animation */
 @import './animation';
+
+/* Shared */
+@import './shared/header';
+@import './shared/footer';
+@import './shared/jumbotron';
+@import './shared/form';
+@import './shared/image';
 
 /* Features */
 @import './features/restaurant';
