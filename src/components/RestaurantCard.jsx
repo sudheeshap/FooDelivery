@@ -1,17 +1,23 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import LazyImage from './LazyImage';
+
 export default function RestaurantCard({ restaurant }) {
   return (
     <div className="restaurant__card">
-      <div
+      <LazyImage
+        isBackgroundImage
+        src={restaurant.coverPhoto}
         className="restaurant__card-image"
-        style={{ backgroundImage: `url(${restaurant.coverPhoto})` }}
       />
-      <div
+
+      <LazyImage
+        isBackgroundImage
+        src={restaurant.logo}
         className="restaurant__card-logo"
-        style={{ backgroundImage: `url(${restaurant.logo})` }}
       />
+
       <div className="restaurant__card-info">
         <div className="restaurant__card-title">{restaurant.name}</div>
         <div className="restaurant__card-subtitle">
@@ -44,6 +50,7 @@ export default function RestaurantCard({ restaurant }) {
           )}
         </div>
       </div>
+
       {!restaurant.isOpen && (
         <div className="restaurant__card-overlay">Closed</div>
       )}

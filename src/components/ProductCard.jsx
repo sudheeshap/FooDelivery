@@ -1,16 +1,18 @@
 import React from 'react';
 import { PropTypes } from 'prop-types';
+
 import food from '../assets/images/food-placeholder.jpg';
+import LazyImage from './LazyImage';
 
 export default function ProductCard({ product, addProduct, isEnabled }) {
   return (
     <div className="product__card">
-      <div
+      <LazyImage
+        isBackgroundImage
+        src={product.photoThumbnail || food}
         className="product__image"
-        style={{
-          backgroundImage: `url(${product.photoThumbnail || food})`,
-        }}
       />
+
       <div className="product__info">
         <div className="product__title">{product.name}</div>
         <div className="product__description">{product.description}</div>
