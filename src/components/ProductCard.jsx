@@ -2,8 +2,8 @@ import React from 'react';
 import { PropTypes } from 'prop-types';
 
 import food from '../assets/images/food-placeholder.jpg';
-import LazyImage from './LazyImage';
-import Button from './button/Button';
+import Button from './shared/button/Button';
+import LazyImage from './shared/lazy-image/LazyImage';
 
 export default function ProductCard({ product, addProduct, isEnabled }) {
   return (

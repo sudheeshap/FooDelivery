@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { Link, useHistory, useLocation } from 'react-router-dom';
 
-import FormInput from '../components/FormInput';
-import Button from '../components/button/Button';
+import FormInput from '../components/shared/form-input/FormInput';
+import Button from '../components/shared/button/Button';
 import { useAuth } from '../hooks/useAuth';
 
 const LoginPage = () => {

@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { PropTypes } from 'prop-types';
 
-import useIntersectionObserver from '../hooks/useIntersectionObserver';
+import useIntersectionObserver from '../../../hooks/useIntersectionObserver';
 
 /**
  * Lazy loaded image or div with background image

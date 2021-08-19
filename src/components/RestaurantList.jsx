@@ -20,7 +20,7 @@ import {
 import { fetchRestaurants } from '../redux/restaurant/restaurant.thunks';
 import { getFilterOptions, getSortOptions } from '../services/runtime.service';
 import RestaurantCard from './RestaurantCard';
-import Button from './button/Button';
+import Button from './shared/button/Button';
 
 export default function RestaurantList() {
   // Options

@@ -2,13 +2,13 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import { Link, useHistory } from 'react-router-dom';
 
-import CartIcon from './CartIcon';
 import {
   selectCartItemCount,
   selectCartRestaurant,
-} from '../redux/cart/cart.selectors';
-import { selectCustomerIsLoggedIn } from '../redux/customer/customer.selectors';
-import { useAuth } from '../hooks/useAuth';
+} from '../../../redux/cart/cart.selectors';
+import { selectCustomerIsLoggedIn } from '../../../redux/customer/customer.selectors';
+import { useAuth } from '../../../hooks/useAuth';
+import CartIcon from '../../CartIcon';
 
 export default function Header() {
   const { logout } = useAuth();

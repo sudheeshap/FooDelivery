@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { useHistory } from 'react-router-dom';
 
-import Button from '../components/button/Button';
+import Button from '../components/shared/button/Button';
 import { resetCart } from '../redux/cart/cart.reducer';
 
 export default function DeliveryPage() {

@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import LazyImage from './LazyImage';
+import LazyImage from './shared/lazy-image/LazyImage';
 
 export default function RestaurantCard({ restaurant }) {
   return (

@@ -1,9 +1,9 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
 
-import { updateFilterQuery } from '../redux/restaurant/restaurant.reducer';
-import useDebounce from '../hooks/useDebounce';
-import FormInput from './FormInput';
+import FormInput from '../form-input/FormInput';
+import useDebounce from '../../../hooks/useDebounce';
+import { updateFilterQuery } from '../../../redux/restaurant/restaurant.reducer';
 
 export default function Jumbotron() {
   const dispatch = useDispatch();
