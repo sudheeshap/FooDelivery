@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link, useHistory, useLocation } from 'react-router-dom';
 
 import FormInput from '../components/FormInput';
-import Button from '../components/Button';
+import Button from '../components/button/Button';
 import { useAuth } from '../hooks/useAuth';
 import CustomerModel from '../models/customer.model';
 
@@ -98,7 +98,7 @@ const RegisterPage = () => {
             required
           />
 
-          <Button type="submit" color="primary" hasShadow isLoading={isLoading}>
+          <Button type="submit" color="primary" isLoading={isLoading}>
             Create your account
           </Button>
 

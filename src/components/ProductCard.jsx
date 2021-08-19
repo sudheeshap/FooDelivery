@@ -3,6 +3,7 @@ import { PropTypes } from 'prop-types';
 
 import food from '../assets/images/food-placeholder.jpg';
 import LazyImage from './LazyImage';
+import Button from './button/Button';
 
 export default function ProductCard({ product, addProduct, isEnabled }) {
   return (
@@ -21,13 +22,16 @@ export default function ProductCard({ product, addProduct, isEnabled }) {
           <span>{product.price}</span>
         </div>
         {isEnabled && (
-          <button
+          <Button
+            outline
             type="button"
-            className="form__button form__button--sm product__add-button"
+            size="sm"
+            color="success"
+            className="product__add-button"
             onClick={() => addProduct(product)}
           >
             Add
-          </button>
+          </Button>
         )}
       </div>
     </div>

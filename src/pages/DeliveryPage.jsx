@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { useHistory } from 'react-router-dom';
-import Button from '../components/Button';
+
+import Button from '../components/button/Button';
 import { resetCart } from '../redux/cart/cart.reducer';
 
 export default function DeliveryPage() {
@@ -32,6 +33,7 @@ export default function DeliveryPage() {
       </div>
       <Button
         color="success"
+        hasShadow
         className="delivery__button"
         onClick={handleClickContinue}
       >
