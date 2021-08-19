@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link, useHistory, useLocation } from 'react-router-dom';
 
 import FormInput from '../components/FormInput';
-import Button from '../components/Button';
+import Button from '../components/button/Button';
 import { useAuth } from '../hooks/useAuth';
 
 const LoginPage = () => {

@@ -1,21 +1,22 @@
 import React from 'react';
 import { PropTypes } from 'prop-types';
 
-const Button = ({ children, size, type, onClick, ...props }) => (
-  <button
+import StyledButton, { ButtonIconLoading } from './Button.styles';
+
+const Button = ({ children, size, color, type, onClick, ...props }) => (
+  <StyledButton
     type={type === 'submit' ? 'submit' : 'button'}
-    className={`form__button form__button--${size} form__button--${
-      props.color
-    } ${props.hasShadow ? 'form__button--shadow' : ''}
-    ${props.className}`}
+    size={size}
+    color={color}
+    hasShadow={props.hasShadow}
+    outline={props.outline}
+    className={props.className}
     disabled={props.disabled || props.isLoading}
     onClick={onClick}
   >
     {children}
-    {props.isLoading && (
-      <i className="bi-arrow-repeat form__button-icon--loading" />
-    )}
-  </button>
+    {props.isLoading && <ButtonIconLoading className="bi-arrow-repeat" />}
+  </StyledButton>
 );
 
 Button.defaultProps = {
@@ -24,9 +25,10 @@ Button.defaultProps = {
   type: 'button',
   color: 'primary',
   className: '',
+  outline: false,
+  hasShadow: false,
   disabled: false,
   isLoading: false,
-  hasShadow: false,
   onClick: null,
 };
 
@@ -36,9 +38,10 @@ Button.propTypes = {
   type: PropTypes.string,
   color: PropTypes.string,
   className: PropTypes.string,
+  outline: PropTypes.bool,
+  hasShadow: PropTypes.bool,
   disabled: PropTypes.bool,
   isLoading: PropTypes.bool,
-  hasShadow: PropTypes.bool,
   onClick: PropTypes.func,
 };
 

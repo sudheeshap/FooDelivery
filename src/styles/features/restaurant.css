@@ -110,7 +110,9 @@
 }
 
 .restaurant-list__filters {
-  margin-right: 25px;
+  margin: 15px 0 15px;
+  display: flex;
+  align-items: center;
 }
 
 .restaurant-list__header,
@@ -122,15 +124,7 @@
 }
 
 .restaurant-list__filter {
-  appearance: none;
-  border: none;
-  cursor: pointer;
-  padding: 5px 10px;
-  background-color: #e5e5e5;
-  border-radius: 5px;
   margin: 0 5px;
-  font-size: 11px;
-  font-weight: bold;
   color: #666;
 }
 
@@ -267,13 +261,6 @@
 
 .restaurant__pagination-button {
   margin: 0 auto;
-  border: 1px solid #6366f1;
-  background-color: #f5f5f5;
-  color: #6366f1;
-}
-
-.restaurant__pagination-button:hover {
-  background-color: #e1e2ff;
 }
 
 @media only screen and (min-width: 600px) {
@@ -285,5 +272,9 @@
 @media only screen and (min-width: 950px) {
   .restaurant__card-container {
     width: 31%;
+  }
+
+  .restaurant-list__filters {
+    margin: 0 25px 0 0;
   }
 }

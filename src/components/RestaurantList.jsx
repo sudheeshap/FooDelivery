@@ -20,6 +20,7 @@ import {
 import { fetchRestaurants } from '../redux/restaurant/restaurant.thunks';
 import { getFilterOptions, getSortOptions } from '../services/runtime.service';
 import RestaurantCard from './RestaurantCard';
+import Button from './button/Button';
 
 export default function RestaurantList() {
   // Options
@@ -98,8 +99,10 @@ export default function RestaurantList() {
             <div className="restaurant-list__filters">
               <span>Filter by</span>
               {filterOptions.map((option) => (
-                <button
+                <Button
                   type="button"
+                  size="sm"
+                  color="default"
                   onClick={() => handleClickFilterTypes(option.value)}
                   className={`restaurant-list__filter ${
                     filterTypes.includes(option.value)
@@ -109,7 +112,7 @@ export default function RestaurantList() {
                   key={option.value}
                 >
                   {option.text}
-                </button>
+                </Button>
               ))}
             </div>
             <div className="restaurant-list__sort">
@@ -145,13 +148,14 @@ export default function RestaurantList() {
 
         {remainingCount > 0 && (
           <div className="restaurant__pagination">
-            <button
+            <Button
               type="button"
-              className="form__button restaurant__pagination-button"
+              outline
+              className="restaurant__pagination-button"
               onClick={handleClickPagination}
             >
               Load more
-            </button>
+            </Button>
           </div>
         )}
       </div>

@@ -1,8 +1,8 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Redirect, useHistory } from 'react-router-dom';
-import Button from '../components/Button';
 
+import Button from '../components/button/Button';
 import Cart from '../components/Cart';
 import { addItem, clearItem, removeItem } from '../redux/cart/cart.reducer';
 import {
@@ -87,7 +87,12 @@ export default function CheckoutPage() {
               <div className="checkout__card">TODO</div>
             </section>
             <section className="checkout__payment-button-wrapper">
-              <Button color="primary" size="lg" onClick={handleClickPlaceOrder}>
+              <Button
+                color="primary"
+                size="lg"
+                hasShadow
+                onClick={handleClickPlaceOrder}
+              >
                 Place order
               </Button>
             </section>
