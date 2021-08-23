@@ -1,3 +1,10 @@
+html {
+  --color-text-primary: #333;
+  --color-text-secondary: #666666;
+  --color-background: white;
+  --color-primary: #6366f1;
+}
+
 html,
 body {
   height: 100%;
@@ -5,6 +12,7 @@ body {
 }
 
 body {
+  color: var(--color-text);
   font-size: 14px;
   margin: 0;
   font-family: 'Roboto', sans-serif;

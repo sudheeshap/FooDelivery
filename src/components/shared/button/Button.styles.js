@@ -2,7 +2,7 @@ import styled, { css } from 'styled-components';
 
 const variantStyles = {
   primary: css`
-    background-color: #6366f1;
+    background-color: var(--color-primary);
     color: white;
   `,
   success: css`
@@ -13,9 +13,9 @@ const variantStyles = {
 
 const variantStylesOutline = {
   primary: css`
-    border: 1px solid #6366f1;
+    border: 1px solid var(--color-primary);
     background-color: #ffffff;
-    color: #6366f1;
+    color: var(--color-primary);
 
     &:hover {
       background-color: #e1e2ff;

@@ -2,8 +2,8 @@ import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Redirect, useHistory } from 'react-router-dom';
 
+import Cart from '../components/cart/Cart';
 import Button from '../components/shared/button/Button';
-import Cart from '../components/Cart';
 import { addItem, clearItem, removeItem } from '../redux/cart/cart.reducer';
 import {
   selectCartGrandTotal,

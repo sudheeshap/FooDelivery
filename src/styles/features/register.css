@@ -40,7 +40,7 @@
 }
 
 .register__link {
-  color: #6366f1;
+  color: var(--color-primary);
   margin: 0 10px;
   text-decoration: none;
   font-weight: 500;

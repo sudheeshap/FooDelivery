@@ -121,7 +121,7 @@
 }
 
 .cart__counter-button {
-  color: #6366f1;
+  color: var(--color-primary);
   cursor: pointer;
   font-weight: bold;
   padding: 5px;
@@ -142,7 +142,6 @@
 .cart__icon {
   cursor: pointer;
   font-size: 22px;
-  padding: 10px 15px;
   position: relative;
 }
 
@@ -168,6 +167,18 @@
   padding: 2px;
   line-height: 1em;
   z-index: 10;
+}
+
+#modal__wrapper .cart {
+  box-shadow: none;
+  padding: 0;
+}
+
+#modal__wrapper .cart__button-container {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  width: 100%;
 }
 
 @media screen and (min-width: 1100px) {

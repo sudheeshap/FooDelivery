@@ -129,7 +129,7 @@
 }
 
 .restaurant-list__filter--active {
-  background-color: #6366f1;
+  background-color: var(--color-primary);
   color: #fff;
 }
 

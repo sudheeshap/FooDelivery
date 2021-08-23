@@ -20,7 +20,6 @@ const Button = ({ children, size, color, type, onClick, ...props }) => (
 );
 
 Button.defaultProps = {
-  children: '',
   size: 'md',
   type: 'button',
   color: 'primary',
@@ -33,7 +32,7 @@ Button.defaultProps = {
 };
 
 Button.propTypes = {
-  children: PropTypes.string,
+  children: PropTypes.oneOfType([PropTypes.node, PropTypes.string]).isRequired,
   size: PropTypes.string,
   type: PropTypes.string,
   color: PropTypes.string,

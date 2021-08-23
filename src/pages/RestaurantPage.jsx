@@ -1,9 +1,10 @@
-import React, { useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
+import { useHistory, useParams } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 
 import {
   selectCartGrandTotal,
+  selectCartItemCount,
   selectCartItems,
   selectCartRestaurant,
   selectCartSubTotal,
@@ -19,13 +20,23 @@ import RestaurantModel from '../models/restaurant.model';
 import { addItem, clearItem, removeItem } from '../redux/cart/cart.reducer';
 import { scrollToPosition } from '../services/browser.service';
 import { updateselectedGroupId } from '../redux/menu-group/menu-group.reducer';
-import Cart from '../components/Cart';
 import MenuList from '../components/MenuList';
 import RestaurantCard from '../components/RestaurantCard';
+import Modal from '../components/shared/modal/Modal';
+import {
+  CartContainer,
+  CartCountButton,
+  CartInfoWrapperMobile,
+} from '../components/cart/Cart.styles';
+import Cart from '../components/cart/Cart';
+import Button from '../components/shared/button/Button';
+import CartIcon from '../components/CartIcon';
 
 export default function RestaurantPage() {
+  const history = useHistory();
   const { slug } = useParams();
   const dispatch = useDispatch();
+  const [isModalOpen, setModalOpen] = useState(false);
 
   const selectedRestaurant =
     useSelector(selectRestaurantSelected) || new RestaurantModel();
@@ -35,6 +46,7 @@ export default function RestaurantPage() {
   const cartItems = useSelector(selectCartItems);
   const subTotal = useSelector(selectCartSubTotal);
   const grandTotal = useSelector(selectCartGrandTotal);
+  const cartItemCount = useSelector(selectCartItemCount);
 
   /**
    * Load restaurant and menu groups based on slug
@@ -103,6 +115,20 @@ export default function RestaurantPage() {
     dispatch(updateselectedGroupId({ groupId }));
   };
 
+  /**
+   * Handle cart button click
+   */
+  const handleClickCart = () => {
+    setModalOpen(true);
+  };
+
+  /**
+   * Clicked on checkout button
+   */
+  const handleClickCheckout = () => {
+    history.push('/checkout');
+  };
+
   return (
     <section className="main-container">
       <section className="menu-container">
@@ -115,14 +141,34 @@ export default function RestaurantPage() {
           isEnabled={selectedRestaurant.isOpen}
         />
       </section>
-      <section className="cart-container">
+      <CartContainer>
         <Cart
           details={cartDetails}
           addItem={handleAddCartItem}
           removeItem={handleRemoveCartItem}
           clearItem={handleClearCartItem}
         />
-      </section>
+
+        <Modal isOpen={isModalOpen} onRequestClose={() => setModalOpen(false)}>
+          <Cart
+            details={cartDetails}
+            addItem={handleAddCartItem}
+            removeItem={handleRemoveCartItem}
+            clearItem={handleClearCartItem}
+          />
+        </Modal>
+      </CartContainer>
+
+      {cartItemCount > 0 && (
+        <CartInfoWrapperMobile>
+          <CartCountButton outline color="primary" size="sm">
+            <CartIcon count={cartItemCount} onClick={handleClickCart} />
+          </CartCountButton>
+          <Button color="success" onClick={handleClickCheckout}>
+            Go to checkout
+          </Button>
+        </CartInfoWrapperMobile>
+      )}
     </section>
   );
 }

@@ -2,8 +2,8 @@ import React from 'react';
 import { PropTypes } from 'prop-types';
 import { useHistory } from 'react-router-dom';
 
-import CartItem from './CartItem';
-import Button from './shared/button/Button';
+import CartItem from '../CartItem';
+import Button from '../shared/button/Button';
 
 export default function Cart({ details, addItem, removeItem, clearItem }) {
   const history = useHistory();
