@@ -5,11 +5,16 @@ import Button from '../shared/button/Button';
 
 export const CartContainer = styled.section`
   width: 100%;
+  display: flex;
+  justify-content: center;
   display: none;
 
-  @media screen and ${breakpoints.device.md} {
+  @media screen and ${breakpoints.device.lg} {
     display: flex;
     justify-content: center;
+    width: 28%;
+    position: sticky;
+    top: 10px;
   }
 `;
 
@@ -26,7 +31,7 @@ export const CartInfoWrapperMobile = styled.div`
   height: 80px;
   z-index: 100;
 
-  @media screen and ${breakpoints.device.md} {
+  @media screen and ${breakpoints.device.lg} {
     display: none;
   }
 `;

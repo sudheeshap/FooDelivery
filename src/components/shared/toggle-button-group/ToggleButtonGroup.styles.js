@@ -19,6 +19,6 @@ export const ToggleButton = styled(Button)`
   margin-bottom: 8px;
 
   @media screen and ${breakpoints.device.md} {
-    margin-right: 8px;
+    margin: 0 8px 0 0;
   }
 `;

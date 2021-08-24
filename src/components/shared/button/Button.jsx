@@ -1,7 +1,7 @@
 import React from 'react';
 import { PropTypes } from 'prop-types';
 
-import StyledButton, { ButtonIconLoading } from './Button.styles';
+import StyledButton, { ButtonIcon, ButtonIconLoading } from './Button.styles';
 
 const Button = ({ children, size, color, type, onClick, ...props }) => (
   <StyledButton
@@ -15,6 +15,7 @@ const Button = ({ children, size, color, type, onClick, ...props }) => (
     onClick={onClick}
   >
     {children}
+    {props.icon && <ButtonIcon className={`bi-${props.icon}`} />}
     {props.isLoading && <ButtonIconLoading className="bi-arrow-repeat" />}
   </StyledButton>
 );
@@ -23,6 +24,7 @@ Button.defaultProps = {
   size: 'md',
   type: 'button',
   color: 'primary',
+  icon: '',
   className: '',
   outline: false,
   hasShadow: false,
@@ -36,6 +38,7 @@ Button.propTypes = {
   size: PropTypes.string,
   type: PropTypes.string,
   color: PropTypes.string,
+  icon: PropTypes.string,
   className: PropTypes.string,
   outline: PropTypes.bool,
   hasShadow: PropTypes.bool,

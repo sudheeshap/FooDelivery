@@ -95,48 +95,6 @@
   border-radius: 10px;
 }
 
-.restaurant-list__count {
-  font-size: 14px;
-  display: flex;
-}
-
-.restaurant-list__header {
-  width: 100%;
-  margin: 30px 10px 20px;
-  color: #666666;
-  font-weight: bold;
-  font-size: 12px;
-  padding: 0 10px;
-}
-
-.restaurant-list__filters {
-  margin: 15px 0 15px;
-  display: flex;
-  align-items: center;
-}
-
-.restaurant-list__header,
-.restaurant-list__actions {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.restaurant-list__filter {
-  margin: 0 5px;
-  color: #666;
-}
-
-.restaurant-list__filter--active {
-  background-color: var(--color-primary);
-  color: #fff;
-}
-
-.restaurant-list__sort select {
-  margin-left: 5px;
-}
-
 .restaurant__card-free-delivery {
   background-color: #cce3ef;
   padding: 1px 10px;
@@ -272,9 +230,5 @@
 @media only screen and (min-width: 950px) {
   .restaurant__card-container {
     width: 31%;
-  }
-
-  .restaurant-list__filters {
-    margin: 0 25px 0 0;
   }
 }

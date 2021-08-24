@@ -1,6 +1,10 @@
 import styled, { css } from 'styled-components';
 
 const variantStyles = {
+  default: css`
+    background-color: var(--color-bg-secondary);
+    color: var(--color-text-secondary);
+  `,
   primary: css`
     background-color: var(--color-primary);
     color: white;
@@ -12,6 +16,15 @@ const variantStyles = {
 };
 
 const variantStylesOutline = {
+  default: css`
+    border: 1px solid var(--color-text-secondary);
+    background-color: #ffffff;
+    color: var(--color-text-secondary);
+
+    &:hover {
+      background-color: #f0f0f0;
+    }
+  `,
   primary: css`
     border: 1px solid var(--color-primary);
     background-color: #ffffff;
@@ -83,6 +96,11 @@ const StyledButton = styled.button`
   &:hover {
     box-shadow: rgb(200 200 200 / 15%) 0px 10px 20px 0px;
   }
+`;
+
+export const ButtonIcon = styled.i`
+  font-size: 16px;
+  margin-left: 10px;
 `;
 
 export const ButtonIconLoading = styled.i`

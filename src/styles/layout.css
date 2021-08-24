@@ -1,7 +1,8 @@
 html {
   --color-text-primary: #333;
   --color-text-secondary: #666666;
-  --color-background: white;
+  --color-bg-primary: white;
+  --color-bg-secondary: #f5f5f5;
   --color-primary: #6366f1;
 }
 

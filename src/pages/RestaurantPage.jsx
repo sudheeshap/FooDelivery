@@ -151,7 +151,11 @@ export default function RestaurantPage() {
 
         <Modal isOpen={isModalOpen} onRequestClose={() => setModalOpen(false)}>
           <Cart
-            details={cartDetails}
+            details={{
+              ...cartDetails,
+              items: cartItems,
+              restaurant: cartRestaurant,
+            }}
             addItem={handleAddCartItem}
             removeItem={handleRemoveCartItem}
             clearItem={handleClearCartItem}
@@ -165,7 +169,7 @@ export default function RestaurantPage() {
             <CartIcon count={cartItemCount} onClick={handleClickCart} />
           </CartCountButton>
           <Button color="success" onClick={handleClickCheckout}>
-            Go to checkout
+            Proceed to checkout
           </Button>
         </CartInfoWrapperMobile>
       )}

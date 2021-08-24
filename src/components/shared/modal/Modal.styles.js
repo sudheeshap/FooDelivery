@@ -20,7 +20,6 @@ export const ModalContent = styled.div`
   background-color: #ffffff;
   width: 100%;
   height: 100%;
-  padding: 10px;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
@@ -30,6 +29,7 @@ export const ModalContent = styled.div`
   @media screen and ${breakpoints.device.md} {
     border-radius: 8px;
     width: 600px;
+    height: auto;
     max-height: 80%;
   }
 `;
@@ -56,7 +56,7 @@ export const ModalButtonIconClose = styled(Button)`
 `;
 
 export const ModalBody = styled.div`
-  padding: 20px 10px;
+  padding: 20px 30px;
   width: 100%;
   display: flex;
   box-sizing: border-box;
