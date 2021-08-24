@@ -20,6 +20,5 @@
 @import './features/menu';
 @import './features/cart';
 @import './features/login';
-@import './features/register';
 @import './features/checkout';
 @import './features/delivery';
