@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
-import { createPortal } from 'react-dom/cjs/react-dom.development';
 import { PropTypes } from 'prop-types';
+import { createPortal } from 'react-dom';
 
 import {
   ModalBody,
