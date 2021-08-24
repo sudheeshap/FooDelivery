@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const StyledSelect = styled.select`
+  background-color: white;
   border: none;
   padding: 2px 5px;
   box-shadow: 0px 2px 5px rgb(150 150 150 / 50%);
