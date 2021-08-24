@@ -10,55 +10,50 @@ import {
 } from '../redux/restaurant/restaurant.reducer';
 import {
   selectRestaurants,
-  selectSearchlistCurrentPage,
-  selectSearchlistFilterQuery,
-  selectSearchlistFilterTypes,
-  selectSearchlistPerPage,
-  selectSearchlistSortBy,
-  selectSearchlistTotal,
+  selectSearchlist,
 } from '../redux/restaurant/restaurant.selectors';
 import { fetchRestaurants } from '../redux/restaurant/restaurant.thunks';
-import { getFilterOptions, getSortOptions } from '../services/runtime.service';
 import RestaurantCard from './RestaurantCard';
+import RestaurantListHeader from './restaurant-list-header/RestaurantListHeader';
 import Button from './shared/button/Button';
 
 export default function RestaurantList() {
-  // Options
-  const filterOptions = getFilterOptions();
-  const sortOptions = getSortOptions();
-
   // Selectors
   const restaurants = useSelector(selectRestaurants);
-  const filterTypes = useSelector(selectSearchlistFilterTypes);
-  const filterQuery = useSelector(selectSearchlistFilterQuery);
-  const sortBy = useSelector(selectSearchlistSortBy);
-  const currentPage = useSelector(selectSearchlistCurrentPage);
-  const perPage = useSelector(selectSearchlistPerPage);
-  const total = useSelector(selectSearchlistTotal);
+  const searchlist = useSelector(selectSearchlist);
 
   const dispatch = useDispatch();
   const history = useHistory();
 
-  const remainingCount = total - restaurants.length;
+  const remainingCount = searchlist.total - restaurants.length;
 
   useEffect(() => {
+    // Fetch restaurant list
     dispatch(
       fetchRestaurants({
-        filters: { types: filterTypes, query: filterQuery },
-        sortBy,
-        currentPage,
-        perPage,
+        filters: {
+          types: searchlist.filters.types,
+          query: searchlist.filters.query,
+        },
+        sortBy: searchlist.sortBy,
+        currentPage: searchlist.currentPage,
+        perPage: searchlist.perPage,
       }),
     );
-  }, [filterTypes.length, filterQuery, sortBy, currentPage]);
+  }, [
+    searchlist.filters.types.length,
+    searchlist.filters.query,
+    searchlist.sortBy,
+    searchlist.currentPage,
+  ]);
 
   /**
-   * Clicked on filter types
+   * Filters changed
    */
-  const handleClickFilterTypes = (value) => {
-    const types = filterTypes.includes(value)
-      ? filterTypes.filter((t) => t !== value)
-      : [...filterTypes, value];
+  const handleChangeFilters = (value) => {
+    const types = searchlist.filters.types.includes(value)
+      ? searchlist.filters.types.filter((t) => t !== value)
+      : [...searchlist.filters.types, value];
 
     dispatch(updateFilterTypes({ types }));
   };
@@ -73,7 +68,7 @@ export default function RestaurantList() {
    * Clicked on pagination
    */
   const handleClickPagination = () =>
-    dispatch(loadMore({ page: currentPage + 1 }));
+    dispatch(loadMore({ page: searchlist.currentPage + 1 }));
 
   /**
    * Clicked on a restaurant
@@ -89,44 +84,13 @@ export default function RestaurantList() {
   return (
     <section className="restaurant-list__wrapper">
       <div className="restaurant-list__container">
-        <div className="restaurant-list__header">
-          <div className="restaurant-list__count">
-            <span>
-              {restaurants.length} of {total} restaurants
-            </span>
-          </div>
-          <div className="restaurant-list__actions">
-            <div className="restaurant-list__filters">
-              <span>Filter by</span>
-              {filterOptions.map((option) => (
-                <Button
-                  type="button"
-                  size="sm"
-                  color="default"
-                  onClick={() => handleClickFilterTypes(option.value)}
-                  className={`restaurant-list__filter ${
-                    filterTypes.includes(option.value)
-                      ? 'restaurant-list__filter--active'
-                      : ''
-                  }`}
-                  key={option.value}
-                >
-                  {option.text}
-                </Button>
-              ))}
-            </div>
-            <div className="restaurant-list__sort">
-              <span>Sort by</span>
-              <select onChange={handleChangeSort}>
-                {sortOptions.map((option) => (
-                  <option value={option.value} key={option.value}>
-                    {option.text}
-                  </option>
-                ))}
-              </select>
-            </div>
-          </div>
-        </div>
+        <RestaurantListHeader
+          loadedCount={restaurants.length}
+          searchlist={searchlist}
+          onChangeFilters={handleChangeFilters}
+          onChangeSort={handleChangeSort}
+        />
+
         <div className="restaurant-list">
           {restaurants.map((restaurant) => (
             <Link
