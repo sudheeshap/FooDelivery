@@ -19,7 +19,7 @@
 
 .cart__subtitle {
   color: #555;
-  font-size: 11px;
+  font-size: 12px;
   padding-top: 10px;
 }
 
@@ -83,12 +83,12 @@
 }
 
 .cart__item .icon {
-  font-size: 15px;
+  font-size: 17px;
 }
 
 .cart__item-name {
   text-align: left;
-  font-size: 12px;
+  font-size: 13px;
 }
 
 .cart__item-actions {
@@ -109,7 +109,7 @@
 
 .cart__item-amount {
   font-weight: bold;
-  font-size: 10px;
+  font-size: 11px;
   margin: 0 5px;
   flex-shrink: 0;
 }
