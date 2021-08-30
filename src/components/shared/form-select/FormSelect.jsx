@@ -15,8 +15,8 @@ const FormSelect = ({
     disabled={props.disabled}
     placeholder={props.placeholder}
     multiple={hasMultiSelect === true}
-    onChange={onChange}
     defaultValue={selected}
+    onChange={onChange}
   >
     {options.map((option) => (
       <option value={option.value} key={option.value}>

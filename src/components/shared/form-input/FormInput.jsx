@@ -9,7 +9,7 @@ const FormInput = ({ type, name, value, size, onChange, ...props }) => (
       autoCorrect="off"
       placeholder={props.placeholder}
       name={name}
-      value={value}
+      defaultValue={value}
       className={`form__input form__input--${size} ${props.className}`}
       disabled={props.disabled}
       required={props.required}

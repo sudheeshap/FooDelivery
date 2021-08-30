@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer renders the footer 1`] = `
+<Footer>
+  <footer>
+    <ul
+      className="footer__navbar"
+    >
+      <li
+        className="footer__nav"
+      >
+        <a
+          className="footer__nav-link"
+          href="/"
+        >
+          About us
+        </a>
+      </li>
+      <li
+        className="footer__nav"
+      >
+        <a
+          className="footer__nav-link"
+          href="/"
+        >
+          Become a partner
+        </a>
+      </li>
+      <li
+        className="footer__nav"
+      >
+        <a
+          className="footer__nav-link"
+          href="/"
+        >
+          Contact us
+        </a>
+      </li>
+    </ul>
+  </footer>
+</Footer>
+`;

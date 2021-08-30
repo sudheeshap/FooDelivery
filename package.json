@@ -38,6 +38,11 @@
       "react-app/jest"
     ]
   },
+  "jest": {
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ]
+  },
   "browserslist": {
     "production": [
       ">0.2%",
@@ -55,7 +60,7 @@
     "@typescript-eslint/parser": "^4.28.3",
     "@wojtekmaj/enzyme-adapter-react-17": "^0.6.3",
     "enzyme": "^3.11.0",
-    "enzyme-adapter-react-16": "^1.15.6",
+    "enzyme-to-json": "^3.6.2",
     "eslint": "^7.32.0",
     "eslint-loader": "^4.0.2",
     "eslint-plugin-import": "^2.23.4",
