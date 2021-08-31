@@ -13,7 +13,7 @@ module.exports = {
     sourceType: 'module',
   },
   parser: 'babel-eslint',
-  plugins: ['react'],
+  plugins: ['react', 'jest'],
   rules: {
     'object-curly-newline': 'off',
     'no-param-reassign': [
