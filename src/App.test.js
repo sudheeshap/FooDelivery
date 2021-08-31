@@ -1,8 +1,44 @@
-// import { render, screen } from '@testing-library/react';
-// import App from './App';
+import React from 'react';
+import { mount } from 'enzyme';
+import configureStore from 'redux-mock-store';
+import { Provider } from 'react-redux';
+import { BrowserRouter } from 'react-router-dom';
+import thunk from 'redux-thunk';
 
-// test('renders learn react link', () => {
-//   render(<App />);
-//   const linkElement = screen.getByText(/learn react/i);
-//   expect(linkElement).toBeInTheDocument();
-// });
+import App from './App';
+import Header from './components/shared/Header/Header';
+import INITIAL_STATE from './redux/initial-state';
+import Footer from './components/shared/Footer/Footer';
+
+describe('App', () => {
+  let wrapper = null;
+
+  beforeEach(() => {
+    const mockStore = configureStore([thunk]);
+    const store = mockStore(INITIAL_STATE);
+
+    wrapper = mount(
+      <BrowserRouter>
+        <Provider store={store}>
+          <App />
+        </Provider>
+      </BrowserRouter>,
+    );
+  });
+
+  it('renders without crashing', () => {
+    expect(wrapper.find(App).length).toEqual(1);
+  });
+
+  it('renders a Header component', () => {
+    expect(wrapper.find(Header)).toHaveLength(1);
+  });
+
+  it('renders a main element', () => {
+    expect(wrapper.find('main')).toHaveLength(1);
+  });
+
+  it('renders a Footer element', () => {
+    expect(wrapper.find(Footer)).toHaveLength(1);
+  });
+});
