@@ -61,20 +61,33 @@ export default function Header() {
               >
                 <img alt="" />
               </div> */}
-              <a href="/" className="navbar__link" onClick={handleClickLogout}>
+              <a
+                href="/"
+                className="navbar__link"
+                data-testid="link-logout"
+                onClick={handleClickLogout}
+              >
                 Logout
               </a>
             </div>
           ) : (
             <div className="navbar__item">
-              <Link to="/login" className="navbar__link">
+              <Link
+                to="/login"
+                className="navbar__link"
+                data-testid="link-login"
+              >
                 Login
               </Link>
             </div>
           )}
 
           <div className="navbar__item">
-            <CartIcon count={cartItemCount} onClick={handleClickCart} />
+            <CartIcon
+              count={cartItemCount}
+              onClick={handleClickCart}
+              data-testid="link-cart"
+            />
           </div>
         </div>
       </nav>

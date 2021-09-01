@@ -1,0 +1,129 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header renders the header 1`] = `
+<BrowserRouter>
+  <Router
+    history={
+      Object {
+        "action": "POP",
+        "block": [Function],
+        "createHref": [Function],
+        "go": [Function],
+        "goBack": [Function],
+        "goForward": [Function],
+        "length": 1,
+        "listen": [Function],
+        "location": Object {
+          "hash": "",
+          "pathname": "/",
+          "search": "",
+          "state": undefined,
+        },
+        "push": [Function],
+        "replace": [Function],
+      }
+    }
+  >
+    <Provider
+      store={
+        Object {
+          "clearActions": [Function],
+          "dispatch": [Function],
+          "getActions": [Function],
+          "getState": [Function],
+          "replaceReducer": [Function],
+          "subscribe": [Function],
+        }
+      }
+    >
+      <Header>
+        <header
+          className="header"
+        >
+          <nav
+            className="navbar"
+          >
+            <div
+              className="navbar__section"
+            >
+              <div
+                className="navbar__item"
+              >
+                <Link
+                  to="/"
+                >
+                  <LinkAnchor
+                    href="/"
+                    navigate={[Function]}
+                  >
+                    <a
+                      href="/"
+                      onClick={[Function]}
+                    >
+                      <img
+                        alt="Workflow"
+                        className="navbar__logo"
+                        src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
+                      />
+                    </a>
+                  </LinkAnchor>
+                </Link>
+              </div>
+            </div>
+            <div
+              className="navbar__section"
+            >
+              <div
+                className="navbar__item"
+              >
+                <Link
+                  className="navbar__link"
+                  data-testid="link-login"
+                  to="/login"
+                >
+                  <LinkAnchor
+                    className="navbar__link"
+                    data-testid="link-login"
+                    href="/login"
+                    navigate={[Function]}
+                  >
+                    <a
+                      className="navbar__link"
+                      data-testid="link-login"
+                      href="/login"
+                      onClick={[Function]}
+                    >
+                      Login
+                    </a>
+                  </LinkAnchor>
+                </Link>
+              </div>
+              <div
+                className="navbar__item"
+              >
+                <CartIcon
+                  count={0}
+                  data-testid="link-cart"
+                  onClick={[Function]}
+                >
+                  <div
+                    className="cart__icon cart__icon--disabled"
+                    onClick={[Function]}
+                    onKeyDown={null}
+                    role="button"
+                    tabIndex="0"
+                  >
+                    <i
+                      className="bi-bag"
+                    />
+                  </div>
+                </CartIcon>
+              </div>
+            </div>
+          </nav>
+        </header>
+      </Header>
+    </Provider>
+  </Router>
+</BrowserRouter>
+`;
