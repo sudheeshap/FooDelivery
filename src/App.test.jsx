@@ -6,9 +6,9 @@ import { BrowserRouter } from 'react-router-dom';
 import thunk from 'redux-thunk';
 
 import App from './App';
-import Header from './components/shared/Header/Header';
+import Header from './components/shared/header/Header';
 import INITIAL_STATE from './redux/initial-state';
-import Footer from './components/shared/Footer/Footer';
+import Footer from './components/shared/footer/Footer';
 
 describe('App', () => {
   let wrapper = null;
