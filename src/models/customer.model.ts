@@ -37,6 +37,16 @@ export default class CustomerModel extends ModelAbstract {
   addressLine2 = '';
 
   /**
+   * Password
+   */
+  password = '';
+
+  /**
+   * Confirm password
+   */
+  passwordConfirm = '';
+
+  /**
    * City
    */
   city = '';

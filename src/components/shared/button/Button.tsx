@@ -1,9 +1,17 @@
-import React from 'react';
-import { PropTypes } from 'prop-types';
+import React, { FC } from 'react';
+import PropTypes from 'prop-types';
 
 import StyledButton, { ButtonIcon, ButtonIconLoading } from './Button.styles';
+import { ButtonProps } from './Button.interface';
 
-const Button = ({ children, size, color, type, onClick, ...props }) => (
+const Button: FC<ButtonProps> = ({
+  children,
+  size,
+  color,
+  type,
+  onClick,
+  ...props
+}) => (
   <StyledButton
     type={type === 'submit' ? 'submit' : 'button'}
     size={size}
@@ -30,7 +38,7 @@ Button.defaultProps = {
   hasShadow: false,
   disabled: false,
   isLoading: false,
-  onClick: null,
+  onClick: undefined,
 };
 
 Button.propTypes = {

@@ -1,10 +1,10 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import { shallow, ShallowWrapper } from 'enzyme';
 
 import FormInput from './FormInput';
 
 describe('FormInput', () => {
-  let formInputWrapper = null;
+  let formInputWrapper: ShallowWrapper;
   const onInputChange = jest.fn();
 
   beforeEach(() => {

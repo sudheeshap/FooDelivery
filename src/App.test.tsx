@@ -1,5 +1,5 @@
 import React from 'react';
-import { mount } from 'enzyme';
+import { mount, ReactWrapper } from 'enzyme';
 import configureStore from 'redux-mock-store';
 import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
@@ -11,7 +11,7 @@ import INITIAL_STATE from './redux/initial-state';
 import Footer from './components/shared/footer/Footer';
 
 describe('App', () => {
-  let wrapper = null;
+  let wrapper: ReactWrapper;
 
   beforeEach(() => {
     const mockStore = configureStore([thunk]);

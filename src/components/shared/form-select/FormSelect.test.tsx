@@ -1,10 +1,10 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import { shallow, ShallowWrapper } from 'enzyme';
 
 import FormSelect from './FormSelect';
 
 describe('FormSelect', () => {
-  let formSelectWrapper = null;
+  let formSelectWrapper: ShallowWrapper;
   const onSelectChange = jest.fn();
   const selectOptions = [
     { value: 'apple', text: 'Apple' },
@@ -31,6 +31,6 @@ describe('FormSelect', () => {
 
   it('should be disabled when disabled true', () => {
     formSelectWrapper.setProps({ disabled: true });
-    expect(formSelectWrapper.props().disabled).toBe(true);
+    expect(formSelectWrapper.getElement().props.disabled).toBe(true);
   });
 });

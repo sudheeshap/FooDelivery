@@ -1,7 +1,16 @@
-import React from 'react';
-import { PropTypes } from 'prop-types';
+import React, { FC } from 'react';
+import PropTypes from 'prop-types';
 
-const FormInput = ({ type, name, value, size, onChange, ...props }) => (
+import { FormInputProps } from './FormInput.interface';
+
+const FormInput: FC<FormInputProps> = ({
+  type,
+  name,
+  value,
+  size,
+  onChange,
+  ...props
+}) => (
   <div className="form__input-container">
     <input
       type={type}
@@ -29,7 +38,7 @@ FormInput.defaultProps = {
   placeholder: '',
   disabled: false,
   required: false,
-  onChange: null,
+  onChange: undefined,
 };
 
 FormInput.propTypes = {

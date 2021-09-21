@@ -1,5 +1,5 @@
 import React from 'react';
-import { mount } from 'enzyme';
+import { mount, ReactWrapper } from 'enzyme';
 import configureStore from 'redux-mock-store';
 import { Provider } from 'react-redux';
 import { mountToJson } from 'enzyme-to-json';
@@ -9,7 +9,7 @@ import Header from './Header';
 import INITIAL_STATE from '../../../redux/initial-state';
 import * as selectors from '../../../redux/customer/customer.selectors';
 
-let headerWrapper = null;
+let headerWrapper: ReactWrapper;
 const mockLogout = jest.fn();
 
 jest.mock('../../../hooks/useAuth.js', () => ({

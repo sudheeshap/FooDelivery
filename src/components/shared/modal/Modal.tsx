@@ -1,5 +1,4 @@
-import React, { useEffect } from 'react';
-import { PropTypes } from 'prop-types';
+import React, { FC, useEffect } from 'react';
 import { createPortal } from 'react-dom';
 
 import {
@@ -9,38 +8,39 @@ import {
   ModalHeader,
   ModalOverlay,
 } from './Modal.styles';
+import { ModalProps } from './Modal.interface';
 
-export default function Modal({
+const Modal: FC<ModalProps> = ({
   title,
   isOpen,
   children,
   onAfterOpen,
   onRequestClose,
-}) {
-  /**
-   * Handle escape key
-   */
-  const handleEscape = (event) => {
-    if (event.keyCode !== 27) {
-      return;
-    }
-
-    // Confirm modal close
-    onRequestClose();
-  };
-
+}) => {
   useEffect(() => {
+    /**
+     * Handle escape key
+     */
+    const handleEscape = (event: KeyboardEvent) => {
+      if (event.keyCode !== 27) {
+        return;
+      }
+
+      // Confirm modal close
+      onRequestClose();
+    };
+
     window.addEventListener('keydown', handleEscape);
 
     if (!isOpen) {
-      return null;
+      return;
     }
     onAfterOpen();
 
     return () => {
       window.removeEventListener('keydown', handleEscape);
     };
-  }, [isOpen]);
+  }, [isOpen, onAfterOpen, onRequestClose]);
 
   return isOpen
     ? createPortal(
@@ -53,7 +53,7 @@ export default function Modal({
                 type="button"
                 size="sm"
                 color="default"
-                onClick={onRequestClose}
+                onClick={() => onRequestClose}
               >
                 <i className="bi-x-circle-fill" />
               </ModalButtonIconClose>
@@ -61,20 +61,20 @@ export default function Modal({
             <ModalBody>{children}</ModalBody>
           </ModalContent>
         </ModalOverlay>,
-        document.getElementById('modal__wrapper'),
+        document.getElementById('modal__wrapper') as Element,
       )
     : null;
-}
+};
 
 Modal.defaultProps = {
   title: '',
   onAfterOpen: () => {},
 };
 
-Modal.propTypes = {
-  title: PropTypes.string,
-  isOpen: PropTypes.bool.isRequired,
-  children: PropTypes.oneOfType([PropTypes.node, PropTypes.string]).isRequired,
-  onAfterOpen: PropTypes.func.isRequired,
-  onRequestClose: PropTypes.func.isRequired,
-};
+// Modal.propTypes = {
+//   title: PropTypes.string,
+//   isOpen: PropTypes.bool.isRequired,
+//   children: PropTypes.oneOfType([PropTypes.node, PropTypes.string]).isRequired,
+//   onAfterOpen: PropTypes.func.isRequired,
+//   onRequestClose: PropTypes.func.isRequired,
+// };

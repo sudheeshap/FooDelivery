@@ -18,7 +18,7 @@ export const useAuth = () => {
   /**
    * Customer login
    */
-  const login = (email, password) => {
+  const login = (email: string, password: string) => {
     setIsLoading(true);
 
     return authLogin(email, password)
@@ -30,7 +30,7 @@ export const useAuth = () => {
   /**
    * Customer register
    */
-  const register = (userData) => {
+  const register = (userData: CustomerModel) => {
     setIsLoading(true);
 
     return registerUser(userData)
