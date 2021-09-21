@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ChangeEvent } from 'react';
 import { useDispatch } from 'react-redux';
 
 import FormInput from '../form-input/FormInput';
@@ -12,7 +12,8 @@ export default function Jumbotron() {
    * Handle search input change
    */
   const handleChangeSearch = useDebounce(
-    ({ target }) => dispatch(updateFilterQuery({ query: target.value })),
+    (event: ChangeEvent<HTMLInputElement>) =>
+      dispatch(updateFilterQuery({ query: event.target.value })),
     300,
   );
 

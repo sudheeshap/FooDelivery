@@ -32,7 +32,7 @@ export const fetchRestaurants = createAsyncThunk(
  */
 export const fetchRestaurant = createAsyncThunk(
   'restaurant/fetchRestaurant',
-  async (slug, { dispatch }) => {
+  async (slug: string, { dispatch }) => {
     const restaurant = await loadRestaurant(slug);
 
     // Fetch menu groups or the selected restaurant

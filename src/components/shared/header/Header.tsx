@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { MouseEvent } from 'react';
 import { useSelector } from 'react-redux';
 import { Link, useHistory } from 'react-router-dom';
 
@@ -21,7 +21,7 @@ export default function Header() {
   /**
    * Clicked on logout button
    */
-  const handleClickLogout = (event) => {
+  const handleClickLogout = (event: MouseEvent<HTMLAnchorElement>) => {
     event.preventDefault();
 
     // Logout customer

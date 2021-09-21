@@ -10,7 +10,7 @@ import HomePage from './pages/HomePage';
 import RegisterPage from './pages/RegisterPage';
 import DeliveryPage from './pages/DeliveryPage';
 
-function App() {
+const App: React.FC = () => {
   return (
     <>
       <Header />
@@ -39,6 +39,6 @@ function App() {
       <Footer />
     </>
   );
-}
+};
 
 export default App;

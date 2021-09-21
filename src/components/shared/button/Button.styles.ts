@@ -1,6 +1,8 @@
-import styled, { css } from 'styled-components';
+import styled, { css, FlattenSimpleInterpolation } from 'styled-components';
 
-const variantStyles = {
+import { ButtonProps } from './Button.interface';
+
+const variantStyles: Record<string, FlattenSimpleInterpolation> = {
   default: css`
     background-color: var(--color-bg-secondary);
     color: var(--color-text-secondary);
@@ -15,7 +17,7 @@ const variantStyles = {
   `,
 };
 
-const variantStylesOutline = {
+const variantStylesOutline: Record<string, FlattenSimpleInterpolation> = {
   default: css`
     border: 1px solid var(--color-text-secondary);
     background-color: #ffffff;
@@ -45,7 +47,7 @@ const variantStylesOutline = {
   `,
 };
 
-const sizeStyles = {
+const sizeStyles: Record<string, FlattenSimpleInterpolation> = {
   sm: css`
     padding: 8px 13px;
     font-size: 11px;
@@ -58,13 +60,21 @@ const sizeStyles = {
   `,
 };
 
-const shadowStyle = (props) =>
-  props.hasShadow &&
-  css`
-    box-shadow: rgb(200 200 200 / 15%) 0px 10px 20px 0px;
-  `;
+const getShadowStyles = (props: ButtonProps) =>
+  props.hasShadow
+    ? css`
+        box-shadow: rgb(200 200 200 / 15%) 0px 10px 20px 0px;
+      `
+    : '';
 
-const StyledButton = styled.button`
+const getSizeStyles = ({ size = 'sm' }: ButtonProps) => sizeStyles[size];
+
+const getOutlineStyles = (props: ButtonProps) =>
+  (props.outline
+    ? variantStylesOutline[props.color || 'default']
+    : variantStyles[props.color || 'default']) || '';
+
+const StyledButton = styled.button<ButtonProps>`
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -79,14 +89,11 @@ const StyledButton = styled.button`
   text-decoration: none;
   transition: background-color 200ms ease-out, box-shadow 200ms ease-out;
 
-  ${shadowStyle};
+  ${getShadowStyles}
 
-  ${(props) => sizeStyles[props.size]}
-
-  ${(props) =>
-    props.outline
-      ? variantStylesOutline[props.color]
-      : variantStyles[props.color]}
+  ${getSizeStyles}
+  
+  ${getOutlineStyles}
 
   &:disabled {
     opacity: 0.4;

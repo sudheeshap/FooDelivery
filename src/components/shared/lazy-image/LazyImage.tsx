@@ -1,12 +1,18 @@
-import React, { useState, useEffect, useRef } from 'react';
-import { PropTypes } from 'prop-types';
+import React, { useState, useEffect, useRef, FC } from 'react';
+import PropTypes from 'prop-types';
 
 import useIntersectionObserver from '../../../hooks/useIntersectionObserver';
+import { LazyImageProps } from './LazyImage.interface';
 
 /**
  * Lazy loaded image or div with background image
  */
-export default function LazyImage({ src, alt, isBackgroundImage, ...props }) {
+const LazyImage: FC<LazyImageProps> = ({
+  src,
+  alt,
+  isBackgroundImage,
+  ...props
+}) => {
   const imageRef = useRef(null);
   const [isImageLoaded, setImageLoaded] = useState(false);
   const isIntersecting = useIntersectionObserver(imageRef);
@@ -18,23 +24,23 @@ export default function LazyImage({ src, alt, isBackgroundImage, ...props }) {
     setImageLoaded(true);
   }
 
-  /**
-   * Load image
-   */
-  function loadImage() {
-    const img = new Image();
-    img.src = src;
-    img.onload = onLoadImage;
-  }
-
   useEffect(() => {
     if (!isIntersecting || isImageLoaded) {
       return;
     }
 
+    /**
+     * Load image
+     */
+    function loadImage() {
+      const img = new Image();
+      img.src = src;
+      img.onload = onLoadImage;
+    }
+
     // Load image as the section is visible in viewport
     loadImage();
-  }, [imageRef.current, isIntersecting]);
+  }, [isImageLoaded, src, isIntersecting]);
 
   return (
     <>
@@ -50,7 +56,7 @@ export default function LazyImage({ src, alt, isBackgroundImage, ...props }) {
           className={`image ${props.className} ${
             isImageLoaded ? 'image--loaded' : ''
           }`}
-          style={isImageLoaded ? { backgroundImage: `url(${src})` } : null}
+          style={isImageLoaded ? { backgroundImage: `url(${src})` } : undefined}
         />
       )}
 
@@ -66,7 +72,7 @@ export default function LazyImage({ src, alt, isBackgroundImage, ...props }) {
       )}
     </>
   );
-}
+};
 
 LazyImage.defaultProps = {
   isBackgroundImage: false,
@@ -80,3 +86,5 @@ LazyImage.propTypes = {
   className: PropTypes.string,
   isBackgroundImage: PropTypes.bool,
 };
+
+export default LazyImage;

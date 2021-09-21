@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { SyntheticEvent, useState } from 'react';
 import { Link, useHistory, useLocation } from 'react-router-dom';
 
 import FormInput from '../components/shared/form-input/FormInput';
@@ -14,15 +14,13 @@ const RegisterPage = () => {
 
   const initialState = {
     ...new CustomerModel(),
-    password: '',
-    passwordConfirm: '',
   };
   const [state, setState] = useState(initialState);
 
   /**
    * Handle form submit
    */
-  const handleSubmit = async (event) => {
+  const handleSubmit = async (event: SyntheticEvent<HTMLFormElement>) => {
     event.preventDefault();
 
     register(state).then((response) => {
@@ -35,8 +33,8 @@ const RegisterPage = () => {
   /**
    * Handle input change
    */
-  const handleInputChange = (event) => {
-    const { value, name } = event.target;
+  const handleInputChange = (event: SyntheticEvent<HTMLInputElement>) => {
+    const { value, name } = event.target as HTMLInputElement;
 
     setState({ ...state, [name]: value });
   };

@@ -32,9 +32,9 @@ import Cart from '../components/cart/Cart';
 import Button from '../components/shared/button/Button';
 import CartIcon from '../components/CartIcon';
 
-export default function RestaurantPage() {
+const RestaurantPage: React.FC = () => {
   const history = useHistory();
-  const { slug } = useParams();
+  const { slug } = useParams<{ slug: string }>();
   const dispatch = useDispatch();
   const [isModalOpen, setModalOpen] = useState(false);
 
@@ -56,7 +56,7 @@ export default function RestaurantPage() {
 
     // Scroll to top of the page
     scrollToPosition(0, 0);
-  }, [slug]);
+  }, [slug, dispatch]);
 
   /**
    * Returns cart details
@@ -175,4 +175,6 @@ export default function RestaurantPage() {
       )}
     </section>
   );
-}
+};
+
+export default RestaurantPage;

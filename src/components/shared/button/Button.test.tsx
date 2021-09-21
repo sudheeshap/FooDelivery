@@ -1,11 +1,11 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import { shallow, ShallowWrapper } from 'enzyme';
 
 import Button from './Button';
 import { ButtonIconLoading } from './Button.styles';
 
 describe('Button', () => {
-  let buttonWrapper = null;
+  let buttonWrapper: ShallowWrapper;
   const onButtonClick = jest.fn();
 
   beforeEach(() => {
@@ -39,6 +39,6 @@ describe('Button', () => {
 
   it('should be disabled when disabled true', () => {
     buttonWrapper.setProps({ disabled: true });
-    expect(buttonWrapper.props().disabled).toBe(true);
+    expect(buttonWrapper.getElement().props.disabled).toBe(true);
   });
 });

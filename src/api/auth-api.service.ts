@@ -1,3 +1,4 @@
+import CustomerModel from '../models/customer.model';
 import { auth, firestore } from './firebase-api';
 
 /**
@@ -50,7 +51,7 @@ export const subscribeAuth = (callback) =>
 /**
  * Register user
  */
-export const registerUser = async (userData) => {
+export const registerUser = async (userData: CustomerModel) => {
   try {
     const userCredential = await auth.createUserWithEmailAndPassword(
       userData.email,
